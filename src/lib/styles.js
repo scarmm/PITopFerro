@@ -77,5 +77,51 @@ export const styles = StyleSheet.create({
         fontWeight: "800"
     },
 
+    imgE: {
+        width: "160px",
+        height: "32px",
+    },
+
+    textoC:{
+        fontSize:"20px",
+        marginBottom:"30px"
+    },
+
+    input1:{
+        marginTop:"80px"
+    },
+
+    textos:{
+        justifyContent:"center",
+        textAlign:"center"
+    },
+
+    textoR:{
+        fontSize:"22px",
+        margin:"30px"
+    },
+
+    textoS:{
+        fontSize:"18px",
+       paddingLeft:"50px",
+       paddingRight:"50px",
+       marginBottom:"10px",
+       marginTop:"10px"
+    },
+
+    textoN:{
+        fontSize:"15px",
+        margin:"20px"
+    },
+
+    imgS:{
+        width:"100px",
+        height:"100px"
+    },
+
+    textos:{
+        marginTop:"40px",
+        textAlign:"center"
+    }
 
 });

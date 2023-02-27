@@ -12,7 +12,7 @@ export const telaLogin = ({ navigation }) => {
             </View>
 
             <View style={styles.texto} >
-                <Text style={styles.texto1} onPress={() => navigation.navigate("EsqueciaSenha")}>Esqueci minha senha</Text>
+                <Text style={styles.texto1} onPress={() => navigation.navigate("EsqueceuaSenha")}>Esqueci minha senha</Text>
             </View>
 
             <View style={styles.botao1}>
