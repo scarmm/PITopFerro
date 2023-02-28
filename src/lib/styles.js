@@ -111,7 +111,8 @@ export const styles = StyleSheet.create({
 
     textoN:{
         fontSize:"15px",
-        margin:"20px"
+        marginBottom:"60px",
+        marginTop:"30px"
     },
 
     imgS:{
@@ -122,6 +123,58 @@ export const styles = StyleSheet.create({
     textos:{
         marginTop:"40px",
         textAlign:"center"
+    },
+
+    textosms:{
+        marginTop:"30px",
+        fontSize:"20px",
+        
+    },
+
+    textosms1:{
+        paddingLeft:"170px",
+        color: "#707070",
+        fontWeight: "200",
+        fontSize: "15px"
+    },
+
+    textoemail:{
+        marginBottom:"60px",
+        marginTop:"30px",
+        fontSize:"20px"
+    },
+
+    textosenha:{
+        fontSize:"20px",
+        marginBottom:"70px"
+    },
+    
+    img2:{
+        width:"150px",
+        height:"150px"
+    },
+
+    imgicon:{
+        width:"30px",
+        height:"30px",
+        margin: "10px",
+    },
+
+    container1:{
+        flex:1,
+        backgroundColor: '#F3ECE8'
+    },
+
+    container2:{
+        flex:1,
+        justifyContent: 'center',
+        alignItems: 'center',
+
+    },
+
+    containerIcones:{
+        paddingLeft:"350px",
     }
+
 
 });
