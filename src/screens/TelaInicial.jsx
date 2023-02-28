@@ -7,7 +7,8 @@ export const telaInicial = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Image style={styles.img} source={{uri: require("../imagens/gatao.png")}} />
-            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Login")}>Clique no miau</Button>
+            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Login")}>LoGin</Button>
+            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Ajuda")}>AJUda</Button>
         </View>
     )
 }
