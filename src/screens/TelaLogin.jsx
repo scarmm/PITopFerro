@@ -5,6 +5,8 @@ import { styles } from "../lib/styles"
 export const telaLogin = ({ navigation }) => {
     return (
         <View style={styles.container}>
+             <Image style={styles.imgicon1} source={{ uri: require("../imagens/voltar.png") }} />
+
             <Image style={styles.img1} source={{ uri: require("../imagens/icon-login.png") }} />
             <View>
                 <TextInput style={styles.input} placeholder="Email" />
@@ -12,7 +14,7 @@ export const telaLogin = ({ navigation }) => {
             </View>
 
             <View style={styles.texto} >
-                <Text style={styles.texto1} onPress={() => navigation.navigate("EsqueciaSenha")}>Esqueci minha senha</Text>
+                <Text style={styles.texto1} onPress={() => navigation.navigate("EsqueceuaSenha")}>Esqueci minha senha</Text>
             </View>
 
             <View style={styles.botao1}>
