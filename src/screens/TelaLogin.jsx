@@ -21,7 +21,7 @@ export const telaLogin = ({ navigation }) => {
                 <Button style={styles.btt} mode="contained" onPress={() => navigation.navigate("Inicio")}>Entrar</Button>
             </View>
 
-            <View style={styles.texto2} >
+            <View style={styles.texto2}>
                 <Text style={styles.texto3} onPress={() => navigation.navigate("Cadastro")}>Não tem conta? Cadastre-se</Text>
             </View>
 

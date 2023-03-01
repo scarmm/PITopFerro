@@ -77,6 +77,7 @@ export const styles = StyleSheet.create({
         fontWeight: "800"
     },
 
+
     imgE: {
         width: "160px",
         height: "32px",
@@ -176,5 +177,3 @@ export const styles = StyleSheet.create({
         paddingLeft:"350px",
     }
 
-
-});
