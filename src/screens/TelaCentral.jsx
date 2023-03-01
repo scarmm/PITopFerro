@@ -16,7 +16,7 @@ export const TelaCentral = ({ navigation }) => {
             <Button style={styles.btt} mode="contained"
              >Enviar</Button>
 
-            <Text style={ajudas.textoCentral2}> Nós iremos lhe contactar pelo seu email cadastrado brevemente</Text>
+            <Text style={ajudas.textoCentral2}>Nós iremos lhe contactar pelo seu email cadastrado brevemente</Text>
             </View>
     )
 }
