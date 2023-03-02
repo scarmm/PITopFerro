@@ -15,6 +15,10 @@ import { TelaSugestoes } from "../screens/TelaSugestoes";
 import { TelaEnvioEmail,} from "../screens/TelaEnvioEmail";
 import { telaMudarSenha } from "../screens/TelaMudarSenha";
 import { TelaSenhaAlterada } from "../screens/TelaSenhaAlterada";
+import { TelaConfigura } from "../screens/TelaConfigura";
+import { TelaEndereco } from "../screens/TelaEndereco";
+import { TelaCartao } from "../screens/TelaCartao";
+import { TelaExcluir } from "../screens/TelaExcluir";
 
 
 const Stack= createNativeStackNavigator();
@@ -24,12 +28,12 @@ export const RootNavigation = () => {
         <Stack.Navigator style={styles.tab} screenOptions={{ headerShown: false }}>
 
         
-            <Stack.Screen name={"Ajuda"} component={TelaAjuda} />
+            <Stack.Screen  name={"Inicio"} component={telaInicial} />
             <Stack.Screen name={"Central"} component={TelaCentral} />
+            <Stack.Screen name={"Ajuda"} component={TelaAjuda} />
             <Stack.Screen name={"AjudaConta"} component={TelaAjudaConta} />
             <Stack.Screen name={"Sugestões"} component={TelaSugestoes} />
 
-            <Stack.Screen  name={"Inicio"} component={telaInicial} />
             <Stack.Screen  name={"Login"} component={telaLogin} />
             <Stack.Screen  name={"Cadastro"} component={telaCadastro} />
             <Stack.Screen  name={"Cadastro2"} component={telaCadastro2} />
@@ -38,7 +42,10 @@ export const RootNavigation = () => {
             <Stack.Screen  name={"TelaEnvioEmail"} component={TelaEnvioEmail} />
             <Stack.Screen  name={"TelaMudarSenha"} component={telaMudarSenha} />
             <Stack.Screen  name={"TelaSenhaAlterada"} component={TelaSenhaAlterada} />
-
+            <Stack.Screen options={{ headerShown: true }} name={"Configurações"} component={TelaConfigura} />
+            <Stack.Screen options={{ headerShown: true }} name={"Endereços"} component={TelaEndereco} />
+            <Stack.Screen options={{ headerShown: true }} name={"Cartões"} component={TelaCartao} />
+            <Stack.Screen options={{ headerShown: true }} name={"Excluir"} component={TelaExcluir} />
         </Stack.Navigator>
     );
 };

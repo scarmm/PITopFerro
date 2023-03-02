@@ -176,4 +176,4 @@ export const styles = StyleSheet.create({
     containerIcones:{
         paddingLeft:"350px",
     }
-
+})

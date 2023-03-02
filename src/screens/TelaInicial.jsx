@@ -9,6 +9,7 @@ export const telaInicial = ({ navigation }) => {
             <Image style={styles.img} source={{uri: require("../imagens/gatao.png")}} />
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Login")}>LoGin</Button>
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Ajuda")}>AJUda</Button>
+            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Configurações")}>Configuração</Button>
         </View>
     )
 }
