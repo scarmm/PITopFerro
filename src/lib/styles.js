@@ -1,3 +1,4 @@
+
 import { StyleSheet } from "react-native";
 
 const borderRadius = 40;
@@ -191,3 +192,4 @@ export const styles = StyleSheet.create({
         paddingLeft: "350px",
     }
 })
+

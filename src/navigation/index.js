@@ -1,3 +1,4 @@
+
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { styles } from "../lib/styles";
 import { telaCadastro } from "../screens/TelaCadastro";
@@ -80,3 +81,4 @@ export const RootNavigation = () => {
         </Stack.Navigator>
     );
 };
+
