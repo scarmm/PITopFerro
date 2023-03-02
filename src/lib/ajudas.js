@@ -31,19 +31,39 @@ export const ajudas = StyleSheet.create({
         padding: '10px'
     },
     img: {
-      width:'125px',
-      height:'220px'
+        width: '125px',
+        height: '220px'
     },
-    textoCentral:{
+    imgajudaconta: {
+        width: '160px',
+        height: '200px',
+    },
+    imgsugestao:{
+        width:"150px",
+        height:"150px",
+    },
+    textoCentral: {
         color: "#707070",
         fontSize: "20px",
         margin: "20px"
     },
-    textoCentral2:{
+    textoCentral2: {
         color: "#707070",
-        opacity:"50%",
-        maxWidth:"270px"
-    }
-    
+        opacity: "50%",
+        maxWidth: "270px"
+    },
+    textoajudaconta: {
+        fontSize: "23px",
+        fontWeight: "bold",
+        padding:"30px"
+    },
+    textoajudaconta2: {
+        textDecorationLine: 'underline',
+        padding: '10px',
+        fontSize: "17px",
+
+    },
+
+
 })
 

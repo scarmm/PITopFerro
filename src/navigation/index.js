@@ -22,11 +22,11 @@ export const RootNavigation = () => {
         <Stack.Navigator style={styles.tab} screenOptions={{ headerShown: false }}>
 
         
+            <Stack.Screen  name={"Ajuda"} options={{ headerShown: true }} component={TelaAjuda} />
             <Stack.Screen  name={"Inicio"} component={telaInicial} />
-            <Stack.Screen name={"Ajuda"} component={TelaAjuda} />
-            <Stack.Screen name={"Central"} component={TelaCentral} />
-            <Stack.Screen name={"AjudaConta"} component={TelaAjudaConta} />
-            <Stack.Screen name={"Sugestões"} component={TelaSugestoes} />
+            <Stack.Screen  name={"Sugestões"} component={TelaSugestoes} />
+            <Stack.Screen  name={"AjudaConta"} component={TelaAjudaConta} />
+            <Stack.Screen  name={"Central"} component={TelaCentral} />
             <Stack.Screen  name={"Login"} component={telaLogin} />
             <Stack.Screen  name={"Cadastro"} component={telaCadastro} />
             <Stack.Screen  name={"Cadastro2"} component={telaCadastro2} />
