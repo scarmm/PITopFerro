@@ -1,5 +1,5 @@
-import { Image, Text } from "react-native"
-import { View } from "react-native"
+import { Image, View } from "react-native"
+import { Text } from "react-native-paper"
 import { styles } from "../lib/styles"
 
 export const TelaSenhaAlterada = ({ navigation }) => {

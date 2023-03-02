@@ -1,6 +1,5 @@
-import { Image, Text } from "react-native"
-import { Button } from "react-native-paper"
-import { View } from "react-native-web"
+import { Image, View } from "react-native"
+import {  Button, Text } from "react-native-paper"
 import { styles } from "../lib/styles"
 
 export const TelaEsqueceuaSenha = ({ navigation }) => {

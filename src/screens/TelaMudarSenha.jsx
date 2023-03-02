@@ -1,5 +1,5 @@
-import { View, Text, TextInput, Image } from "react-native"
-import { Button } from "react-native-paper"
+import { Image, View } from "react-native"
+import {  Button, TextInput, Text } from "react-native-paper"
 import { styles } from "../lib/styles"
 
 export const telaMudarSenha = ({ navigation }) => {
