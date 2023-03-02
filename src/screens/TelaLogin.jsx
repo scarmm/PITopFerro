@@ -1,15 +1,15 @@
-import { View, Text, TextInput, Image } from "react-native"
-import { Button } from "react-native-paper"
+import { View, Image } from "react-native"
+import { Button, TextInput, Text } from "react-native-paper"
 import { styles } from "../lib/styles"
 
 export const telaLogin = ({ navigation }) => {
     return (
         <View style={styles.container}>
-             <Image style={styles.imgicon1} source={{ uri: require("../imagens/voltar.png") }} />
+            <Image style={styles.imgicon1} source={{ uri: require("../imagens/voltar.png") }} />
 
             <Image style={styles.img1} source={{ uri: require("../imagens/icon-login.png") }} />
             <View>
-                <TextInput style={styles.input} placeholder="Email" />
+                <TextInput style={styles.input} placeholder="Email" mode="flat" />
                 <TextInput style={styles.input} placeholder="Senha" />
             </View>
 
