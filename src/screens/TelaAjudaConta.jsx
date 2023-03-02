@@ -1,3 +1,4 @@
+
 import { Image, Text, View } from "react-native"
 import { ajudas } from "../lib/ajudas"
 

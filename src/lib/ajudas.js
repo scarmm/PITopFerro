@@ -1,3 +1,4 @@
+
 //tela de ajuda bibop 
 import { StyleSheet } from "react-native";
 
@@ -66,4 +67,3 @@ export const ajudas = StyleSheet.create({
 
 
 })
-

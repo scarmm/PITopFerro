@@ -1,6 +1,5 @@
-import { Image, Text, TextInput } from "react-native"
-import { Button } from "react-native-paper"
-import { View } from "react-native-web"
+import { Image, View } from "react-native"
+import {  Button, TextInput, Text } from "react-native-paper"
 import { styles } from "../lib/styles"
 
 export const TelaEnvioEmail = ({ navigation }) => {

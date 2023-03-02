@@ -1,4 +1,8 @@
+
 import { StyleSheet } from "react-native";
+
+const borderRadius = 40;
+const inputPaddingX = 20;
 
 export const styles = StyleSheet.create({
     container: {
@@ -11,10 +15,14 @@ export const styles = StyleSheet.create({
         height: 55,
         width: 320,
         margin: 15,
-        padding: 20,
-        borderRadius: 30,
+        paddingLeft: inputPaddingX,
+        paddingRight: inputPaddingX,
+        borderRadius: borderRadius,
+        borderTopEndRadius: borderRadius,
+        borderTopLeftRadius: borderRadius,
         backgroundColor: "white",
         color: "#BAC4BD",
+        overflow: 'hidden',
         fontSize: "15px",
         shadowColor: '#171717',
         shadowOffset: { width: -2, height: 4 },
@@ -83,98 +91,105 @@ export const styles = StyleSheet.create({
         height: "32px",
     },
 
-    textoC:{
-        fontSize:"20px",
-        marginBottom:"30px"
+    textoC: {
+        fontSize: "20px",
+        marginBottom: "30px"
     },
 
-    input1:{
-        marginTop:"80px"
+    input1: {
+        marginTop: "80px"
     },
 
-    textos:{
-        justifyContent:"center",
+    textos: {
+        display: "flex",
+        justifyContent: "center",
+    },
+
+    textoR: {
+        fontSize: "22px",
+        margin: "30px",
+        alignItems: "center",
+        justifyContent: "center",
+        display: "flex",
+    },
+
+    textoS: {
+        fontSize: "18px",
+        paddingLeft: "50px",
+        paddingRight: "50px",
+        marginBottom: "10px",
+        marginTop: "10px",
+        alignItems: "center",
+        justifyContent: "center",
+        display: "flex",
         textAlign:"center"
     },
 
-    textoR:{
-        fontSize:"22px",
-        margin:"30px"
+    textoN: {
+        fontSize: "15px",
+        marginBottom: "60px",
+        marginTop: "30px"
     },
 
-    textoS:{
-        fontSize:"18px",
-       paddingLeft:"50px",
-       paddingRight:"50px",
-       marginBottom:"10px",
-       marginTop:"10px"
+    imgS: {
+        width: "100px",
+        height: "100px"
     },
 
-    textoN:{
-        fontSize:"15px",
-        marginBottom:"60px",
-        marginTop:"30px"
+    textos: {
+        marginTop: "40px",
+        textAlign: "center"
     },
 
-    imgS:{
-        width:"100px",
-        height:"100px"
+    textosms: {
+        marginTop: "30px",
+        fontSize: "20px",
+
     },
 
-    textos:{
-        marginTop:"40px",
-        textAlign:"center"
-    },
-
-    textosms:{
-        marginTop:"30px",
-        fontSize:"20px",
-        
-    },
-
-    textosms1:{
-        paddingLeft:"170px",
+    textosms1: {
+        paddingLeft: "170px",
         color: "#707070",
         fontWeight: "200",
         fontSize: "15px"
     },
 
-    textoemail:{
-        marginBottom:"60px",
-        marginTop:"30px",
-        fontSize:"20px"
+    textoemail: {
+        marginBottom: "60px",
+        marginTop: "30px",
+        fontSize: "20px"
     },
 
-    textosenha:{
-        fontSize:"20px",
-        marginBottom:"70px"
-    },
-    
-    img2:{
-        width:"150px",
-        height:"150px"
+    textosenha: {
+        fontSize: "20px",
+        marginBottom: "70px"
     },
 
-    imgicon:{
-        width:"30px",
-        height:"30px",
+    img2: {
+        width: "150px",
+        height: "150px"
+    },
+
+    imgicon: {
+        width: "30px",
+        height: "30px",
         margin: "10px",
     },
 
-    container1:{
-        flex:1,
+    container1: {
+        flex: 1,
         backgroundColor: '#F3ECE8'
     },
 
-    container2:{
-        flex:1,
+    container2: {
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
 
     },
 
-    containerIcones:{
-        paddingLeft:"350px",
+    containerIcones: {
+        paddingLeft: "350px",
     }
-
 })
+
