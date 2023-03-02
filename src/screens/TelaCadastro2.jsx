@@ -1,5 +1,5 @@
-import { Image, Text, TextInput, View } from "react-native"
-import { Button } from "react-native-paper"
+import { View, Image } from "react-native"
+import { Button, TextInput, Text } from "react-native-paper"
 import { styles } from "../lib/styles"
 
 export const telaCadastro2 = ({ navigation }) => {
