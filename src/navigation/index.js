@@ -14,6 +14,10 @@ import { TelaSugestoes } from "../screens/TelaSugestoes";
 import { TelaEnvioEmail, } from "../screens/TelaEnvioEmail";
 import { telaMudarSenha } from "../screens/TelaMudarSenha";
 import { TelaSenhaAlterada } from "../screens/TelaSenhaAlterada";
+import { TelaConfigura } from "../screens/TelaConfigura";
+import { TelaEndereco } from "../screens/TelaEndereco";
+import { TelaCartao } from "../screens/TelaCartao";
+import { TelaExcluir } from "../screens/TelaExcluir";
 
 
 
@@ -76,7 +80,12 @@ export const RootNavigation = () => {
                 options={{
                     title: ""
                 }}
+                  <Stack.Screen options={{ headerShown: true }} name={"Configurações"} component={TelaConfigura} />
+            <Stack.Screen options={{ headerShown: true }} name={"Endereços"} component={TelaEndereco} />
+            <Stack.Screen options={{ headerShown: true }} name={"Cartões"} component={TelaCartao} />
+            <Stack.Screen options={{ headerShown: true }} name={"Excluir"} component={TelaExcluir} />
             />
+
 
         </Stack.Navigator>
     );
