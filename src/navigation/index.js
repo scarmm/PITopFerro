@@ -18,6 +18,10 @@ import { TelaConfigura } from "../screens/TelaConfigura";
 import { TelaEndereco } from "../screens/TelaEndereco";
 import { TelaCartao } from "../screens/TelaCartao";
 import { TelaExcluir } from "../screens/TelaExcluir";
+import { TelaPrincipal } from "../screens/TelaPrincipal";
+import { Image } from "react-native";
+import { Searchbar } from "react-native-paper";
+import { principas } from "../lib/principas";
 import {TelaLocalizacao}  from "../screens/TelaLocalizacao";
 import { TelaCadastroCartao } from "../screens/TelaCadastroCartao";
 
@@ -31,7 +35,13 @@ export const RootNavigation = () => {
             headerShown: true,
             headerTransparent: true,
         }}>
-
+            <Stack.Screen name={"Principal"} component={TelaPrincipal}
+                options={{
+                    headerStyle: { backgroundColor: "#2C2019" },
+                    headerTransparent: false,
+                    title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
+                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
+                }} />
             <Stack.Screen name={"Inicio"} component={telaInicial}
 
                 options={{
@@ -95,13 +105,13 @@ export const RootNavigation = () => {
                     title: ""
                 }}
             />
-           
+        
             <Stack.Screen name={"Configurações"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaConfigura} />
             <Stack.Screen name={"Endereços"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaEndereco} />
             <Stack.Screen name={"Cartões"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaCartao} />
-            <Stack.Screen name={"Excluir"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaExcluir} />
-            
+            <Stack.Screen name={"Excluir"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaExcluir} />      
 }
+
 
 
         </Stack.Navigator>
