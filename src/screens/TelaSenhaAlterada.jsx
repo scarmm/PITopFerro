@@ -1,6 +1,7 @@
 import { Image, View } from "react-native"
 import { Text } from "react-native-paper"
 import { styles } from "../lib/styles"
+import Icon from 'react-native-vector-icons/AntDesign';
 
 export const TelaSenhaAlterada = ({ navigation }) => {
     return (
@@ -11,7 +12,8 @@ export const TelaSenhaAlterada = ({ navigation }) => {
             </View>
 
             <View style={styles.containerIcones}>
-            <Image style={styles.imgicon} source={{ uri: require("../imagens/seta-voltar.png") }} />
+            <Icon.Button style={styles.imgicon} name="login" size={25} color="#34271F" backgroundColor="none" onPress={() => navigation.navigate("Inicio") } >
+            </Icon.Button>
             </View>
         </View>
 

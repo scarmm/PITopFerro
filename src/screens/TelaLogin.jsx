@@ -1,16 +1,83 @@
+import { useState } from "react";
 import { View, Image } from "react-native"
-import { Button, TextInput, Text } from "react-native-paper"
+import { Button, TextInput, Text, HelperText } from "react-native-paper"
 import { styles } from "../lib/styles"
 
-export const telaLogin = ({ navigation }) => {
+export const telaLogin = ({ route, navigation }) => {
+
+    const [Email, setEmail] = useState({
+        value: "",
+        error: "",
+    });
+    const [Senha, setSenha] = useState({
+        value: "",
+        error: "",
+    });
+    const [mostraErro, setMostraErro] = useState("");
+    const { mensagem } = route.params || false;
+
+    function onLoginPressed() {
+        
+        console.log("LoginIniciado");
+        if (Email.value === "" || Senha.value === "") {
+            setEmail({ ...Email, error: "Entre com um e-mail válido" });
+            setSenha({ ...Senha, error: "Entre com uma senha" });
+            return;
+        }
+        signInWithEmailAndPassword(auth, Email.value, Senha.value)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                navigation.navigate("HomeNavigation");
+            })
+            .catch((error) => {
+                lidarComErro(error.code);
+            });
+    }
+
+    function lidarComErro(erro) {
+        if (erro == "pippippp") {
+            setMostraErro("Senha errada 😕");
+            return;
+        }
+        if (erro == "pipoiipo") {
+            setMostraErro("Usuário não encontrado 😕");
+            return;
+        }
+        if (erro == "auth/invalid-email") {
+            setMostraErro("E-mail inválido 😕");
+            return;
+        }
+        setMostraErro(erro);
+    }
+
+
     return (
         <View style={styles.container}>
             <Image style={styles.imgicon1} source={{ uri: require("../imagens/voltar.png") }} />
 
             <Image style={styles.img1} source={{ uri: require("../imagens/icon-login.png") }} />
             <View>
-                <TextInput style={styles.input} placeholder="Email" mode="flat" />
-                <TextInput style={styles.input} placeholder="Senha" />
+
+                {mensagem && <HelperText type="info">{mensagem}</HelperText>}
+                <HelperText type="error">{mostraErro}</HelperText>
+                <TextInput style={styles.input} placeholder="Email" mode="flat"
+                    value={Email.value}
+                    onChangeText={(text) => setEmail({ value: text, error: "" })}
+                    error={!!Email.error}
+                    errorText={Email.error}
+                    returnKeyType="next"
+                    autoCompleteType="email"
+                    textContentType="emailAddress"
+                    keyboardType="email-address" />
+
+                <HelperText visible={!!Email.error}>{Email.error}</HelperText>
+                <TextInput style={styles.input} placeholder="Senha"
+                    returnKeyType="done"
+                    value={Senha.value}
+                    onChangeText={(text) => setSenha({ value: text, error: "" })}
+                    error={!!Senha.error}
+                    errorText={Senha.error}
+                    secureTextEntry />
             </View>
 
             <View style={styles.texto} >
@@ -18,7 +85,7 @@ export const telaLogin = ({ navigation }) => {
             </View>
 
             <View style={styles.botao1}>
-                <Button style={styles.btt} mode="contained" onPress={() => navigation.navigate("Inicio")}>Entrar</Button>
+                <Button style={styles.btt} mode="contained" onPress={(onLoginPressed) => navigation.navigate("Inicio")}>Entrar</Button>
             </View>
 
             <View style={styles.texto2}>

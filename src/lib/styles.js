@@ -172,8 +172,8 @@ export const styles = StyleSheet.create({
 
     imgicon: {
         width: "30px",
-        height: "30px",
-        margin: "10px",
+        height: "50px",
+        padding:"20px"
     },
 
     container1: {

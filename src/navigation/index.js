@@ -81,6 +81,7 @@ export const RootNavigation = () => {
             <Stack.Screen name={"TelaSenhaAlterada"} component={TelaSenhaAlterada}
                 options={{
                     title: ""
+
                 }}
             />
             <Stack.Screen name={"Localização"} component={TelaLocalizacao}
@@ -100,6 +101,7 @@ export const RootNavigation = () => {
             <Stack.Screen name={"Cartões"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaCartao} />
             <Stack.Screen name={"Excluir"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaExcluir} />
             
+}
 
 
         </Stack.Navigator>
