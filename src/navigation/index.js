@@ -36,9 +36,9 @@ export const RootNavigation = () => {
                     title: ""
                 }}
             />
-            <Stack.Screen name={"Ajuda"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: {color: "white" } }} component={TelaAjuda} />
+            <Stack.Screen name={"Ajuda"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjuda} />
             <Stack.Screen name={"Central"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaCentral} />
-            <Stack.Screen name={"AjudaConta"} options={{headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjudaConta} />
+            <Stack.Screen name={"AjudaConta"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjudaConta} />
             <Stack.Screen name={"Sugestões"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaSugestoes} />
 
             <Stack.Screen name={"Login"} component={telaLogin}
@@ -79,12 +79,12 @@ export const RootNavigation = () => {
             <Stack.Screen name={"TelaSenhaAlterada"} component={TelaSenhaAlterada}
                 options={{
                     title: ""
-                }}
-                  <Stack.Screen options={{ headerShown: true }} name={"Configurações"} component={TelaConfigura} />
+                }} />
+            <Stack.Screen options={{ headerShown: true }} name={"Configurações"} component={TelaConfigura} />
             <Stack.Screen options={{ headerShown: true }} name={"Endereços"} component={TelaEndereco} />
             <Stack.Screen options={{ headerShown: true }} name={"Cartões"} component={TelaCartao} />
             <Stack.Screen options={{ headerShown: true }} name={"Excluir"} component={TelaExcluir} />
-            />
+
 
 
         </Stack.Navigator>
