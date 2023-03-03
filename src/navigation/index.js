@@ -18,7 +18,10 @@ import { TelaConfigura } from "../screens/TelaConfigura";
 import { TelaEndereco } from "../screens/TelaEndereco";
 import { TelaCartao } from "../screens/TelaCartao";
 import { TelaExcluir } from "../screens/TelaExcluir";
-
+import { TelaPrincipal } from "../screens/TelaPrincipal";
+import { Image } from "react-native";
+import { Searchbar } from "react-native-paper";
+import { principas } from "../lib/principas";
 
 
 const Stack = createNativeStackNavigator();
@@ -29,16 +32,22 @@ export const RootNavigation = () => {
             headerShown: true,
             headerTransparent: true,
         }}>
-
+            <Stack.Screen name={"Principal"} component={TelaPrincipal}
+                options={{
+                    headerStyle: { backgroundColor: "#2C2019" },
+                    headerTransparent: false,
+                    title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
+                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
+                }} />
             <Stack.Screen name={"Inicio"} component={telaInicial}
 
                 options={{
                     title: ""
                 }}
             />
-            <Stack.Screen name={"Ajuda"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: {color: "white" } }} component={TelaAjuda} />
+            <Stack.Screen name={"Ajuda"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjuda} />
             <Stack.Screen name={"Central"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaCentral} />
-            <Stack.Screen name={"AjudaConta"} options={{headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjudaConta} />
+            <Stack.Screen name={"AjudaConta"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjudaConta} />
             <Stack.Screen name={"Sugestões"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaSugestoes} />
 
             <Stack.Screen name={"Login"} component={telaLogin}
@@ -80,11 +89,11 @@ export const RootNavigation = () => {
                 options={{
                     title: ""
                 }}
-                  <Stack.Screen options={{ headerShown: true }} name={"Configurações"} component={TelaConfigura} />
+            />
+            <Stack.Screen options={{ headerShown: true }} name={"Configurações"} component={TelaConfigura} />
             <Stack.Screen options={{ headerShown: true }} name={"Endereços"} component={TelaEndereco} />
             <Stack.Screen options={{ headerShown: true }} name={"Cartões"} component={TelaCartao} />
             <Stack.Screen options={{ headerShown: true }} name={"Excluir"} component={TelaExcluir} />
-            />
 
 
         </Stack.Navigator>
