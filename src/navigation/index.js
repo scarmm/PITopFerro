@@ -18,6 +18,8 @@ import { TelaConfigura } from "../screens/TelaConfigura";
 import { TelaEndereco } from "../screens/TelaEndereco";
 import { TelaCartao } from "../screens/TelaCartao";
 import { TelaExcluir } from "../screens/TelaExcluir";
+import {TelaLocalizacao}  from "../screens/TelaLocalizacao";
+import { TelaCadastroCartao } from "../screens/TelaCadastroCartao";
 
 
 
@@ -36,9 +38,9 @@ export const RootNavigation = () => {
                     title: ""
                 }}
             />
-            <Stack.Screen name={"Ajuda"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: {color: "white" } }} component={TelaAjuda} />
+            <Stack.Screen name={"Ajuda"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjuda} />
             <Stack.Screen name={"Central"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaCentral} />
-            <Stack.Screen name={"AjudaConta"} options={{headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjudaConta} />
+            <Stack.Screen name={"AjudaConta"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjudaConta} />
             <Stack.Screen name={"Sugestões"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaSugestoes} />
 
             <Stack.Screen name={"Login"} component={telaLogin}
@@ -80,11 +82,24 @@ export const RootNavigation = () => {
                 options={{
                     title: ""
                 }}
-                  <Stack.Screen options={{ headerShown: true }} name={"Configurações"} component={TelaConfigura} />
-            <Stack.Screen options={{ headerShown: true }} name={"Endereços"} component={TelaEndereco} />
-            <Stack.Screen options={{ headerShown: true }} name={"Cartões"} component={TelaCartao} />
-            <Stack.Screen options={{ headerShown: true }} name={"Excluir"} component={TelaExcluir} />
             />
+            <Stack.Screen name={"Localização"} component={TelaLocalizacao}
+                options={{
+                    title: ""
+                }}
+            />
+
+            <Stack.Screen name={"CadastroCartão"} component={TelaCadastroCartao}
+                options={{
+                    title: ""
+                }}
+            />
+           
+            <Stack.Screen name={"Configurações"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaConfigura} />
+            <Stack.Screen name={"Endereços"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaEndereco} />
+            <Stack.Screen name={"Cartões"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaCartao} />
+            <Stack.Screen name={"Excluir"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaExcluir} />
+            
 
 
         </Stack.Navigator>

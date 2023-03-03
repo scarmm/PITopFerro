@@ -40,6 +40,41 @@ export const styles = StyleSheet.create({
         shadowOffset: { width: -2, height: 4 },
         shadowOpacity: 0.2,
         shadowRadius: 5,
+    },
+
+    botao2:{
+        flex:1,
+        justifyContent: "center",
+        alignItems: "center",
+        borderRadius: 20,
+        backgroundColor: "#2C2019",
+        margin: 50,
+        width: 300,
+        
+    },
+
+    botao3: {
+        margin: 20,
+        borderRadius: 20,
+        backgroundColor: "#fff",
+        shadowColor: '#171717',
+        shadowOffset: { width: -2, height: 4 },
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
+    },
+
+    check:{
+        flex:1,
+        justifyContent:'center',
+        alignItems: 'center',
+        padding: 10,
+        flexDirection: 'row',
+        opacity: "40%"
+    },
+
+    textOpa: {
+        fontSize: 17,
+        opacity: "90%"
     }
 
 })

@@ -24,7 +24,6 @@ export const TelaExcluir = () => {
   return (
     <Provider>
       <View>
-        <Text>Excluir a conta</Text>
         <View>
           <Button style={styles.botao} onPress={showDialog}>Excluir usuário?</Button>    
           <Portal>
