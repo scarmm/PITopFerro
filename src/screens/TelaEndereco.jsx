@@ -1,9 +1,10 @@
 import { Text, View } from "react-native";
+import Icon from 'react-native-vector-icons/Ionicons';
 import { styles } from "../lib/config";
 
 export const TelaEndereco = ({ navigation }) => {
     return (
-        <View>
+        <View style={styles.container}>
             <View style={styles.endereco}>
                 <Text style={styles.text}>Josevaldo Silva | 047-99214324</Text>
                 <Text>R. Louis W R Schooene, 307, Jaravituba</Text>
@@ -20,7 +21,9 @@ export const TelaEndereco = ({ navigation }) => {
                 <Text>São Bernardo do Campo, São Paulo, 89423423</Text>
             </View>
             <View style={styles.text1}>
-                <Text onPress={() => {navigation.navigate("Adicionar")}}>Adicione um novo endereço</Text>
+                
+            <Icon.Button style={styles.imgicon} name="add-circle-outline" size={18} color="#34271F" backgroundColor="none" onPress={() => {navigation.navigate("Adicionar")}}>Adicione um novo endereço
+            </Icon.Button>
             </View>
         </View>
     )

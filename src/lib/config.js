@@ -1,24 +1,42 @@
 import { StyleSheet } from "react-native";
 
+const borderRadius = 40;
+const inputPaddingX = 20;
+
 export const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        marginHorizontal: "5%",
-        marginVertical: "5%"
+
+    container: {
+        flex: 1,
+        padding: '30px',
+        backgroundColor: '#F3ECE8',
     },
 
-    text:{
+    text: {
         fontSize: 18,
         marginVertical: "5%",
         fontWeight: 600
     },
 
-    text1:{
-        flex: 1,
+    text1: {
         justifyContent: 'center',
         alignItems: 'center',
     },
-    endereco:{
+
+    endereco: {
+        margin: 30,
+        padding: 20,
+        alignItems:"center",
+        borderRadius: 15,
+        backgroundColor: "#fff",
+        border: 10,
+        shadowColor: '#171717',
+        shadowOffset: { width: -2, height: 4 },
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
+        
+    },
+
+    botao: {
         margin: 30,
         padding: 20,
         borderRadius: 15,
@@ -30,27 +48,54 @@ export const styles = StyleSheet.create({
         shadowRadius: 5,
     },
 
-    botao:{
+
+    botaoE:{
         margin: 30,
         padding: 20,
         borderRadius: 15,
         backgroundColor: "#fff",
         border: 10,
+        color:"black"
+    },
+
+    alert:{
+        borderRadius: 15,
+        backgroundColor: "#fff",
+    },
+
+    CO:{
+        justifyContent:"space-around",
+
+    },
+
+    input: {
+        height: 55,
+        width: 320,
+        margin: 15,
+        paddingLeft: inputPaddingX,
+        paddingRight: inputPaddingX,
+        borderRadius: borderRadius,
+        borderTopEndRadius: borderRadius,
+        borderTopLeftRadius: borderRadius,
+        backgroundColor: "white",
+        color: "#BAC4BD",
+        overflow: 'hidden',
+        fontSize: "15px",
         shadowColor: '#171717',
         shadowOffset: { width: -2, height: 4 },
         shadowOpacity: 0.2,
         shadowRadius: 5,
+
     },
 
-    botao2:{
-        flex:1,
+    botao2: {
         justifyContent: "center",
         alignItems: "center",
         borderRadius: 20,
         backgroundColor: "#2C2019",
-        margin: 50,
         width: 300,
         
+
     },
 
     botao3: {
@@ -61,11 +106,17 @@ export const styles = StyleSheet.create({
         shadowOffset: { width: -2, height: 4 },
         shadowOpacity: 0.2,
         shadowRadius: 5,
+        paddingLeft: inputPaddingX,
+        paddingRight: inputPaddingX,
+        borderRadius: borderRadius,
+        borderTopEndRadius: borderRadius,
+        borderTopLeftRadius: borderRadius,
+        overflow: 'hidden',
     },
 
-    check:{
-        flex:1,
-        justifyContent:'center',
+    check: {
+        flex: 1,
+        justifyContent: 'center',
         alignItems: 'center',
         padding: 10,
         flexDirection: 'row',
@@ -73,8 +124,17 @@ export const styles = StyleSheet.create({
     },
 
     textOpa: {
-        fontSize: 17,
+        fontSize: 14,
         opacity: "90%"
+    },
+
+    local:{
+        alignItems:"center",
+        justifyContent:"center",
+        padding:"30px",
+        marginTop: "30px"
     }
+
+    
 
 })
