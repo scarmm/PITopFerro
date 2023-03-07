@@ -23,16 +23,16 @@ export const TelaExcluir = () => {
 
   return (
     <Provider>
-      <View>
+      <View style={styles.container}>
         <View>
-          <Button style={styles.botao} onPress={showDialog}>Excluir usuário?</Button>    
+          <Button style={styles.botao} onPress={showDialog}><Text style={styles.botaoE}>Excluir usuário?</Text></Button>    
           <Portal>
-            <Dialog visible={visible} onDismiss={hideDialog}>
+            <Dialog style={styles.alert} visible={visible} onDismiss={hideDialog}>
               <Dialog.Title>Deseja excluir este usuário?</Dialog.Title>
               <Dialog.Content>
                 <Paragraph>Confirme se você ama o usuário ou não</Paragraph>
               </Dialog.Content>
-              <Dialog.Actions>
+              <Dialog.Actions style={styles.CO}>
                 <Button onPress={hideDialogExclude}>Ok</Button>
                 <Button onPress={hideDialog}>Cancelar</Button>
               </Dialog.Actions>
