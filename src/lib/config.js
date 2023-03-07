@@ -75,6 +75,7 @@ export const styles = StyleSheet.create({
     textOpa: {
         fontSize: 17,
         opacity: "90%"
-    }
+    },
+
 
 })
