@@ -1,5 +1,6 @@
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { AnimatedTabBarNavigator } from "react-native-animated-nav-tab-bar";
 import { styles } from "../lib/styles";
 import { telaCadastro } from "../screens/TelaCadastro";
 import { telaCadastro2 } from "../screens/TelaCadastro2";
@@ -22,8 +23,9 @@ import { TelaPrincipal } from "../screens/TelaPrincipal";
 import { Image } from "react-native";
 import { Searchbar } from "react-native-paper";
 import { principas } from "../lib/principas";
-import {TelaLocalizacao}  from "../screens/TelaLocalizacao";
+import { TelaLocalizacao } from "../screens/TelaLocalizacao";
 import { TelaCadastroCartao } from "../screens/TelaCadastroCartao";
+import { useNavigation } from "@react-navigation/native";
 
 
 
@@ -105,11 +107,11 @@ export const RootNavigation = () => {
                     title: ""
                 }}
             />
-        
+
             <Stack.Screen name={"Configurações"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaConfigura} />
             <Stack.Screen name={"Endereços"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaEndereco} />
             <Stack.Screen name={"Cartões"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaCartao} />
-            <Stack.Screen name={"Excluir"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaExcluir} />      
+            <Stack.Screen name={"Excluir"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaExcluir} />
 
 
         </Stack.Navigator>
