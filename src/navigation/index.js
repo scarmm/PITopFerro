@@ -24,6 +24,7 @@ import { Searchbar } from "react-native-paper";
 import { principas } from "../lib/principas";
 import {TelaLocalizacao}  from "../screens/TelaLocalizacao";
 import { TelaCadastroCartao } from "../screens/TelaCadastroCartao";
+import { TelaPagamento } from "../screens/TelaPagamento";
 
 
 
@@ -35,6 +36,12 @@ export const RootNavigation = () => {
             headerShown: true,
             headerTransparent: true,
         }}>
+            <Stack.Screen name={"Inicio"} component={telaInicial}
+
+                options={{
+                    title: ""
+                }}
+            />
             <Stack.Screen name={"Principal"} component={TelaPrincipal}
                 options={{
                     headerStyle: { backgroundColor: "#2C2019" },
@@ -42,12 +49,6 @@ export const RootNavigation = () => {
                     title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
                     headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
                 }} />
-            <Stack.Screen name={"Inicio"} component={telaInicial}
-
-                options={{
-                    title: ""
-                }}
-            />
             <Stack.Screen name={"Ajuda"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjuda} />
             <Stack.Screen name={"Central"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaCentral} />
             <Stack.Screen name={"AjudaConta"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjudaConta} />
@@ -101,6 +102,12 @@ export const RootNavigation = () => {
             />
 
             <Stack.Screen name={"CadastroCartão"} component={TelaCadastroCartao}
+                options={{
+                    title: ""
+                }}
+            />
+
+            <Stack.Screen name={"Pagamento"} component={TelaPagamento}
                 options={{
                     title: ""
                 }}
