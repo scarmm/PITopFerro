@@ -24,9 +24,10 @@ import { Searchbar } from "react-native-paper";
 import { principas } from "../lib/principas";
 import {TelaLocalizacao}  from "../screens/TelaLocalizacao";
 import { TelaCadastroCartao } from "../screens/TelaCadastroCartao";
-import { TelaIntrodução } from "../screens/TelaIntro";
-import { TelaIntrodução2 } from "../screens/TelaIntro2";
-import { TelaIntrodução3 } from "../screens/TelaIntro3";
+
+import { TelaPagamento } from "../screens/TelaPagamento";
+
+
 
 
 
@@ -39,16 +40,22 @@ export const RootNavigation = () => {
             headerTransparent: true,
         }}>
 
+
             <Stack.Screen  name={"Introducao"} component={TelaIntrodução} />
             <Stack.Screen  name={"Introducao2"} component={TelaIntrodução2} />
             <Stack.Screen  name={"Introducao3"} component={TelaIntrodução3} />
+
 
             <Stack.Screen name={"Inicio"} component={telaInicial}
 
                 options={{
                     title: ""
                 }}
-                />
+
+            />
+
+        
+
 
             <Stack.Screen name={"Principal"} component={TelaPrincipal}
                 options={{
@@ -110,6 +117,12 @@ export const RootNavigation = () => {
             />
 
             <Stack.Screen name={"CadastroCartão"} component={TelaCadastroCartao}
+                options={{
+                    title: ""
+                }}
+            />
+
+            <Stack.Screen name={"Pagamento"} component={TelaPagamento}
                 options={{
                     title: ""
                 }}

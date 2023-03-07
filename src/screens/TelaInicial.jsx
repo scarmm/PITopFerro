@@ -13,6 +13,7 @@ export const telaInicial = ({ navigation }) => {
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Configurações")}>Configuração</Button>
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Localização")}>Localização</Button>
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("CadastroCartão")}>Cadastro Cartâo</Button>
+            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Pagamento")}>Tela de Pagamentos</Button>
         </View>
     )
 }
