@@ -26,7 +26,9 @@ import { principas } from "../lib/principas";
 import { TelaLocalizacao } from "../screens/TelaLocalizacao";
 import { TelaCadastroCartao } from "../screens/TelaCadastroCartao";
 import { useNavigation } from "@react-navigation/native";
-
+import { TelaIntrodução } from "../screens/TelaIntro"
+import { TelaIntrodução2 } from "../screens/TelaIntro2"
+import { TelaIntrodução3 } from "../screens/TelaIntro3"
 import { TelaPagamento } from "../screens/TelaPagamento";
 
 
