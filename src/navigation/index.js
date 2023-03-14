@@ -42,10 +42,30 @@ export const RootNavigation = () => {
             headerTransparent: true,
         }}>
 
+            <Stack.Screen name={"Introducao"} component={TelaIntrodução}
+                options={{
+                    title: "",
+                    headerShown: false,
+                }}
+            />
+            <Stack.Screen name={"Introducao2"} component={TelaIntrodução2}
+                options={{
+                    title: "",
+                    headerShown: false,
+                }}
+            />
+            <Stack.Screen name={"Introducao3"} component={TelaIntrodução3}
+                options={{
+                    title: "",
+                    headerShown: false,
+                }}
+            />
 
-            <Stack.Screen  name={"Introducao"} component={TelaIntrodução} />
-            <Stack.Screen  name={"Introducao2"} component={TelaIntrodução2} />
-            <Stack.Screen  name={"Introducao3"} component={TelaIntrodução3} />
+
+
+
+
+          
 
 
             <Stack.Screen name={"Inicio"} component={telaInicial}
@@ -57,6 +77,7 @@ export const RootNavigation = () => {
             />
 
         
+
 
 
             <Stack.Screen name={"Principal"} component={TelaPrincipal}
