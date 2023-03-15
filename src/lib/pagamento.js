@@ -7,21 +7,4 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
 
-   pagamento:{
-        justifyContent: "center",
-        alignItems: "center",
-        borderRadius: 20,
-        backgroundColor: "#2C2019",
-        margin: 50,
-        width: 300,
-    },
-
-    text:{
-        fontSize: 17,
-        fontWeight: 600
-    },
-
-    pagamentoL:{
-        paddingLeft: 40
-    }
 }) 
