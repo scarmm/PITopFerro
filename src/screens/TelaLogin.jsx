@@ -1,3 +1,5 @@
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "firebase/auth";
 import { useState } from "react";
 import { View, Image } from "react-native"
 import { Button, TextInput, Text, HelperText } from "react-native-paper"
@@ -27,7 +29,7 @@ export const telaLogin = ({ route, navigation }) => {
         signInWithEmailAndPassword(auth, Email.value, Senha.value)
             .then((userCredential) => {
                 const user = userCredential.user;
-                navigation.navigate("HomeNavigation");
+                navigation.navigate("TelaInicial");
             })
             .catch((error) => {
                 lidarComErro(error.code);
@@ -35,11 +37,11 @@ export const telaLogin = ({ route, navigation }) => {
     }
 
     function lidarComErro(erro) {
-        if (erro == "pippippp") {
+        if (erro == "auth/wrong-password") {
             setMostraErro("Senha errada 😕");
             return;
         }
-        if (erro == "pipoiipo") {
+        if (erro == "auth/user-not-found") {
             setMostraErro("Usuário não encontrado 😕");
             return;
         }
@@ -85,7 +87,7 @@ export const telaLogin = ({ route, navigation }) => {
             </View>
 
             <View style={styles.botao1}>
-                <Button style={styles.btt} mode="contained" onPress={(onLoginPressed) => navigation.navigate("Inicio")}>Entrar</Button>
+                <Button style={styles.btt} mode="contained" onPress={(onLoginPressed)}>Entrar</Button>
             </View>
 
             <View style={styles.texto2}>
