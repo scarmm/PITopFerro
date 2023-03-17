@@ -32,11 +32,6 @@ import { TelaIntrodução3 } from "../screens/TelaIntro3"
 import { TelaPagamento } from "../screens/TelaPagamento";
 
 
-import { TelaIntrodução} from "../screens/TelaIntro";
-import { TelaIntrodução2} from "../screens/TelaIntro2";
-import { TelaIntrodução3} from "../screens/TelaIntro3";
-
-
 const Stack = createNativeStackNavigator();
 
 export const RootNavigation = () => {
@@ -48,13 +43,6 @@ export const RootNavigation = () => {
 
 
 
-        <Stack.Screen name={"Principal"} component={TelaPrincipal}
-            options={{
-                headerStyle: { backgroundColor: "#2C2019" },
-                headerTransparent: false,
-                title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
-                headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
-            }} />
   
             <Stack.Screen name={"Introducao"} component={TelaIntrodução}
                 options={{
@@ -86,6 +74,13 @@ export const RootNavigation = () => {
                 }}
 
             />
+                <Stack.Screen name={"Principal"} component={TelaPrincipal}
+                    options={{
+                        headerStyle: { backgroundColor: "#2C2019" },
+                        headerTransparent: false,
+                        title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
+                        headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
+                    }} />
 
         
 
