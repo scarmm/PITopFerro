@@ -26,15 +26,10 @@ import { principas } from "../lib/principas";
 import { TelaLocalizacao } from "../screens/TelaLocalizacao";
 import { TelaCadastroCartao } from "../screens/TelaCadastroCartao";
 import { useNavigation } from "@react-navigation/native";
-import { TelaIntrodução } from "../screens/TelaIntro"
-import { TelaIntrodução2 } from "../screens/TelaIntro2"
-import { TelaIntrodução3 } from "../screens/TelaIntro3"
+import { TelaIntrodução } from "../screens/TelaIntro";
+import { TelaIntrodução2 } from "../screens/TelaIntro2";
+import { TelaIntrodução3 } from "../screens/TelaIntro3";
 import { TelaPagamento } from "../screens/TelaPagamento";
-
-
-import { TelaIntrodução} from "../screens/TelaIntro";
-import { TelaIntrodução2} from "../screens/TelaIntro2";
-import { TelaIntrodução3} from "../screens/TelaIntro3";
 
 
 const Stack = createNativeStackNavigator();
@@ -47,15 +42,12 @@ export const RootNavigation = () => {
         }}>
 
 
+<Stack.Screen name={"Pagamento"} component={TelaPagamento}
+                options={{
+                    title: ""
+                }}
+            />
 
-        <Stack.Screen name={"Principal"} component={TelaPrincipal}
-            options={{
-                headerStyle: { backgroundColor: "#2C2019" },
-                headerTransparent: false,
-                title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
-                headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
-            }} />
-  
             <Stack.Screen name={"Introducao"} component={TelaIntrodução}
                 options={{
                     title: "",
@@ -86,8 +78,15 @@ export const RootNavigation = () => {
                 }}
 
             />
+            <Stack.Screen name={"Principal"} component={TelaPrincipal}
+                options={{
+                    headerStyle: { backgroundColor: "#2C2019" },
+                    headerTransparent: false,
+                    title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
+                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
+                }} />
 
-        
+
 
 
 
@@ -134,7 +133,7 @@ export const RootNavigation = () => {
             <Stack.Screen name={"TelaSenhaAlterada"} component={TelaSenhaAlterada}
                 options={{
                     title: ""
-
+                    
                 }}
             />
             <Stack.Screen name={"Localização"} component={TelaLocalizacao}
@@ -150,12 +149,8 @@ export const RootNavigation = () => {
             />
 
 
-            <Stack.Screen name={"Pagamento"} component={TelaPagamento}
-                options={{
-                    title: ""
-                }}
-            />
-        
+            
+
 
             <Stack.Screen name={"Configurações"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaConfigura} />
             <Stack.Screen name={"Endereços"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaEndereco} />

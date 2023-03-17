@@ -7,8 +7,6 @@ export const telaCadastro2 = ({ navigation }) => {
 
         <View style={styles.container}>
 
-
-
             <View style={styles.cadastro}>
                 <View>
                     <Text style={styles.textoC}>Crie seu cadastro</Text>
