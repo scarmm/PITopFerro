@@ -28,7 +28,7 @@ export const ajudas = StyleSheet.create({
         backgroundColor: '#F3ECE8'
     },
     textoajuda1: {
-        textDecorationLine: 'underline',
+       
         padding: '10px'
     },
     img: {
