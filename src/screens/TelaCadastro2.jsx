@@ -63,6 +63,7 @@ export const telaCadastro2 = ({ navigation }) => {
     }
   }
 
+
   function lidarComErro(erro) {
     if (erro == "auth/weak-password") {
       setMostraErro("Senha muito Fraquinha");
