@@ -26,12 +26,7 @@ import { principas } from "../lib/principas";
 import { TelaLocalizacao } from "../screens/TelaLocalizacao";
 import { TelaCadastroCartao } from "../screens/TelaCadastroCartao";
 import { useNavigation } from "@react-navigation/native";
-import { TelaIntrodução } from "../screens/TelaIntro"
-import { TelaIntrodução2 } from "../screens/TelaIntro2"
-import { TelaIntrodução3 } from "../screens/TelaIntro3"
 import { TelaPagamento } from "../screens/TelaPagamento";
-
-
 import { TelaIntrodução} from "../screens/TelaIntro";
 import { TelaIntrodução2} from "../screens/TelaIntro2";
 import { TelaIntrodução3} from "../screens/TelaIntro3";
@@ -158,8 +153,14 @@ export const RootNavigation = () => {
         
 
             <Stack.Screen name={"Configurações"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaConfigura} />
+
+
             <Stack.Screen name={"Endereços"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaEndereco} />
+
+
             <Stack.Screen name={"Cartões"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaCartao} />
+
+
             <Stack.Screen name={"Excluir"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaExcluir} />
 
 

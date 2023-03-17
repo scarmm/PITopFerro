@@ -22,7 +22,7 @@ export const TelaEndereco = ({ navigation }) => {
             </View>
             <View style={styles.text1}>
                 
-            <Icon.Button style={styles.imgicon} name="add-circle-outline" size={18} color="#34271F" backgroundColor="none" onPress={() => {navigation.navigate("Adicionar")}}>Adicione um novo endereço
+            <Icon.Button style={styles.imgicon} name="add-circle-outline" size={18} color="#34271F" backgroundColor="none" onPress={() => {navigation.navigate("Localização")}}>Adicione um novo endereço
             </Icon.Button>
             </View>
         </View>

@@ -7,6 +7,7 @@ import  Icon3  from "react-native-vector-icons/Ionicons";
 import { principas } from "../lib/principas"
 import { TelaAjuda } from "./TelaAjuda";
 import { TelaConfigura } from "./TelaConfigura";
+import { TelaCarrinho } from "./TelaCarrinho";
 
 
 const Tabs = AnimatedTabBarNavigator();
@@ -30,7 +31,7 @@ export function TabsNav() {
         )
       }}/> 
 
-            <Tabs.Screen name="Carrinho" component={TelaAjuda}   options={{
+            <Tabs.Screen name="Carrinho" component={TelaCarrinho}   options={{
         tabBarIcon: ({ focused, color, size }) => (
             <Icon2
                 name="shopping-cart"
