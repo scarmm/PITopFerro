@@ -30,6 +30,7 @@ import { TelaIntrodução } from "../screens/TelaIntro";
 import { TelaIntrodução2 } from "../screens/TelaIntro2";
 import { TelaIntrodução3 } from "../screens/TelaIntro3";
 import { TelaPagamento } from "../screens/TelaPagamento";
+import { TelaObrigado } from "../screens/TelaObrigado";
 
 
 
@@ -58,13 +59,22 @@ export const RootNavigation = () => {
         
                     />
 
+        
+                    <Stack.Screen name={"Inicio"} component={telaInicial}
+        
+                        options={{
+                            title: ""
+                        }}
+        
+                    />
 
-<Stack.Screen name={"Pagamento"} component={TelaPagamento}
-                options={{
-                    title: ""
-                }}
-            />
+<Stack.Screen name={"Inicio"} component={telaInicial}
 
+options={{
+    title: ""
+}}
+
+/>
             <Stack.Screen name={"Introducao"} component={TelaIntrodução}
                 options={{
                     title: "",
@@ -86,7 +96,22 @@ export const RootNavigation = () => {
 
 
 
+<Stack.Screen name={"Pagamento"} component={TelaPagamento}
+                options={{
+                    title: ""
+                }}
+            />
 
+       
+
+
+                <Stack.Screen name={"Principal"} component={TelaPrincipal}
+                    options={{
+                        headerStyle: { backgroundColor: "#2C2019" },
+                        headerTransparent: false,
+                        title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
+                        headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
+                    }} />
 
 
 
@@ -145,6 +170,11 @@ export const RootNavigation = () => {
             />
 
             <Stack.Screen name={"CadastroCartão"} component={TelaCadastroCartao}
+                options={{
+                    title: ""
+                }}
+            />
+            <Stack.Screen name={"Obrigado"} component={TelaObrigado}
                 options={{
                     title: ""
                 }}
