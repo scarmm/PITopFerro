@@ -43,13 +43,13 @@ export const RootNavigation = () => {
             headerShown: true,
             headerTransparent: true,
         }}>
-        
-          <Stack.Screen name={"Inicio"} component={telaInicial}
+
+            <Stack.Screen name={"Inicio"} component={telaInicial}
 
                 options={{
                     title: ""
                 }}
-
+            />
 
             <Stack.Screen name={"Dormitorio"} component={TelaDormitorio}
                 options={{
@@ -57,37 +57,28 @@ export const RootNavigation = () => {
                     headerTransparent: false,
                     title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
                     headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
-             
+
                 }} />
 
 
-          
-        
-            
-                            <Stack.Screen name={"Principal"} component={TelaPrincipal}
-                                options={{
-                                    headerStyle: { backgroundColor: "#2C2019" },
-                                    headerTransparent: false,
-                                    title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
-                                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
-                                }} />
-               
-
-            />
 
 
-            <Stack.Screen name={"Pagamento"} component={TelaPagamento}
+
+            <Stack.Screen name={"Principal"} component={TelaPrincipal}
                 options={{
-                    title: ""
-                }}
-            />
+                    headerStyle: { backgroundColor: "#2C2019" },
+                    headerTransparent: false,
+                    title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
+                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
+                }} />
 
 
-options={{
-    title: ""
-}}
 
-/>
+
+        
+
+    
+
             <Stack.Screen name={"Introducao"} component={TelaIntrodução}
                 options={{
                     title: "",
@@ -109,25 +100,16 @@ options={{
 
 
 
-<Stack.Screen name={"Pagamento"} component={TelaPagamento}
+            <Stack.Screen name={"Pagamento"} component={TelaPagamento}
                 options={{
                     title: ""
                 }}
             />
 
-       
-
-
-            <Stack.Screen name={"Principal"} component={TelaPrincipal}
-                options={{
-                    headerStyle: { backgroundColor: "#2C2019" },
-                    headerTransparent: false,
-                    title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
-                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
-                }} />
 
 
 
+           
 
 
             <Stack.Screen name={"Ajuda"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjuda} />
