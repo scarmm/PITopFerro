@@ -31,6 +31,7 @@ import { TelaIntrodução2 } from "../screens/TelaIntro2";
 import { TelaIntrodução3 } from "../screens/TelaIntro3";
 import { TelaPagamento } from "../screens/TelaPagamento";
 import { TelaObrigado } from "../screens/TelaObrigado";
+import { TelaDormitorio } from "../screens/TelaDormitorio";
 
 
 
@@ -43,6 +44,25 @@ export const RootNavigation = () => {
             headerTransparent: true,
         }}>
         
+          <Stack.Screen name={"Inicio"} component={telaInicial}
+
+                options={{
+                    title: ""
+                }}
+
+
+            <Stack.Screen name={"Dormitorio"} component={TelaDormitorio}
+                options={{
+                    headerStyle: { backgroundColor: "#2C2019" },
+                    headerTransparent: false,
+                    title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
+                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
+             
+                }} />
+
+
+          
+        
             
                             <Stack.Screen name={"Principal"} component={TelaPrincipal}
                                 options={{
@@ -51,24 +71,17 @@ export const RootNavigation = () => {
                                     title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
                                     headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
                                 }} />
-                    <Stack.Screen name={"Inicio"} component={telaInicial}
-        
-                        options={{
-                            title: ""
-                        }}
-        
-                    />
+               
 
-        
-                    <Stack.Screen name={"Inicio"} component={telaInicial}
-        
-                        options={{
-                            title: ""
-                        }}
-        
-                    />
+            />
 
-<Stack.Screen name={"Inicio"} component={telaInicial}
+
+            <Stack.Screen name={"Pagamento"} component={TelaPagamento}
+                options={{
+                    title: ""
+                }}
+            />
+
 
 options={{
     title: ""
@@ -105,13 +118,13 @@ options={{
        
 
 
-                <Stack.Screen name={"Principal"} component={TelaPrincipal}
-                    options={{
-                        headerStyle: { backgroundColor: "#2C2019" },
-                        headerTransparent: false,
-                        title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
-                        headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
-                    }} />
+            <Stack.Screen name={"Principal"} component={TelaPrincipal}
+                options={{
+                    headerStyle: { backgroundColor: "#2C2019" },
+                    headerTransparent: false,
+                    title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
+                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
+                }} />
 
 
 
@@ -160,7 +173,7 @@ options={{
             <Stack.Screen name={"TelaSenhaAlterada"} component={TelaSenhaAlterada}
                 options={{
                     title: ""
-                    
+
                 }}
             />
             <Stack.Screen name={"Localização"} component={TelaLocalizacao}
@@ -181,7 +194,7 @@ options={{
             />
 
 
-            
+
 
 
             <Stack.Screen name={"Configurações"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaConfigura} />
@@ -194,6 +207,7 @@ options={{
 
 
             <Stack.Screen name={"Excluir"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaExcluir} />
+
 
 
         </Stack.Navigator>
