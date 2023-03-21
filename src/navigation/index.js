@@ -30,6 +30,7 @@ import { TelaIntrodução } from "../screens/TelaIntro";
 import { TelaIntrodução2 } from "../screens/TelaIntro2";
 import { TelaIntrodução3 } from "../screens/TelaIntro3";
 import { TelaPagamento } from "../screens/TelaPagamento";
+import { TelaObrigado } from "../screens/TelaObrigado";
 
 
 
@@ -42,6 +43,14 @@ export const RootNavigation = () => {
             headerTransparent: true,
         }}>
 
+        
+                    <Stack.Screen name={"Inicio"} component={telaInicial}
+        
+                        options={{
+                            title: ""
+                        }}
+        
+                    />
 
 <Stack.Screen name={"Inicio"} component={telaInicial}
 
@@ -78,6 +87,7 @@ options={{
             />
 
        
+
 
                 <Stack.Screen name={"Principal"} component={TelaPrincipal}
                     options={{
@@ -144,6 +154,11 @@ options={{
             />
 
             <Stack.Screen name={"CadastroCartão"} component={TelaCadastroCartao}
+                options={{
+                    title: ""
+                }}
+            />
+            <Stack.Screen name={"Obrigado"} component={TelaObrigado}
                 options={{
                     title: ""
                 }}
