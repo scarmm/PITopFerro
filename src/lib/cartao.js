@@ -36,9 +36,25 @@ export const styles = StyleSheet.create({
     },
 
     lateral: {
-       justifyContent: 'center',
-       alignItems: 'center',
+        alignItems:"center",
+        justifyContent:"space-around",
        flexDirection: 'row',
 
-    }
+    },
+    caixas:{
+        height: 50, 
+        width: 140,
+       
+    },
+    caixasfora:{
+   
+    },
+
+    botao:{
+        justifyContent: "center",
+        alignItems: "center",
+        borderRadius: 20,
+        backgroundColor: "#2C2019",
+        width: 300,
+    },
 })

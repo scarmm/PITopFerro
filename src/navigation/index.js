@@ -43,12 +43,13 @@ export const RootNavigation = () => {
         }}>
 
 
-<Stack.Screen name={"Pagamento"} component={TelaPagamento}
-                options={{
-                    title: ""
-                }}
-            />
+<Stack.Screen name={"Inicio"} component={telaInicial}
 
+options={{
+    title: ""
+}}
+
+/>
             <Stack.Screen name={"Introducao"} component={TelaIntrodução}
                 options={{
                     title: "",
@@ -70,15 +71,13 @@ export const RootNavigation = () => {
 
 
 
-
-
-            <Stack.Screen name={"Inicio"} component={telaInicial}
-
+<Stack.Screen name={"Pagamento"} component={TelaPagamento}
                 options={{
                     title: ""
                 }}
-
             />
+
+       
 
                 <Stack.Screen name={"Principal"} component={TelaPrincipal}
                     options={{

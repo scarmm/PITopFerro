@@ -1,25 +1,28 @@
 import { View, Text, Picker } from "react-native-web";
 import { styles } from "../lib/cartao";
 import Hr from "react-native-hr-component";
-import { TextInput } from "react-native-paper";
+import { Button, TextInput } from "react-native-paper";
 import { useState } from "react";
 
 export const TelaCadastroCartao = ({ navigation }) => {
   const [nome, setNome] = useState("");
   const [numero, setNumero] = useState("");
   const [selectedValue, setSelectedValue] = useState("");
+  const [selectedValue2, setSelectedValue2] = useState("");
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Cadastrar Cartão</Text>
       <Hr lineColor="#d3d3d3" width={50} />
     <Text style={styles.text2}>Insira as informações de cartão de crédito</Text>
-    <View style={styles.botao3}>
+    <View>
     <TextInput
+    style={styles.botao3}
           label="Nome do Cartão"
           value={nome}
           onChangeText={setNome}
         />
        <TextInput
+       style={styles.botao3}
           label="Número do Cartão"
           value={numero}
           onChangeText={setNumero}
@@ -28,9 +31,9 @@ export const TelaCadastroCartao = ({ navigation }) => {
 <View style={styles.lateral}>
   <View>
       <Picker
-        selectedValue={selectedValue}
-        style={{ height: 50, width: 140}}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        selectedValue={selectedValue2}
+        style={styles.caixas}
+        onValueChange={(itemValue, itemIndex) => setSelectedValue2(itemValue)}
       >
         <Picker.Item label="01" />
         <Picker.Item label="02" />
@@ -49,7 +52,7 @@ export const TelaCadastroCartao = ({ navigation }) => {
     <View>
       <Picker
         selectedValue={selectedValue}
-        style={{ height: 50, width: 140}}
+        style={styles.caixas}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}>
 
           <Picker.Item label="2020" />
@@ -61,10 +64,18 @@ export const TelaCadastroCartao = ({ navigation }) => {
           <Picker.Item label="2027" />
           <Picker.Item label="2028" />
           <Picker.Item label="2029" />
+          <Picker.Item label="2030" />
       </Picker>
 
      </View>
     </View>
-  </View>
+
+    <View style={styles.botao}>
+    <Button style={styles.btt} mode="contained" onPress={() => navigation.navigate("TelaSenhaAlterada")}>Confirmar</Button>
+
+      </View>
+
+   </View>
+
   );
 };
