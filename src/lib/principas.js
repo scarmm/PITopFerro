@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
 export const principas = StyleSheet.create({
+
     container: {
         flex: 1,
         justifyContent: 'center',
@@ -75,5 +76,6 @@ export const principas = StyleSheet.create({
         color: "#A69387",
 
     }
+
 
 })

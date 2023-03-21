@@ -43,6 +43,14 @@ export const RootNavigation = () => {
             headerShown: true,
             headerTransparent: true,
         }}>
+        
+          <Stack.Screen name={"Inicio"} component={telaInicial}
+
+                options={{
+                    title: ""
+                }}
+
+
             <Stack.Screen name={"Dormitorio"} component={TelaDormitorio}
                 options={{
                     headerStyle: { backgroundColor: "#2C2019" },
@@ -53,13 +61,20 @@ export const RootNavigation = () => {
                 }} />
 
 
-            <Stack.Screen name={"Inicio"} component={telaInicial}
-
-                options={{
-                    title: ""
-                }}
+          
+        
+            
+                            <Stack.Screen name={"Principal"} component={TelaPrincipal}
+                                options={{
+                                    headerStyle: { backgroundColor: "#2C2019" },
+                                    headerTransparent: false,
+                                    title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
+                                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
+                                }} />
+               
 
             />
+
 
             <Stack.Screen name={"Pagamento"} component={TelaPagamento}
                 options={{
@@ -67,6 +82,12 @@ export const RootNavigation = () => {
                 }}
             />
 
+
+options={{
+    title: ""
+}}
+
+/>
             <Stack.Screen name={"Introducao"} component={TelaIntrodução}
                 options={{
                     title: "",
@@ -88,6 +109,13 @@ export const RootNavigation = () => {
 
 
 
+<Stack.Screen name={"Pagamento"} component={TelaPagamento}
+                options={{
+                    title: ""
+                }}
+            />
+
+       
 
 
             <Stack.Screen name={"Principal"} component={TelaPrincipal}
