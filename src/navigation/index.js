@@ -42,6 +42,22 @@ export const RootNavigation = () => {
             headerShown: true,
             headerTransparent: true,
         }}>
+        
+            
+                            <Stack.Screen name={"Principal"} component={TelaPrincipal}
+                                options={{
+                                    headerStyle: { backgroundColor: "#2C2019" },
+                                    headerTransparent: false,
+                                    title: <Image source={require("../imagens/TF.png")} style={{ width: 50, height: 50 }} />,
+                                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
+                                }} />
+                    <Stack.Screen name={"Inicio"} component={telaInicial}
+        
+                        options={{
+                            title: ""
+                        }}
+        
+                    />
 
         
                     <Stack.Screen name={"Inicio"} component={telaInicial}
