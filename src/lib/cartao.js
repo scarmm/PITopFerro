@@ -1,5 +1,8 @@
 import { StyleSheet } from "react-native";
 
+const borderRadius = 40;
+const inputPaddingX = 20;
+
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -11,12 +14,14 @@ export const styles = StyleSheet.create({
         fontSize: 18,
         marginVertical: "5%",
         fontWeight: 600,
+        alignSelf: "center",
     },
 
     text2:{
         fontSize: 16,
         fontWeight: 600,
         marginTop: 10,
+        paddingLeft: 15,
     },
  
     botao3: {
@@ -27,12 +32,13 @@ export const styles = StyleSheet.create({
         shadowOffset: { width: -2, height: 4 },
         shadowOpacity: 0.2,
         shadowRadius: 5,
-        paddingLeft: 'inputPaddingX',
-        paddingRight: 'inputPaddingX',
-        borderRadius: 'borderRadius',
-        borderTopEndRadius: 'borderRadius',
-        borderTopLeftRadius: 'borderRadius',
+        paddingLeft: inputPaddingX,
+        paddingRight: inputPaddingX,
+        borderRadius: borderRadius,
+        borderTopEndRadius: borderRadius,
+        borderTopLeftRadius: borderRadius,
         overflow: 'hidden',
+
     },
 
     lateral: {
@@ -44,6 +50,19 @@ export const styles = StyleSheet.create({
     caixas:{
         height: 50, 
         width: 140,
+        margin: 10,
+        borderRadius: 20,
+        backgroundColor: "#fff",
+        shadowColor: '#171717',
+        shadowOffset: { width: -2, height: 4 },
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
+        paddingLeft: inputPaddingX,
+        paddingRight: inputPaddingX,
+        borderRadius: borderRadius,
+        borderTopEndRadius: borderRadius,
+        borderTopLeftRadius: borderRadius,
+        overflow: 'hidden',
        
     },
     caixasfora:{
@@ -54,7 +73,18 @@ export const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         borderRadius: 20,
-        backgroundColor: "#2C2019",
-        width: 300,
+    },
+
+    botaozinho: {
+        backgroundColor: "#34271F",
+        margin: "40px",
+        width: 160,
+        height: 50,
+        borderRadius: 50,
+        padding: '5px',
+        shadowColor: '#171717',
+        shadowOffset: { width: -2, height: 4 },
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
     },
 })

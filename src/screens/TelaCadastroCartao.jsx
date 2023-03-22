@@ -71,11 +71,10 @@ export const TelaCadastroCartao = ({ navigation }) => {
     </View>
 
     <View style={styles.botao}>
-    <Button style={styles.btt} mode="contained" onPress={() => navigation.navigate("TelaSenhaAlterada")}>Confirmar</Button>
-
+    <Button style={styles.botaozinho} 
+    mode="contained" 
+    onPress={() => navigation.navigate("Confirmar")}>Confirmar</Button>
       </View>
-
    </View>
-
   );
 };
