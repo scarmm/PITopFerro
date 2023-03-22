@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
         flex:1,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: '#F3ECE8'
     },
     container2:{
         justifyContent: 'center',
@@ -12,7 +13,6 @@ export const styles = StyleSheet.create({
     },
     botaoObrigado: {
         backgroundColor: "#34271F",
-        margin: "40px",
         width: 300,
         height: 50,
         borderRadius: 50,
@@ -23,13 +23,17 @@ export const styles = StyleSheet.create({
         shadowRadius: 5,
     },
     text:{
-        justifyContent: 'center',
-        alignItems: 'center',
+        textAlign: "center",
+        fontSize: 36,
+        color: '#7E441D'
+    },
+    text2:{
+        textAlign:'center',
         fontSize: 36,
         color: '#7E441D'
     },
     image:{
-        minHeight: 100,
-        minWidth: 100
+        minHeight: 400,
+        minWidth: 400
     }
 })
