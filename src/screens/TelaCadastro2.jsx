@@ -1,4 +1,4 @@
-import { View, Image } from "react-native";
+import { View, Image, ScrollView } from "react-native";
 import { Button, TextInput, Text, HelperText } from "react-native-paper";
 import { styles } from "../lib/styles";
 import { useState } from "react";
@@ -81,6 +81,7 @@ export const telaCadastro2 = ({ navigation }) => {
   }
 
   return (
+    <ScrollView>
     <View style={styles.container}>
       <View style={styles.cadastro}>
         <View>
@@ -140,5 +141,6 @@ export const telaCadastro2 = ({ navigation }) => {
         </Text>
       </View>
     </View>
+    </ScrollView>
   );
 };

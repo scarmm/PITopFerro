@@ -8,7 +8,11 @@ export const principas = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#F3ECE8'
     },
-
+    
+    tela: {
+        backgroundColor: '#F3ECE8',
+        flex:1
+    },
     containerboxs: {
         flex: 1,
         flexDirection: "row",
@@ -21,7 +25,7 @@ export const principas = StyleSheet.create({
         borderRadius: "20px",
         marginRight: "30px",
         width: "290px",
-        height: "35px",
+        height: "32px",
 
     },
 
@@ -75,7 +79,8 @@ export const principas = StyleSheet.create({
         fontWeight: "700",
         color: "#A69387",
 
-    }
+    },
+
 
 
 })
