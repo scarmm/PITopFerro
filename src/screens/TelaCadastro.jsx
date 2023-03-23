@@ -1,7 +1,7 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../lib/firebase";
 import { useState } from "react";
-import { View, Image } from "react-native";
+import { View, Image, ScrollView } from "react-native";
 import { Button, TextInput, Text, HelperText } from "react-native-paper";
 import { styles } from "../lib/styles";
 
@@ -86,6 +86,7 @@ export const telaCadastro = ({ navigation }) => {
   }
 
   return (
+    <ScrollView>
     <View style={styles.container}>
       <View style={styles.cadastro}>
         <View>
@@ -150,5 +151,6 @@ export const telaCadastro = ({ navigation }) => {
         </Text>
       </View>
     </View>
+    </ScrollView>
   );
 };
