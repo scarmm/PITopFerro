@@ -1,4 +1,3 @@
-
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { AnimatedTabBarNavigator } from "react-native-animated-nav-tab-bar";
 import { styles } from "../lib/styles";
@@ -12,7 +11,7 @@ import { TelaAjuda } from "../screens/TelaAjuda";
 import { TelaCentral } from "../screens/TelaCentral";
 import { TelaAjudaConta } from "../screens/TelaAjudaConta";
 import { TelaSugestoes } from "../screens/TelaSugestoes";
-import { TelaEnvioEmail, } from "../screens/TelaEnvioEmail";
+import { TelaEnvioEmail } from "../screens/TelaEnvioEmail";
 import { telaMudarSenha } from "../screens/TelaMudarSenha";
 import { TelaSenhaAlterada } from "../screens/TelaSenhaAlterada";
 import { TelaConfigura } from "../screens/TelaConfigura";
@@ -36,197 +35,427 @@ import { TelaSaladeEstar } from "../screens/TelaSaladeEstar";
 import { TelaCozinha } from "../screens/TelaCozinha";
 import { TelaDecoracao } from "../screens/TelaDecoracao";
 import { telaPreCompra } from "../screens/TelaPreCompra";
-
-
+import { TelaResultado } from "../screens/TelaResultado";
+import { TelaCarrinho1 } from "../screens/TelaCarrinho1";
 
 const Stack = createNativeStackNavigator();
 
 export const RootNavigation = () => {
-    return (
-        <Stack.Navigator style={styles.tab} screenOptions={{
-            headerShown: true,
-            headerTransparent: true,
-        }}>
+  return (
+    <Stack.Navigator
+      style={styles.tab}
+      screenOptions={{
+        headerShown: true,
+        headerTransparent: true,
+      }}
+    >
+      <Stack.Screen
+        name={"Inicio"}
+        component={telaInicial}
+        options={{
+          title: "",
+        }}
+      />
 
-
-            <Stack.Screen name={"Inicio"} component={telaInicial}
-
-                options={{
-                    title: ""
-                }}
+      <Stack.Screen
+        name={"Dormitorio"}
+        component={TelaDormitorio}
+        options={{
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTransparent: false,
+          headerLeft: () => null,
+          title: (
+            <Image
+              source={require("../imagens/TF.png")}
+              style={{ width: 40, height: 40, alignItems: "center" }}
             />
-
-            <Stack.Screen name={"Dormitorio"} component={TelaDormitorio}
-                options={{
-                    headerStyle: { backgroundColor: "#2C2019" },
-                    headerTransparent: false,
-                    headerLeft: () => null,
-                    title: <Image source={require("../imagens/TF.png")} style={{ width: 40, height: 40, alignItems: "center" }} />,
-                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
-
-                }} />
-
-            <Stack.Screen name={"Sala"} component={TelaSaladeEstar}
-                options={{
-                    headerStyle: { backgroundColor: "#2C2019" },
-                    headerTransparent: false,
-                    headerLeft: () => null,
-                    title: <Image source={require("../imagens/TF.png")} style={{ width: 40, height: 40, alignItems: "center" }} />,
-                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
-
-                }} />
-
-            <Stack.Screen name={"Cozinha"} component={TelaCozinha}
-                options={{
-                    headerStyle: { backgroundColor: "#2C2019" },
-                    headerTransparent: false,
-                    headerLeft: () => null,
-                    title: <Image source={require("../imagens/TF.png")} style={{ width: 40, height: 40, alignItems: "center" }} />,
-                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
-
-                }} />
-
-            <Stack.Screen name={"Decoração"} component={TelaDecoracao}
-                options={{
-                    headerStyle: { backgroundColor: "#2C2019" },
-                    headerTransparent: false,
-                    headerLeft: () => null,
-                    title: <Image source={require("../imagens/TF.png")} style={{ width: 40, height: 40, alignItems: "center" }} />,
-                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
-
-                }} />
-
-
-            <Stack.Screen name={"PreCompra"} component={telaPreCompra}
-                options={{
-                    headerStyle: { backgroundColor: "#2C2019" },
-                    headerTransparent: false,
-                    headerLeft: () => null,
-                    title: <Image source={require("../imagens/TF.png")} style={{ width: 40, height: 40, alignItems: "center" }} />,
-                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
-
-                }} />
-
-
-            <Stack.Screen name={"Principal"} component={TelaPrincipal}
-                options={{
-                    headerStyle: { backgroundColor: "#2C2019" },
-                    headerTransparent: false,
-                    headerLeft: () => null,
-                    title: <Image source={require("../imagens/TF.png")} style={{ width: 40, height: 40, alignItems: "center" }} />,
-                    headerRight: () => (<Searchbar placeholder="Busque na TopFerro..." placeholderTextColor={"gray"} style={principas.barrapesquisa} color="#fff" />),
-                }} />
-
-            <Stack.Screen name={"Introducao"} component={TelaIntrodução}
-                options={{
-                    title: "",
-                    headerShown: false,
-                }}
+          ),
+          headerRight: () => (
+            <Searchbar
+              placeholder="Busque na TopFerro..."
+              placeholderTextColor={"gray"}
+              style={principas.barrapesquisa}
+              color="#fff"
             />
+          ),
+        }}
+      />
 
-            <Stack.Screen name={"Introducao2"} component={TelaIntrodução2}
-                options={{
-                    title: "",
-                    headerShown: false,
-                }}
+      <Stack.Screen
+        name={"Sala"}
+        component={TelaSaladeEstar}
+        options={{
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTransparent: false,
+          headerLeft: () => null,
+          title: (
+            <Image
+              source={require("../imagens/TF.png")}
+              style={{ width: 40, height: 40, alignItems: "center" }}
             />
-
-            <Stack.Screen name={"Introducao3"} component={TelaIntrodução3}
-                options={{
-                    title: "",
-                    headerShown: false,
-                }}
+          ),
+          headerRight: () => (
+            <Searchbar
+              placeholder="Busque na TopFerro..."
+              placeholderTextColor={"gray"}
+              style={principas.barrapesquisa}
+              color="#fff"
             />
+          ),
+        }}
+      />
 
-
-
-            <Stack.Screen name={"Pagamento"} component={TelaPagamento}
-                options={{
-                    title: ""
-                }}
+      <Stack.Screen
+        name={"Cozinha"}
+        component={TelaCozinha}
+        options={{
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTransparent: false,
+          headerLeft: () => null,
+          title: (
+            <Image
+              source={require("../imagens/TF.png")}
+              style={{ width: 40, height: 40, alignItems: "center" }}
             />
-
-            <Stack.Screen name={"Ajuda"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjuda} />
-            <Stack.Screen name={"Central"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaCentral} />
-            <Stack.Screen name={"AjudaConta"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaAjudaConta} />
-            <Stack.Screen name={"Sugestões"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaSugestoes} />
-
-            <Stack.Screen name={"Login"} component={telaLogin}
-                options={{
-                    title: ""
-                }}
+          ),
+          headerRight: () => (
+            <Searchbar
+              placeholder="Busque na TopFerro..."
+              placeholderTextColor={"gray"}
+              style={principas.barrapesquisa}
+              color="#fff"
             />
-            <Stack.Screen name={"Cadastro"} component={telaCadastro}
-                options={{
-                    title: ""
-                }}
+          ),
+        }}
+      />
+
+      <Stack.Screen
+        name={"Decoração"}
+        component={TelaDecoracao}
+        options={{
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTransparent: false,
+          headerLeft: () => null,
+          title: (
+            <Image
+              source={require("../imagens/TF.png")}
+              style={{ width: 40, height: 40, alignItems: "center" }}
             />
-            <Stack.Screen name={"Cadastro2"} component={telaCadastro2}
-                options={{
-                    title: ""
-                }}
+          ),
+          headerRight: () => (
+            <Searchbar
+              placeholder="Busque na TopFerro..."
+              placeholderTextColor={"gray"}
+              style={principas.barrapesquisa}
+              color="#fff"
             />
-            <Stack.Screen name={"EsqueceuaSenha"} component={TelaEsqueceuaSenha}
-                options={{
-                    title: ""
-                }}
+          ),
+        }}
+      />
+
+      <Stack.Screen
+        name={"Resultados"}
+        component={TelaResultado}
+        options={{
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTransparent: false,
+          headerLeft: () => null,
+          title: (
+            <Image
+              source={require("../imagens/TF.png")}
+              style={{ width: 40, height: 40, alignItems: "center" }}
             />
-            <Stack.Screen name={"TelaEnvioSms"} component={TelaEnvioSms}
-                options={{
-                    title: ""
-                }}
+          ),
+          headerRight: () => (
+            <Searchbar
+              placeholder="Busque na TopFerro..."
+              placeholderTextColor={"gray"}
+              style={principas.barrapesquisa}
+              color="#fff"
             />
-            <Stack.Screen name={"TelaEnvioEmail"} component={TelaEnvioEmail}
-                options={{
-                    title: ""
-                }}
+          ),
+        }}
+      />
+
+      <Stack.Screen
+        name={"PreCompra"}
+        component={telaPreCompra}
+        options={{
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTransparent: false,
+          headerLeft: () => null,
+          title: (
+            <Image
+              source={require("../imagens/TF.png")}
+              style={{ width: 40, height: 40, alignItems: "center" }}
             />
-            <Stack.Screen name={"TelaMudarSenha"} component={telaMudarSenha}
-                options={{
-                    title: ""
-                }}
+          ),
+          headerRight: () => (
+            <Searchbar
+              placeholder="Busque na TopFerro..."
+              placeholderTextColor={"gray"}
+              style={principas.barrapesquisa}
+              color="#fff"
             />
-            <Stack.Screen name={"TelaSenhaAlterada"} component={TelaSenhaAlterada}
-                options={{
-                    title: ""
+          ),
+        }}
+      />
 
-                }}
+      <Stack.Screen
+        name={"Principal"}
+        component={TelaPrincipal}
+        options={{
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTransparent: false,
+          headerLeft: () => null,
+          title: (
+            <Image
+              source={require("../imagens/TF.png")}
+              style={{ width: 40, height: 40, alignItems: "center" }}
             />
-            <Stack.Screen name={"Localização"} component={TelaLocalizacao}
-                options={{
-                    title: ""
-                }}
+          ),
+          headerRight: () => (
+            <Searchbar
+              placeholder="Busque na TopFerro..."
+              placeholderTextColor={"gray"}
+              style={principas.barrapesquisa}
+              color="#fff"
             />
+          ),
+        }}
+      />
 
-            <Stack.Screen name={"CadastroCartão"} component={TelaCadastroCartao}
-                options={{
-                    title: ""
-                }}
+      <Stack.Screen
+        name={"Introducao"}
+        component={TelaIntrodução}
+        options={{
+          title: "",
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name={"Introducao2"}
+        component={TelaIntrodução2}
+        options={{
+          title: "",
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name={"Introducao3"}
+        component={TelaIntrodução3}
+        options={{
+          title: "",
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name={"Pagamento"}
+        component={TelaPagamento}
+        options={{
+          title: "",
+        }}
+      />
+
+      <Stack.Screen
+        name={"Ajuda"}
+        options={{
+          headerTintColor: "white",
+          headerTransparent: false,
+          headerTitleAlign: "center",
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTitleStyle: { color: "white" },
+        }}
+        component={TelaAjuda}
+      />
+      <Stack.Screen
+        name={"Central"}
+        options={{
+          headerTintColor: "white",
+          headerTransparent: false,
+          headerTitleAlign: "center",
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTitleStyle: { color: "white" },
+        }}
+        component={TelaCentral}
+      />
+      <Stack.Screen
+        name={"AjudaConta"}
+        options={{
+          headerTintColor: "white",
+          headerTransparent: false,
+          headerTitleAlign: "center",
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTitleStyle: { color: "white" },
+        }}
+        component={TelaAjudaConta}
+      />
+      <Stack.Screen
+        name={"Sugestões"}
+        options={{
+          headerTintColor: "white",
+          headerTransparent: false,
+          headerTitleAlign: "center",
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTitleStyle: { color: "white" },
+        }}
+        component={TelaSugestoes}
+      />
+
+      <Stack.Screen
+        name={"Login"}
+        component={telaLogin}
+        options={{
+          title: "",
+        }}
+      />
+      <Stack.Screen
+        name={"Cadastro"}
+        component={telaCadastro}
+        options={{
+          title: "",
+        }}
+      />
+      <Stack.Screen
+        name={"Cadastro2"}
+        component={telaCadastro2}
+        options={{
+          title: "",
+        }}
+      />
+      <Stack.Screen
+        name={"EsqueceuaSenha"}
+        component={TelaEsqueceuaSenha}
+        options={{
+          title: "",
+        }}
+      />
+      <Stack.Screen
+        name={"TelaEnvioSms"}
+        component={TelaEnvioSms}
+        options={{
+          title: "",
+        }}
+      />
+      <Stack.Screen
+        name={"TelaEnvioEmail"}
+        component={TelaEnvioEmail}
+        options={{
+          title: "",
+        }}
+      />
+      <Stack.Screen
+        name={"TelaMudarSenha"}
+        component={telaMudarSenha}
+        options={{
+          title: "",
+        }}
+      />
+      <Stack.Screen
+        name={"TelaSenhaAlterada"}
+        component={TelaSenhaAlterada}
+        options={{
+          title: "",
+        }}
+      />
+      <Stack.Screen
+        name={"Localização"}
+        component={TelaLocalizacao}
+        options={{
+          title: "",
+        }}
+      />
+
+      <Stack.Screen
+        name={"CadastroCartão"}
+        component={TelaCadastroCartao}
+        options={{
+          title: "",
+        }}
+      />
+      <Stack.Screen
+        name={"Obrigado"}
+        component={TelaObrigado}
+        options={{
+          title: "",
+        }}
+      />
+
+      <Stack.Screen
+        name={"Configurações"}
+        options={{
+          headerTintColor: "white",
+          headerTransparent: false,
+          headerTitleAlign: "center",
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTitleStyle: { color: "white" },
+        }}
+        component={TelaConfigura}
+      />
+
+      <Stack.Screen
+        name={"Endereços"}
+        options={{
+          headerTintColor: "white",
+          headerTransparent: false,
+          headerTitleAlign: "center",
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTitleStyle: { color: "white" },
+        }}
+        component={TelaEndereco}
+      />
+
+      <Stack.Screen
+        name={"Cartões"}
+        options={{
+          headerTintColor: "white",
+          headerTransparent: false,
+          headerTitleAlign: "center",
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTitleStyle: { color: "white" },
+        }}
+        component={TelaCartao}
+      />
+
+      <Stack.Screen
+        name={"Excluir"}
+        options={{
+          headerTintColor: "white",
+          headerTransparent: false,
+          headerTitleAlign: "center",
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTitleStyle: { color: "white" },
+        }}
+        component={TelaExcluir}
+      />
+
+<Stack.Screen
+        name={"Carrinho1"}
+        component={TelaCarrinho1}
+        options={{
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTransparent: false,
+          headerLeft: () => null,
+          title: (
+            <Image
+              source={require("../imagens/TF.png")}
+              style={{ width: 40, height: 40, alignItems: "center" }}
             />
-            <Stack.Screen name={"Obrigado"} component={TelaObrigado}
-                options={{
-                    title: ""
-                }}
+          ),
+          headerRight: () => (
+            <Searchbar
+              placeholder="Busque na TopFerro..."
+              placeholderTextColor={"gray"}
+              style={principas.barrapesquisa}
+              color="#fff"
             />
+          ),
+        }}
+      />
 
-
-
-
-
-            <Stack.Screen name={"Configurações"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaConfigura} />
-
-
-            <Stack.Screen name={"Endereços"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaEndereco} />
-
-
-            <Stack.Screen name={"Cartões"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaCartao} />
-
-
-            <Stack.Screen name={"Excluir"} options={{ headerTintColor: 'white', headerTransparent: false, headerTitleAlign: 'center', headerStyle: { backgroundColor: "#2C2019" }, headerTitleStyle: { color: "white" } }} component={TelaExcluir} />
-
-
-
-        </Stack.Navigator>
-    );
+    </Stack.Navigator>
+  );
 };
-

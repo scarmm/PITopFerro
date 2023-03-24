@@ -6,7 +6,8 @@ export const principas = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F3ECE8'
+        backgroundColor: '#F3ECE8',
+        
     },
     
     tela: {
@@ -16,6 +17,7 @@ export const principas = StyleSheet.create({
     containerboxs: {
         flex: 1,
         flexDirection: "row",
+        flexWrap: "wrap",
         justifyContent: "space-around",
 
     },
@@ -39,7 +41,7 @@ export const principas = StyleSheet.create({
         shadowOffset: { width: -2, height: 4 },
         shadowOpacity: 0.2,
         shadowRadius: 5,
-        borderRadius: 15
+        borderRadius: 15,
     },
 
     boxstext: {

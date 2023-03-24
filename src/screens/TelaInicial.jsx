@@ -22,6 +22,8 @@ export const telaInicial = ({ navigation }) => {
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Dormitorio")}>Tela decoração</Button>
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Principal")}>Tela principas</Button>
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("PreCompra")}>Tela pre compra</Button>
+            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Resultados")}>resultadopesquisa</Button>
+            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Carrinho1")}>carrinho cheio</Button>
         </View>
         </ScrollView>
     )
