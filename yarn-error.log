@@ -1,26 +1,26 @@
 Arguments: 
-  /home/senac/.nvm/versions/node/v16.19.0/bin/node /home/senac/.nvm/versions/node/v16.19.0/bin/yarn add ionic-accordion
+  /home/senac/.nvm/versions/node/v16.19.1/bin/node /home/senac/.nvm/versions/node/v16.19.1/bin/yarn add react-native-reanimated2
 
 PATH: 
-  /home/senac/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/bin/remote-cli:/tmp/yarn--1679073680842-0.724729300287682:/home/senac/PITopFerro/node_modules/.bin:/home/senac/.config/yarn/link/node_modules/.bin:/home/senac/.yarn/bin:/home/senac/.nvm/versions/node/v16.19.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/home/senac/.nvm/versions/node/v16.19.0/lib/node_modules/npm/bin/node-gyp-bin:/home/senac/.nvm/versions/node/v16.19.0/bin:/home/senac/.nvm/versions/node/v16.19.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Common Files/Autodesk Shared/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/samuel.souza2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/samuel.souza2/AppData/Roaming/npm:/snap/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin
+  /home/senac/.nvm/versions/node/v16.19.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2204.1.8.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Users/samuel.souza2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/samuel.souza2/AppData/Roaming/npm:/snap/bin
 
 Yarn version: 
   1.22.19
 
 Node version: 
-  16.19.0
+  16.19.1
 
 Platform: 
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/ionic-accordion: Not found
-      at Request.params.callback [as _callback] (/home/senac/.nvm/versions/node/v16.19.0/lib/node_modules/yarn/lib/cli.js:66145:18)
-      at Request.self.callback (/home/senac/.nvm/versions/node/v16.19.0/lib/node_modules/yarn/lib/cli.js:140890:22)
+  Error: https://registry.yarnpkg.com/react-native-reanimated2: Not found
+      at Request.params.callback [as _callback] (/home/senac/.nvm/versions/node/v16.19.1/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/home/senac/.nvm/versions/node/v16.19.1/lib/node_modules/yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:513:28)
-      at Request.<anonymous> (/home/senac/.nvm/versions/node/v16.19.0/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.<anonymous> (/home/senac/.nvm/versions/node/v16.19.1/lib/node_modules/yarn/lib/cli.js:141862:10)
       at Request.emit (node:events:513:28)
-      at IncomingMessage.<anonymous> (/home/senac/.nvm/versions/node/v16.19.0/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at IncomingMessage.<anonymous> (/home/senac/.nvm/versions/node/v16.19.1/lib/node_modules/yarn/lib/cli.js:141784:12)
       at Object.onceWrapper (node:events:627:28)
       at IncomingMessage.emit (node:events:525:35)
       at endReadableNT (node:internal/streams/readable:1358:12)
@@ -43,16 +43,21 @@ npm manifest:
       "@react-navigation/native": "6.1.6",
       "@react-navigation/native-stack": "6.9.12",
       "@types/react": "18.0.28",
+      "accordion-collapse-react-native": "^1.1.1",
       "expo": "48.0.5",
+      "expo-checkbox": "~2.3.1",
       "expo-status-bar": "1.4.4",
-      "firebase": "9.17.2",
+      "firebase": "^9.18.0",
       "react": "18.2.0",
       "react-dom": "18.2.0",
-      "react-native": "0.71.3",
+      "react-native": "0.71.4",
       "react-native-animated-nav-tab-bar": "^3.1.8",
+      "react-native-gesture-handler": "^2.9.0",
       "react-native-headers": "1.1.3",
       "react-native-hr-component": "2.0.3",
       "react-native-paper": "5.2.0",
+      "react-native-reanimated": "^3.0.2",
+      "react-native-reanimated-carousel": "^3.3.0",
       "react-native-safe-area-context": "4.5.0",
       "react-native-screens": "3.20.0",
       "react-native-vector-icons": "9.2.0",
@@ -824,6 +829,13 @@ Lockfile:
     dependencies:
       "@babel/helper-plugin-utils" "^7.18.6"
   
+  "@babel/plugin-transform-object-assign@^7.16.7":
+    version "7.18.6"
+    resolved "https://registry.yarnpkg.com/@babel/plugin-transform-object-assign/-/plugin-transform-object-assign-7.18.6.tgz#7830b4b6f83e1374a5afb9f6111bcfaea872cdd2"
+    integrity sha512-mQisZ3JfqWh2gVXvfqYCAAyRs6+7oev+myBsTwW5RnPhYXOTuCEw2oe3YgxlXMViXUS53lG8koulI7mJ+8JE+A==
+    dependencies:
+      "@babel/helper-plugin-utils" "^7.18.6"
+  
   "@babel/plugin-transform-object-super@^7.0.0", "@babel/plugin-transform-object-super@^7.18.6":
     version "7.18.6"
     resolved "https://registry.yarnpkg.com/@babel/plugin-transform-object-super/-/plugin-transform-object-super-7.18.6.tgz#fb3c6ccdd15939b6ff7939944b51971ddc35912c"
@@ -1066,7 +1078,7 @@ Lockfile:
       "@babel/types" "^7.4.4"
       esutils "^2.0.2"
   
-  "@babel/preset-typescript@^7.13.0":
+  "@babel/preset-typescript@^7.13.0", "@babel/preset-typescript@^7.16.7":
     version "7.21.0"
     resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.21.0.tgz#bcbbca513e8213691fe5d4b23d9251e01f00ebff"
     integrity sha512-myc9mpoVA5m1rF8K8DgLEatOYFDpwC+RkMkjZ0Du6uI62YvDe8uxIEYVs/VCdSJ097nlALiU/yBC7//3nI+hNg==
@@ -1139,6 +1151,13 @@ Lockfile:
     dependencies:
       deepmerge "^3.2.0"
       hoist-non-react-statics "^3.3.0"
+  
+  "@egjs/hammerjs@^2.0.17":
+    version "2.0.17"
+    resolved "https://registry.yarnpkg.com/@egjs/hammerjs/-/hammerjs-2.0.17.tgz#5dc02af75a6a06e4c2db0202cae38c9263895124"
+    integrity sha512-XQsZgjm2EcVUiZQf11UBJQfmZeEmOW8DpI1gsFeln6w0ae0ii4dMQEQ0kjl6DspdWX1aGY1/loyXnP0JS06e/A==
+    dependencies:
+      "@types/hammerjs" "^2.0.36"
   
   "@emotion/is-prop-valid@^1.1.0":
     version "1.2.0"
@@ -1632,12 +1651,12 @@ Lockfile:
       "@firebase/util" "1.9.3"
       tslib "^2.1.0"
   
-  "@firebase/app-compat@0.2.4":
-    version "0.2.4"
-    resolved "https://registry.yarnpkg.com/@firebase/app-compat/-/app-compat-0.2.4.tgz#610bf28a655373e6b4cda2115fb594f3c576d7d5"
-    integrity sha512-eYKtxMrzi+icZ6dFeJEoEpxu3aq1jp2PeL5vPIOAavJpdgRWFmSGmw3a46Hkay+GGGX4fkJG3vCfuoQsf5ksjA==
+  "@firebase/app-compat@0.2.5":
+    version "0.2.5"
+    resolved "https://registry.yarnpkg.com/@firebase/app-compat/-/app-compat-0.2.5.tgz#7253fe6b17a3128b465c96c1f374594ce91c7dcd"
+    integrity sha512-PSEax7UAc1Qxcksq5GHKb8M9rCsXTJWxWUf6pqhGTWO9UbJnI1tv00ogoCicEHgkXBTkOWMLxCs3318HaGZh4g==
     dependencies:
-      "@firebase/app" "0.9.4"
+      "@firebase/app" "0.9.5"
       "@firebase/component" "0.6.4"
       "@firebase/logger" "0.4.0"
       "@firebase/util" "1.9.3"
@@ -1648,10 +1667,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@firebase/app-types/-/app-types-0.9.0.tgz#35b5c568341e9e263b29b3d2ba0e9cfc9ec7f01e"
     integrity sha512-AeweANOIo0Mb8GiYm3xhTEBVCmPwTYAu9Hcd2qSkLuga/6+j9b1Jskl5bpiSQWy9eJ/j5pavxj6eYogmnuzm+Q==
   
-  "@firebase/app@0.9.4":
-    version "0.9.4"
-    resolved "https://registry.yarnpkg.com/@firebase/app/-/app-0.9.4.tgz#28eb5cd0406f92825afb32a53194d59c19cddb7b"
-    integrity sha512-xX8I6pNqUxhxhaghy9fbjOWOP9ndx5UeN5F0V/PWD2u7xRg88YkzZrDocTAIU17y82UPZ1x1E5n15CsXGcxaOg==
+  "@firebase/app@0.9.5":
+    version "0.9.5"
+    resolved "https://registry.yarnpkg.com/@firebase/app/-/app-0.9.5.tgz#dabf46a6b0384b805b65c787b440a895dac2b4c4"
+    integrity sha512-mXO9hrygxCohD8Qy0z8p9ZtuQirmjkjSTuQghH05/kLG1UJqP0TQZBlhP5qwzMTKuu2YpIn3kX2PZoSWti8LDA==
     dependencies:
       "@firebase/component" "0.6.4"
       "@firebase/logger" "0.4.0"
@@ -1659,12 +1678,12 @@ Lockfile:
       idb "7.0.1"
       tslib "^2.1.0"
   
-  "@firebase/auth-compat@0.3.4":
-    version "0.3.4"
-    resolved "https://registry.yarnpkg.com/@firebase/auth-compat/-/auth-compat-0.3.4.tgz#3c00b391876d6192e35eaf805adda3aef43199a5"
-    integrity sha512-AVNZ4pwLV063ngPKU+8tykQ6v+fRlKfBWEp1W+JU1pEJI+GK0thOPrCn22lWyI8LYiDrh3MLIiBJCv7fsyQajw==
+  "@firebase/auth-compat@0.3.5":
+    version "0.3.5"
+    resolved "https://registry.yarnpkg.com/@firebase/auth-compat/-/auth-compat-0.3.5.tgz#db4c41646b949ad18b4824beefd02338c3a865d6"
+    integrity sha512-xEkR4Buuw8NfyJhMVC3HMvyaODfstpMuo55tK03APoP+X9fnZpQE+ASdacq60qBBvpKF78d+gmAhmh0ISTXZ0w==
     dependencies:
-      "@firebase/auth" "0.21.4"
+      "@firebase/auth" "0.21.5"
       "@firebase/auth-types" "0.12.0"
       "@firebase/component" "0.6.4"
       "@firebase/util" "1.9.3"
@@ -1681,10 +1700,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@firebase/auth-types/-/auth-types-0.12.0.tgz#f28e1b68ac3b208ad02a15854c585be6da3e8e79"
     integrity sha512-pPwaZt+SPOshK8xNoiQlK5XIrS97kFYc3Rc7xmy373QsOJ9MmqXxLaYssP5Kcds4wd2qK//amx/c+A8O2fVeZA==
   
-  "@firebase/auth@0.21.4":
-    version "0.21.4"
-    resolved "https://registry.yarnpkg.com/@firebase/auth/-/auth-0.21.4.tgz#2ce8a34a78b53a168152b987b7bbd844f0431669"
-    integrity sha512-yZrs1F8sTt8IMCJl29gaxokDZSLjO08r2bL2PNKV1Duz2vJ67ZtVcgHAidyf8BFak9uS8mepd9KlYFDfwUO60Q==
+  "@firebase/auth@0.21.5":
+    version "0.21.5"
+    resolved "https://registry.yarnpkg.com/@firebase/auth/-/auth-0.21.5.tgz#02ca0b73ae0ee69a0bab0b19da6c92a722b56a6c"
+    integrity sha512-Pt/S24qbtJeFPxYxcQHDNgYAuEa9oyCK1XJBQ9Kc3FT1rDMb1OaK6wfnDDrCChQfENdHZVI1pGw4QG6/tO3NWw==
     dependencies:
       "@firebase/component" "0.6.4"
       "@firebase/logger" "0.4.0"
@@ -1732,13 +1751,13 @@ Lockfile:
       faye-websocket "0.11.4"
       tslib "^2.1.0"
   
-  "@firebase/firestore-compat@0.3.4":
-    version "0.3.4"
-    resolved "https://registry.yarnpkg.com/@firebase/firestore-compat/-/firestore-compat-0.3.4.tgz#1c656c225a1ed2a3cd6af1f4118701b5539a4c44"
-    integrity sha512-xUzz1V53vA1R8S5QQbQ33zqNv0bV+dZpeQKqMXt6HNWa1yiX7lUooGYRws825F+QBOadW1teav1ttXnGZAsgUw==
+  "@firebase/firestore-compat@0.3.5":
+    version "0.3.5"
+    resolved "https://registry.yarnpkg.com/@firebase/firestore-compat/-/firestore-compat-0.3.5.tgz#df159e66ea96096cd2c4b4ce8d72ff9685464444"
+    integrity sha512-gwBFGOqNIgF2TOJ2mKIS1lTQy6I9DytWsmIfvXGV76is53MaZUZXyUZd7oIC8h2Otq6gP3xtvPRQJTMcnQrbFg==
     dependencies:
       "@firebase/component" "0.6.4"
-      "@firebase/firestore" "3.8.4"
+      "@firebase/firestore" "3.9.0"
       "@firebase/firestore-types" "2.5.1"
       "@firebase/util" "1.9.3"
       tslib "^2.1.0"
@@ -1748,10 +1767,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@firebase/firestore-types/-/firestore-types-2.5.1.tgz#464b2ee057956599ca34de50eae957c30fdbabb7"
     integrity sha512-xG0CA6EMfYo8YeUxC8FeDzf6W3FX1cLlcAGBYV6Cku12sZRI81oWcu61RSKM66K6kUENP+78Qm8mvroBcm1whw==
   
-  "@firebase/firestore@3.8.4":
-    version "3.8.4"
-    resolved "https://registry.yarnpkg.com/@firebase/firestore/-/firestore-3.8.4.tgz#66b057330a22f0cd240b60746f2b2920b10dee31"
-    integrity sha512-sNLT4vGBSrx75Q2yLzCHL/1LDS7+UG8gaIohox/GpKYGxt4r8/AsUOmjN4llDqdnFSgY5ePYp2+nHArFXHyZjA==
+  "@firebase/firestore@3.9.0":
+    version "3.9.0"
+    resolved "https://registry.yarnpkg.com/@firebase/firestore/-/firestore-3.9.0.tgz#de31229a8b7fdf8da44c267234ea5796d3a0d045"
+    integrity sha512-At8HeTec3y7EfGjtYqvzON/8896igJgE34zjEndYxKPUKyhQ6xtcM+zhfa8C+lUW6W8qQB6lNzTNNXmF4NxdpQ==
     dependencies:
       "@firebase/component" "0.6.4"
       "@firebase/logger" "0.4.0"
@@ -2239,13 +2258,13 @@ Lockfile:
     dependencies:
       serve-static "^1.13.1"
   
-  "@react-native-community/cli-doctor@^10.1.1":
-    version "10.2.0"
-    resolved "https://registry.yarnpkg.com/@react-native-community/cli-doctor/-/cli-doctor-10.2.0.tgz#6050030eea9200ce3c35de360cf8455e126b4d45"
-    integrity sha512-yLxJazUmNSPslHxeeev0gLvsK0nQan8BmGWbtqPz2WwbIbD89vbytC7G96OxiQXr46iWEWAwEJiTTdgA7jlA5Q==
+  "@react-native-community/cli-doctor@^10.2.0":
+    version "10.2.1"
+    resolved "https://registry.yarnpkg.com/@react-native-community/cli-doctor/-/cli-doctor-10.2.1.tgz#b6b7a3f0f9cef1a05f1adc6393eb29c6f8f2972c"
+    integrity sha512-IwhdSD+mtgWdxg2eMr0fpkn08XN7r70DC1riGSmqK/DXNyWBzIZlCkDN+/TwlaUEsiFk6LQTjgCiqZSMpmDrsg==
     dependencies:
       "@react-native-community/cli-config" "^10.1.1"
-      "@react-native-community/cli-platform-ios" "^10.2.0"
+      "@react-native-community/cli-platform-ios" "^10.2.1"
       "@react-native-community/cli-tools" "^10.1.1"
       chalk "^4.1.2"
       command-exists "^1.2.8"
@@ -2261,7 +2280,7 @@ Lockfile:
       sudo-prompt "^9.0.0"
       wcwidth "^1.0.1"
   
-  "@react-native-community/cli-hermes@^10.1.3":
+  "@react-native-community/cli-hermes@^10.2.0":
     version "10.2.0"
     resolved "https://registry.yarnpkg.com/@react-native-community/cli-hermes/-/cli-hermes-10.2.0.tgz#cc252f435b149f74260bc918ce22fdf58033a87e"
     integrity sha512-urfmvNeR8IiO/Sd92UU3xPO+/qI2lwCWQnxOkWaU/i2EITFekE47MD6MZrfVulRVYRi5cuaFqKZO/ccOdOB/vQ==
@@ -2272,18 +2291,7 @@ Lockfile:
       hermes-profile-transformer "^0.0.6"
       ip "^1.1.5"
   
-  "@react-native-community/cli-platform-android@10.1.3":
-    version "10.1.3"
-    resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-android/-/cli-platform-android-10.1.3.tgz#8380799cd4d3f9a0ca568b0f5b4ae9e462ce3669"
-    integrity sha512-8YZEpBL6yd9l4CIoFcLOgrV8x2GDujdqrdWrNsNERDAbsiFwqAQvfjyyb57GAZVuEPEJCoqUlGlMCwOh3XQb9A==
-    dependencies:
-      "@react-native-community/cli-tools" "^10.1.1"
-      chalk "^4.1.2"
-      execa "^1.0.0"
-      glob "^7.1.3"
-      logkitty "^0.7.1"
-  
-  "@react-native-community/cli-platform-android@^10.2.0":
+  "@react-native-community/cli-platform-android@10.2.0", "@react-native-community/cli-platform-android@^10.2.0":
     version "10.2.0"
     resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-android/-/cli-platform-android-10.2.0.tgz#0bc689270a5f1d9aaf9e723181d43ca4dbfffdef"
     integrity sha512-CBenYwGxwFdObZTn1lgxWtMGA5ms2G/ALQhkS+XTAD7KHDrCxFF9yT/fnAjFZKM6vX/1TqGI1RflruXih3kAhw==
@@ -2294,18 +2302,7 @@ Lockfile:
       glob "^7.1.3"
       logkitty "^0.7.1"
   
-  "@react-native-community/cli-platform-ios@10.1.1":
-    version "10.1.1"
-    resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-ios/-/cli-platform-ios-10.1.1.tgz#39ed6810117d8e7330d3aa4d85818fb6ae358785"
-    integrity sha512-EB9/L8j1LqrqyfJtLRixU+d8FIP6Pr83rEgUgXgya/u8wk3h/bvX70w+Ff2skwjdPLr5dLUQ/n5KFX4r3bsNmA==
-    dependencies:
-      "@react-native-community/cli-tools" "^10.1.1"
-      chalk "^4.1.2"
-      execa "^1.0.0"
-      glob "^7.1.3"
-      ora "^5.4.1"
-  
-  "@react-native-community/cli-platform-ios@^10.2.0":
+  "@react-native-community/cli-platform-ios@10.2.0":
     version "10.2.0"
     resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-ios/-/cli-platform-ios-10.2.0.tgz#be21c0e3bbf17358d540cc23e5556bf679f6322e"
     integrity sha512-hIPK3iL/mL+0ChXmQ9uqqzNOKA48H+TAzg+hrxQLll/6dNMxDeK9/wZpktcsh8w+CyhqzKqVernGcQs7tPeKGw==
@@ -2317,7 +2314,19 @@ Lockfile:
       glob "^7.1.3"
       ora "^5.4.1"
   
-  "@react-native-community/cli-plugin-metro@^10.1.1":
+  "@react-native-community/cli-platform-ios@^10.2.1":
+    version "10.2.1"
+    resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-ios/-/cli-platform-ios-10.2.1.tgz#2e6bd2cb6d48cbb8720d7b7265bb1bab80745f72"
+    integrity sha512-hz4zu4Y6eyj7D0lnZx8Mf2c2si8y+zh/zUTgCTaPPLzQD8jSZNNBtUUiA1cARm2razpe8marCZ1QbTMAGbf3mg==
+    dependencies:
+      "@react-native-community/cli-tools" "^10.1.1"
+      chalk "^4.1.2"
+      execa "^1.0.0"
+      fast-xml-parser "^4.0.12"
+      glob "^7.1.3"
+      ora "^5.4.1"
+  
+  "@react-native-community/cli-plugin-metro@^10.2.0":
     version "10.2.0"
     resolved "https://registry.yarnpkg.com/@react-native-community/cli-plugin-metro/-/cli-plugin-metro-10.2.0.tgz#83cabbc04c80f7e94f88ed998b72c7d572c6f094"
     integrity sha512-9eiJrKYuauEDkQLCrjJUh7tS9T0oaMQqVUSSSuyDG6du7HQcfaR4mSf21wK75jvhKiwcQLpsFmMdctAb+0v+Cg==
@@ -2371,17 +2380,17 @@ Lockfile:
     dependencies:
       joi "^17.2.1"
   
-  "@react-native-community/cli@10.1.3":
-    version "10.1.3"
-    resolved "https://registry.yarnpkg.com/@react-native-community/cli/-/cli-10.1.3.tgz#ad610c46da9fc7c717272024ec757dc646726506"
-    integrity sha512-kzh6bYLGN1q1q0IiczKSP1LTrovFeVzppYRTKohPI9VdyZwp7b5JOgaQMB/Ijtwm3MxBDrZgV9AveH/eUmUcKQ==
+  "@react-native-community/cli@10.2.0":
+    version "10.2.0"
+    resolved "https://registry.yarnpkg.com/@react-native-community/cli/-/cli-10.2.0.tgz#bcb65bb3dcb03b0fc4e49619d51e12d23396b301"
+    integrity sha512-QH7AFBz5FX2zTZRH/o3XehHrZ0aZZEL5Sh+23nSEFgSj3bLFfvjjZhuoiRSAo7iiBdvAoXrfxQ8TXgg4Xf/7fw==
     dependencies:
       "@react-native-community/cli-clean" "^10.1.1"
       "@react-native-community/cli-config" "^10.1.1"
       "@react-native-community/cli-debugger-ui" "^10.0.0"
-      "@react-native-community/cli-doctor" "^10.1.1"
-      "@react-native-community/cli-hermes" "^10.1.3"
-      "@react-native-community/cli-plugin-metro" "^10.1.1"
+      "@react-native-community/cli-doctor" "^10.2.0"
+      "@react-native-community/cli-hermes" "^10.2.0"
+      "@react-native-community/cli-plugin-metro" "^10.2.0"
       "@react-native-community/cli-server-api" "^10.1.1"
       "@react-native-community/cli-tools" "^10.1.1"
       "@react-native-community/cli-types" "^10.0.0"
@@ -2589,6 +2598,11 @@ Lockfile:
     dependencies:
       "@types/minimatch" "*"
       "@types/node" "*"
+  
+  "@types/hammerjs@^2.0.36":
+    version "2.0.41"
+    resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.41.tgz#f6ecf57d1b12d2befcce00e928a6a097c22980aa"
+    integrity sha512-ewXv/ceBaJprikMcxCmWU1FKyMAQ2X7a9Gtmzw8fcg2kIePI1crERDM818W+XYrxqdBBOdlf2rm137bU+BltCA==
   
   "@types/html-minifier-terser@^6.0.0":
     version "6.1.0"
@@ -2931,6 +2945,13 @@ Lockfile:
     dependencies:
       mime-types "~2.1.34"
       negotiator "0.6.3"
+  
+  accordion-collapse-react-native@^1.1.1:
+    version "1.1.1"
+    resolved "https://registry.yarnpkg.com/accordion-collapse-react-native/-/accordion-collapse-react-native-1.1.1.tgz#e5e3b00a2f75838f37f5b8ca19cf7d8ccad8404a"
+    integrity sha512-VHQkJIlcN112YCa8L16OtXHZL0RRmozYnC4sP0ONBwNcmeiqBpacafQXiekwZzXT7HVbJwdrKlcJA5241XbVdw==
+    dependencies:
+      lodash.get "4.4.2"
   
   acorn-import-assertions@^1.7.6:
     version "1.8.0"
@@ -4904,6 +4925,11 @@ Lockfile:
       path-browserify "^1.0.0"
       url-parse "^1.5.9"
   
+  expo-checkbox@~2.3.1:
+    version "2.3.1"
+    resolved "https://registry.yarnpkg.com/expo-checkbox/-/expo-checkbox-2.3.1.tgz#d214e797a54f387f8ec360487272fefc0aa846a0"
+    integrity sha512-CTIabriK5xbtDnI9U5Hve82/WG85XLI4GLYSRTT1XST21HjQ7mDaeiYm7DnKzcgM+qeBwmbg3crJYnp7WW/8Ew==
+  
   expo-constants@~14.2.0, expo-constants@~14.2.1:
     version "14.2.1"
     resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-14.2.1.tgz#b5b6b8079d2082c31ccf2cbc7cf97a0e83c229c3"
@@ -5255,24 +5281,24 @@ Lockfile:
     dependencies:
       micromatch "^4.0.2"
   
-  firebase@9.17.2:
-    version "9.17.2"
-    resolved "https://registry.yarnpkg.com/firebase/-/firebase-9.17.2.tgz#950720666b1628a0b16926fbea4fc4217bd66185"
-    integrity sha512-2V95/evwB3zsi6RYHCvPXfkiQrSepFQJohv3YGoQVhS0bvXuYXmkLtrCVGShxneB/5t9HE5C9q9C8XPnK4APBw==
+  firebase@^9.18.0:
+    version "9.18.0"
+    resolved "https://registry.yarnpkg.com/firebase/-/firebase-9.18.0.tgz#c617c8194baa7683b6da24d05e613eadc6ab7e32"
+    integrity sha512-CTV5S3mTtn9zodeWkdeTqiQFyS7t+iskA50V9hVKPCQ4TPw4tnoyNgtNzWUmemFnYadzzsTnAaxsR7UaBJgiqw==
     dependencies:
       "@firebase/analytics" "0.9.4"
       "@firebase/analytics-compat" "0.2.4"
-      "@firebase/app" "0.9.4"
+      "@firebase/app" "0.9.5"
       "@firebase/app-check" "0.6.4"
       "@firebase/app-check-compat" "0.3.4"
-      "@firebase/app-compat" "0.2.4"
+      "@firebase/app-compat" "0.2.5"
       "@firebase/app-types" "0.9.0"
-      "@firebase/auth" "0.21.4"
-      "@firebase/auth-compat" "0.3.4"
+      "@firebase/auth" "0.21.5"
+      "@firebase/auth-compat" "0.3.5"
       "@firebase/database" "0.14.4"
       "@firebase/database-compat" "0.3.4"
-      "@firebase/firestore" "3.8.4"
-      "@firebase/firestore-compat" "0.3.4"
+      "@firebase/firestore" "3.9.0"
+      "@firebase/firestore-compat" "0.3.5"
       "@firebase/functions" "0.9.4"
       "@firebase/functions-compat" "0.3.4"
       "@firebase/installations" "0.6.4"
@@ -6569,6 +6595,16 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
     integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
   
+  lodash.get@4.4.2:
+    version "4.4.2"
+    resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+    integrity sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==
+  
+  lodash.isequal@^4.5.0:
+    version "4.5.0"
+    resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+    integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
+  
   lodash.memoize@^4.1.2:
     version "4.1.2"
     resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
@@ -6772,16 +6808,6 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
     integrity sha512-iclAHeNqNm68zFtnZ0e+1L2yUIdvzNoauKU4WBA3VvH/vPFieF7qfRlwUZU+DA9P9bPXIS90ulxoUoCH23sV2w==
   
-  metro-babel-transformer@0.73.7:
-    version "0.73.7"
-    resolved "https://registry.yarnpkg.com/metro-babel-transformer/-/metro-babel-transformer-0.73.7.tgz#561ffa0336eb6d7d112e7128e957114c729fdb71"
-    integrity sha512-s7UVkwovGTEXYEQrv5hcmSBbFJ9s9lhCRNMScn4Itgj3UMdqRr9lU8DXKEFlJ7osgRxN6n5+eXqcvhE4B1H1VQ==
-    dependencies:
-      "@babel/core" "^7.20.0"
-      hermes-parser "0.8.0"
-      metro-source-map "0.73.7"
-      nullthrows "^1.1.1"
-  
   metro-babel-transformer@0.73.8:
     version "0.73.8"
     resolved "https://registry.yarnpkg.com/metro-babel-transformer/-/metro-babel-transformer-0.73.8.tgz#521374cb9234ba126f3f8d63588db5901308b4ed"
@@ -6963,19 +6989,6 @@ Lockfile:
       "@babel/template" "^7.0.0"
       react-refresh "^0.4.0"
   
-  metro-react-native-babel-transformer@0.73.7:
-    version "0.73.7"
-    resolved "https://registry.yarnpkg.com/metro-react-native-babel-transformer/-/metro-react-native-babel-transformer-0.73.7.tgz#a92055fd564cd403255cc34f925c5e99ce457565"
-    integrity sha512-73HW8betjX+VPm3iqsMBe8F/F2Tt+hONO6YJwcF7FonTqQYW1oTz0dOp0dClZGfHUXxpJBz6Vuo7J6TpdzDD+w==
-    dependencies:
-      "@babel/core" "^7.20.0"
-      babel-preset-fbjs "^3.4.0"
-      hermes-parser "0.8.0"
-      metro-babel-transformer "0.73.7"
-      metro-react-native-babel-preset "0.73.7"
-      metro-source-map "0.73.7"
-      nullthrows "^1.1.1"
-  
   metro-react-native-babel-transformer@0.73.8:
     version "0.73.8"
     resolved "https://registry.yarnpkg.com/metro-react-native-babel-transformer/-/metro-react-native-babel-transformer-0.73.8.tgz#cbcd4b243216878431dc4311ce46f02a928e3991"
@@ -6996,14 +7009,6 @@ Lockfile:
     dependencies:
       absolute-path "^0.0.0"
   
-  metro-runtime@0.73.7:
-    version "0.73.7"
-    resolved "https://registry.yarnpkg.com/metro-runtime/-/metro-runtime-0.73.7.tgz#9f3a7f3ff668c1a87370650e32b47d8f6329fd1e"
-    integrity sha512-2fxRGrF8FyrwwHY0TCitdUljzutfW6CWEpdvPilfrs8p0PI5X8xOWg8ficeYtw+DldHtHIAL2phT59PqzHTyVA==
-    dependencies:
-      "@babel/runtime" "^7.0.0"
-      react-refresh "^0.4.0"
-  
   metro-runtime@0.73.8:
     version "0.73.8"
     resolved "https://registry.yarnpkg.com/metro-runtime/-/metro-runtime-0.73.8.tgz#dadae7c154fbbde24390cf7f7e7d934a2768cd18"
@@ -7011,20 +7016,6 @@ Lockfile:
     dependencies:
       "@babel/runtime" "^7.0.0"
       react-refresh "^0.4.0"
-  
-  metro-source-map@0.73.7:
-    version "0.73.7"
-    resolved "https://registry.yarnpkg.com/metro-source-map/-/metro-source-map-0.73.7.tgz#8e9f850a72d60ea7ace05b984f981c8ec843e7a0"
-    integrity sha512-gbC/lfUN52TtQhEsTTA+987MaFUpQlufuCI05blLGLosDcFCsARikHsxa65Gtslm/rG2MqvFLiPA5hviONNv9g==
-    dependencies:
-      "@babel/traverse" "^7.20.0"
-      "@babel/types" "^7.20.0"
-      invariant "^2.2.4"
-      metro-symbolicate "0.73.7"
-      nullthrows "^1.1.1"
-      ob1 "0.73.7"
-      source-map "^0.5.6"
-      vlq "^1.0.0"
   
   metro-source-map@0.73.8:
     version "0.73.8"
@@ -7038,18 +7029,6 @@ Lockfile:
       nullthrows "^1.1.1"
       ob1 "0.73.8"
       source-map "^0.5.6"
-      vlq "^1.0.0"
-  
-  metro-symbolicate@0.73.7:
-    version "0.73.7"
-    resolved "https://registry.yarnpkg.com/metro-symbolicate/-/metro-symbolicate-0.73.7.tgz#40e4cda81f8030b86afe391b5e686a0b06822b0a"
-    integrity sha512-571ThWmX5o8yGNzoXjlcdhmXqpByHU/bSZtWKhtgV2TyIAzYCYt4hawJAS5+/qDazUvjHdm8BbdqFUheM0EKNQ==
-    dependencies:
-      invariant "^2.2.4"
-      metro-source-map "0.73.7"
-      nullthrows "^1.1.1"
-      source-map "^0.5.6"
-      through2 "^2.0.1"
       vlq "^1.0.0"
   
   metro-symbolicate@0.73.8:
@@ -7564,11 +7543,6 @@ Lockfile:
     version "1.1.1"
     resolved "https://registry.yarnpkg.com/nullthrows/-/nullthrows-1.1.1.tgz#7818258843856ae971eae4208ad7d7eb19a431b1"
     integrity sha512-2vPPEi+Z7WqML2jZYddDIfy5Dqb0r2fze2zTxNNknZaFpVHU3mFB3R+DWeJWGVx0ecvttSGlJTI+WG+8Z4cDWw==
-  
-  ob1@0.73.7:
-    version "0.73.7"
-    resolved "https://registry.yarnpkg.com/ob1/-/ob1-0.73.7.tgz#14c9b6ddc26cf99144f59eb542d7ae956e6b3192"
-    integrity sha512-DfelfvR843KADhSUATGGhuepVMRcf5VQX+6MQLy5AW0BKDLlO7Usj6YZeAAZP7P86QwsoTxB0RXCFiA7t6S1IQ==
   
   ob1@0.73.8:
     version "0.73.8"
@@ -8522,7 +8496,18 @@ Lockfile:
       jscodeshift "^0.13.1"
       nullthrows "^1.1.1"
   
-  react-native-gradle-plugin@^0.71.15:
+  react-native-gesture-handler@^2.9.0:
+    version "2.9.0"
+    resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.9.0.tgz#2f63812e523c646f25b9ad660fc6f75948e51241"
+    integrity sha512-a0BcH3Qb1tgVqUutc6d3VuWQkI1AM3+fJx8dkxzZs9t06qA27QgURYFoklpabuWpsUTzuKRpxleykp25E8m7tg==
+    dependencies:
+      "@egjs/hammerjs" "^2.0.17"
+      hoist-non-react-statics "^3.3.0"
+      invariant "^2.2.4"
+      lodash "^4.17.21"
+      prop-types "^15.7.2"
+  
+  react-native-gradle-plugin@^0.71.16:
     version "0.71.16"
     resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.16.tgz#822bb0c680e03b5df5aa65f2e5ffc2bc2930854a"
     integrity sha512-H2BjG2zk7B7Wii9sXvd9qhCVRQYDAHSWdMw9tscmZBqSP62DkIWEQSk4/B2GhQ4aK9ydVXgtqR6tBeg3yy8TSA==
@@ -8547,6 +8532,24 @@ Lockfile:
       "@callstack/react-theme-provider" "^3.0.8"
       color "^3.1.2"
       use-event-callback "^0.1.0"
+  
+  react-native-reanimated-carousel@^3.3.0:
+    version "3.3.0"
+    resolved "https://registry.yarnpkg.com/react-native-reanimated-carousel/-/react-native-reanimated-carousel-3.3.0.tgz#e71e9441ee6aaae401c5a023b27bf48a54565d16"
+    integrity sha512-rprUl+LqWoXyH/8OvHv+m9Kol2YORHEnz7tvRum+o4ciCUCcYnafQBbSqG44RMllOCqm3WOAcuEX5p8a7W3ZZw==
+  
+  react-native-reanimated@^3.0.2:
+    version "3.0.2"
+    resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-3.0.2.tgz#8f7284fab2b0cd949779429e48f32d19a966bbd6"
+    integrity sha512-8Et90yTI9yxchGbDP79k391XZqc/64zNbASbGy8X3Vgv4EbZ1M3IkKwcIbZmbVwpA804VJ6V9nJAGUh9fP0LrA==
+    dependencies:
+      "@babel/plugin-transform-object-assign" "^7.16.7"
+      "@babel/preset-typescript" "^7.16.7"
+      convert-source-map "^1.7.0"
+      invariant "^2.2.4"
+      lodash.isequal "^4.5.0"
+      setimmediate "^1.0.5"
+      string-hash-64 "^1.0.3"
   
   react-native-safe-area-context@4.5.0:
     version "4.5.0"
@@ -8582,15 +8585,15 @@ Lockfile:
       postcss-value-parser "^4.2.0"
       styleq "^0.1.2"
   
-  react-native@0.71.3:
-    version "0.71.3"
-    resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.71.3.tgz#0faab799c49e61ba12df9e6525c3ac7d595d673c"
-    integrity sha512-RYJXCcQGa4NTfKiPgl92eRDUuQ6JGDnHqFEzRwJSqEx9lWvlvRRIebstJfurzPDKLQWQrvITR7aI7e09E25mLw==
+  react-native@0.71.4:
+    version "0.71.4"
+    resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.71.4.tgz#f03f600efe68f745d19454ab17f9c1a9ef304790"
+    integrity sha512-3hSYqvWrOdKhpV3HpEKp1/CkWx8Sr/N/miCrmUIAsVTSJUR7JW0VvIsrV9urDhUj/s6v2WF4n7qIEEJsmTCrPw==
     dependencies:
       "@jest/create-cache-key-function" "^29.2.1"
-      "@react-native-community/cli" "10.1.3"
-      "@react-native-community/cli-platform-android" "10.1.3"
-      "@react-native-community/cli-platform-ios" "10.1.1"
+      "@react-native-community/cli" "10.2.0"
+      "@react-native-community/cli-platform-android" "10.2.0"
+      "@react-native-community/cli-platform-ios" "10.2.0"
       "@react-native/assets" "1.0.0"
       "@react-native/normalize-color" "2.1.0"
       "@react-native/polyfills" "2.0.0"
@@ -8603,16 +8606,16 @@ Lockfile:
       jest-environment-node "^29.2.1"
       jsc-android "^250231.0.0"
       memoize-one "^5.0.0"
-      metro-react-native-babel-transformer "0.73.7"
-      metro-runtime "0.73.7"
-      metro-source-map "0.73.7"
+      metro-react-native-babel-transformer "0.73.8"
+      metro-runtime "0.73.8"
+      metro-source-map "0.73.8"
       mkdirp "^0.5.1"
       nullthrows "^1.1.1"
       pretty-format "^26.5.2"
       promise "^8.3.0"
       react-devtools-core "^4.26.1"
       react-native-codegen "^0.71.5"
-      react-native-gradle-plugin "^0.71.15"
+      react-native-gradle-plugin "^0.71.16"
       react-refresh "^0.4.0"
       react-shallow-renderer "^16.15.0"
       regenerator-runtime "^0.13.2"
@@ -9562,6 +9565,11 @@ Lockfile:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz#b9c7330c7042862f6b142dc274bbcc5866ce3546"
     integrity sha512-QwiXZgpRcKkhTj2Scnn++4PKtWsH0kpzZ62L2R6c/LUVYv7hVnZqcg2+sMuT6R7Jusu1vviK/MFsu6kNJfWlEQ==
+  
+  string-hash-64@^1.0.3:
+    version "1.0.3"
+    resolved "https://registry.yarnpkg.com/string-hash-64/-/string-hash-64-1.0.3.tgz#0deb56df58678640db5c479ccbbb597aaa0de322"
+    integrity sha512-D5OKWKvDhyVWWn2x5Y9b+37NUllks34q1dCDhk/vYcso9fmhs+Tl3KR/gE4v5UNj2UA35cnX4KdVVGkG1deKqw==
   
   string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
     version "4.2.3"
