@@ -9,10 +9,10 @@ export const principas = StyleSheet.create({
         backgroundColor: '#F3ECE8',
         
     },
-    
+
     tela: {
         backgroundColor: '#F3ECE8',
-        flex:1
+        flex: 1
     },
     containerboxs: {
         flex: 1,
@@ -83,6 +83,63 @@ export const principas = StyleSheet.create({
 
     },
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    circulos: {
+        width: 60,
+        height: 60,
+        borderRadius: 60 / 2,
+        backgroundColor: "E7D5CA",
+    },
+
+    shadowProp: {
+        shadowColor: 'black',
+        shadowOffset: { width: -2, height: 4 },
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
+    },
+
+    circulosfora: {
+        display: "flex",
+        justifyContent: "space-evenly",
+        alignContent: "center",
+        flexDirection: "row",
+        
+
+
+    },
+    iconebotao: {
+        margin: "6px"
+    }
 
 
 })
