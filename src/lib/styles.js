@@ -9,7 +9,8 @@ export const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F3ECE8'
+        backgroundColor: '#F3ECE8',
+        padding: 30
     },
     input: {
         height: 55,
@@ -122,7 +123,7 @@ export const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         display: "flex",
-        textAlign:"center"
+        textAlign: "center"
     },
 
     textoN: {
@@ -173,7 +174,7 @@ export const styles = StyleSheet.create({
     imgicon: {
         width: "30px",
         height: "50px",
-        padding:"20px"
+        padding: "20px"
     },
 
     container1: {
@@ -190,7 +191,27 @@ export const styles = StyleSheet.create({
 
     containerIcones: {
         paddingLeft: "350px",
-    }
+    },
+
+    botaoE: {
+        margin: 30,
+        padding: 20,
+        borderRadius: 15,
+        backgroundColor: "#fff",
+        border: 10,
+        color: "black"
+    },
+
+    alert: {
+        borderRadius: 15,
+        backgroundColor: "#fff",
+    },
+
+    CO: {
+        justifyContent: "space-around",
+
+    },
+
 
 })
 
