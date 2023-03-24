@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#F3ECE8",
+    padding:"20px",
   },
 
   container1: {
@@ -129,5 +130,6 @@ export const styles = StyleSheet.create({
   textotitulo: {
     fontSize: "18px",
     fontWeight: "600",
+    marginTop:"20px"
   },
 });
