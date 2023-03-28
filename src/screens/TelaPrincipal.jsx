@@ -10,6 +10,7 @@ import { TelaAjuda } from "./TelaAjuda";
 import { TelaConfigura } from "./TelaConfigura";
 import { TelaCarrinho } from "./TelaCarrinho";
 import Carousel from "react-native-reanimated-carousel";
+import { telaLogin } from "./TelaLogin";
 
 const Tabs = AnimatedTabBarNavigator();
 export function TabsNav() {
@@ -77,6 +78,20 @@ export function TabsNav() {
           tabBarIcon: ({ focused, color, size }) => (
             <Icon2
               name="settings"
+              size={size ? size : 24}
+              color={focused ? color : "#fff"}
+              focused={focused}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Login"
+        component={telaLogin}
+        options={{
+          tabBarIcon: ({ focused, color, size }) => (
+            <Icon2
+              name="user"
               size={size ? size : 24}
               color={focused ? color : "#fff"}
               focused={focused}
