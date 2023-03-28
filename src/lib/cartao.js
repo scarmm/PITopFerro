@@ -8,10 +8,11 @@ export const styles = StyleSheet.create({
         flex: 1,
         padding:30,
         backgroundColor: '#F3ECE8',
+        marginTop: 150
     },
 
     text: {
-        fontSize: 18,
+        fontSize: 24,
         marginVertical: "5%",
         fontWeight: 600,
         alignSelf: "center",
@@ -20,7 +21,8 @@ export const styles = StyleSheet.create({
     text2:{
         fontSize: 16,
         fontWeight: 600,
-        marginTop: 10,
+        marginTop: 40,
+        marginBottom:15,
         paddingLeft: 15,
     },
  

@@ -81,7 +81,6 @@ export const telaCadastro2 = ({ navigation }) => {
   }
 
   return (
-    <ScrollView>
     <View style={styles.container}>
       <View style={styles.cadastro}>
         <View>
@@ -105,21 +104,6 @@ export const telaCadastro2 = ({ navigation }) => {
           errorText={password.error}
           secureTextEntry
         />
-        <TextInput
-          style={styles.input}
-          placeholder="Confirme Senha"
-          returnKeyType="done"
-          value={confirmaPassword.value}
-          onChangeText={(text) =>
-            setConfirmaPassword({ value: text, error: "" })
-          }
-          error={!!confirmaPassword.error}
-          errorText={confirmaPassword.error}
-          secureTextEntry
-        />
-        <HelperText type="error" visible={!!confirmaPassword.error}>
-          {confirmaPassword.error}
-        </HelperText>
       </View>
 
       <View style={styles.bot}>
@@ -141,6 +125,5 @@ export const telaCadastro2 = ({ navigation }) => {
         </Text>
       </View>
     </View>
-    </ScrollView>
   );
 };

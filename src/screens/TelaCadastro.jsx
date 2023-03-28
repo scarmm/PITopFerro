@@ -86,7 +86,6 @@ export const telaCadastro = ({ navigation }) => {
   }
 
   return (
-    <ScrollView>
     <View style={styles.container}>
       <View style={styles.cadastro}>
         <View>
@@ -151,6 +150,5 @@ export const telaCadastro = ({ navigation }) => {
         </Text>
       </View>
     </View>
-    </ScrollView>
   );
 };

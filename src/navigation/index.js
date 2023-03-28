@@ -42,6 +42,8 @@ const Stack = createNativeStackNavigator();
 
 export const RootNavigation = () => {
   return (
+    
+
     <Stack.Navigator
       style={styles.tab}
       screenOptions={{
