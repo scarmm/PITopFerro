@@ -84,9 +84,13 @@ export const principas = StyleSheet.create({
     },
 
 
+    resultadopesquisa:{
+        padding:"15px",
+    },
 
-
-
+    titulotext:{
+      marginLeft:"110px"
+    },
 
 
 

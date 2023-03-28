@@ -1,9 +1,11 @@
 import { View, Text } from "react-native";
 import { styles } from "../lib/config";
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { ScrollView } from "react-native-web";
 
 export const TelaCartao = () => {
   return (
+    <ScrollView style={{backgroundColor:"#F3ECE8"}}>
     <View style={styles.container}>
       <View style={styles.endereco}>
         <Text style={styles.text}>Cartão Crédito</Text>
@@ -16,5 +18,6 @@ export const TelaCartao = () => {
             </Icon.Button>
       </View>
     </View>
+    </ScrollView>
   );
 };

@@ -1,15 +1,13 @@
 import { Image, ScrollView, Text, View } from "react-native";
 import { ajudas } from "../lib/ajudas";
-import { styles } from "../lib/styles";
 import {
   Collapse,
   CollapseHeader,
   CollapseBody,
-  AccordionList,
 } from "accordion-collapse-react-native";
 export const TelaAjudaConta = ({ navigation }) => {
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor:"#F3ECE8"}}>
       <View style={ajudas.containerAjudaConta}>
         <Image
           style={ajudas.imgajudaconta}

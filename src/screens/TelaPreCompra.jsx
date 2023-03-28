@@ -5,7 +5,7 @@ import Icon from "react-native-vector-icons/FontAwesome5";
 
 export const telaPreCompra = ({ navigation }) => {
   return (
-    <ScrollView style={{backgroundColor: "#F3ECE8"}}>
+    <ScrollView style={{ backgroundColor: "#F3ECE8" }}>
       <View style={styles.container}>
         <View style={styles.container1}>
           <View style={styles.imagem}>
@@ -14,7 +14,6 @@ export const telaPreCompra = ({ navigation }) => {
               source={{ uri: require("../imagens/mesa9.jpg") }}
             ></Image>
           </View>
-
           <View style={styles.container2}>
             <View>
               <Text style={styles.texto1}>Lorem ipsum dolor sit.</Text>
@@ -117,8 +116,8 @@ export const telaPreCompra = ({ navigation }) => {
               <Text style={styles.boxstext2}>R$234,50</Text>
             </View>
           </View>
-          </View>
-        </View> 
+        </View>
+      </View>
     </ScrollView>
   );
 };
