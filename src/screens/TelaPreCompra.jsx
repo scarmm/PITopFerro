@@ -1,7 +1,8 @@
-import { Image, ScrollView, View } from "react-native";
+import { Image, View } from "react-native";
 import { Text } from "react-native";
 import { styles } from "../lib/PreCompra";
 import Icon from "react-native-vector-icons/FontAwesome5";
+import { ScrollView } from "react-native-web";
 
 export const telaPreCompra = ({ navigation }) => {
   return (
