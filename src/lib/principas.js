@@ -7,12 +7,12 @@ export const principas = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#F3ECE8',
-        
+
     },
 
     tela: {
         backgroundColor: '#F3ECE8',
-        flex: 1
+        flex: 1,
     },
     containerboxs: {
         flex: 1,
@@ -82,47 +82,11 @@ export const principas = StyleSheet.create({
         color: "#A69387",
 
     },
-
-
-    resultadopesquisa:{
-        padding:"15px",
-    },
-
-    titulotext:{
-      marginLeft:"110px"
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     circulos: {
         width: 60,
         height: 60,
         borderRadius: 60 / 2,
-        backgroundColor: "E7D5CA",
+        backgroundColor: "#E7D5CA",
     },
 
     shadowProp: {
@@ -131,19 +95,29 @@ export const principas = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 3,
     },
-
     circulosfora: {
         display: "flex",
         justifyContent: "space-evenly",
         alignContent: "center",
         flexDirection: "row",
-        
-
-
     },
     iconebotao: {
         margin: "6px"
-    }
+    },
+    carrosa: {
+        borderRadius: "30px",
+        marginBottom: "40px",
+        marginTop: "20px"
+    },
+    carrosa2: {
+        borderRadius: "30px",
+        marginLeft: "20px"
+    },
+    image: {
+        width: "370px",
+        height: "175px",
+        flex: 1,
 
+    }
 
 })

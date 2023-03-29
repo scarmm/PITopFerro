@@ -1,5 +1,8 @@
+
+
+
 import { useNavigation } from "@react-navigation/native";
-import { Text, TextInput, View } from "react-native";
+import { Image, Text, TextInput, View } from "react-native";
 import { AnimatedTabBarNavigator } from "react-native-animated-nav-tab-bar";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import Icon2 from "react-native-vector-icons/Feather";
@@ -10,7 +13,6 @@ import { TelaAjuda } from "./TelaAjuda";
 import { TelaConfigura } from "./TelaConfigura";
 import { TelaCarrinho } from "./TelaCarrinho";
 import Carousel from "react-native-reanimated-carousel";
-import { telaLogin } from "./TelaLogin";
 
 const Tabs = AnimatedTabBarNavigator();
 export function TabsNav() {
@@ -85,52 +87,45 @@ export function TabsNav() {
           ),
         }}
       />
-      <Tabs.Screen
-        name="Login"
-        component={telaLogin}
-        options={{
-          tabBarIcon: ({ focused, color, size }) => (
-            <Icon2
-              name="user"
-              size={size ? size : 24}
-              color={focused ? color : "#fff"}
-              focused={focused}
-            />
-          ),
-        }}
-      />
     </Tabs.Navigator>
   );
 }
 export const TelaPrincipal = ({}) => {
   return <TabsNav />;
 };
+const images = [
+  require("../imagens/gatao.png"),
+  require("../imagens/salaa.png"),
+  require("../imagens/sala.png"),
+];
 
 const TelaPrincipal2 = ({}) => {
   return (
     <View style={principas.tela}>
-      <Carousel
-        loop
-        width={185 * 2}
-        height={350 / 2}
-        autoPlay={true}
-        data={[...new Array(6).keys()]}
-        scrollAnimationDuration={1000}
-        onSnapToItem={(index) => console.log("current index:", index)}
-        renderItem={({ index }) => (
-          <View
-            style={{
-              flex: 1,
-              borderWidth: 1,
-              justifyContent: "center",
-              borderRadius: "30px",
-              marginLeft: "50px",
-            }}
-          >
-            <Text style={{ textAlign: "center", fontSize: 30 }}>{index}</Text>
-          </View>
-        )}
-      />
+      <View style={principas.carrosa}>
+        <Carousel
+          style={principas.carrosa2}
+          loop
+          width={185 * 2}
+          height={350 / 2}
+          autoPlay={true}
+          data={[images]}
+          scrollAnimationDuration={1000}
+          renderItem={({ images }) => (
+            <View
+              style={{
+                flex: 1,
+                borderWidth: 1,
+                justifyContent: "center",
+                borderRadius:"30px",
+             
+              }}
+            >
+              <Image style={principas.image} source={{uri: require("../imagens/salaa.png")}}/>
+            </View>
+          )}
+        />
+      </View>
 
       <View style={principas.circulosfora}>
         <View style={[principas.circulos, principas.shadowProp]}>
@@ -156,7 +151,7 @@ const TelaPrincipal2 = ({}) => {
         <View style={[principas.circulos, principas.shadowProp]}>
           <Icon.Button
             style={principas.iconebotao}
-            name="home"
+            name="kitchen"
             backgroundColor="none"
             color={"black"}
             size={30}
@@ -164,14 +159,14 @@ const TelaPrincipal2 = ({}) => {
           ></Icon.Button>
         </View>
         <View style={[principas.circulos, principas.shadowProp]}>
-          <Icon.Button
+          <Icon4.Button
             style={principas.iconebotao}
-            name="home"
+            name="image-frame"
             backgroundColor="none"
             color={"black"}
             size={30}
             onPress={() => navigation.navigate("TelaDecoracao")}
-          ></Icon.Button>
+          ></Icon4.Button>
         </View>
       </View>
     </View>
