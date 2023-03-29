@@ -1,6 +1,3 @@
-
-
-
 import { useNavigation } from "@react-navigation/native";
 import { Image, Text, TextInput, View } from "react-native";
 import { AnimatedTabBarNavigator } from "react-native-animated-nav-tab-bar";
@@ -13,6 +10,7 @@ import { TelaAjuda } from "./TelaAjuda";
 import { TelaConfigura } from "./TelaConfigura";
 import { TelaCarrinho } from "./TelaCarrinho";
 import Carousel from "react-native-reanimated-carousel";
+import {telaLogin, TelaLogin} from "./TelaLogin"
 
 const Tabs = AnimatedTabBarNavigator();
 export function TabsNav() {
@@ -59,13 +57,14 @@ export function TabsNav() {
           ),
         }}
       />
+
       <Tabs.Screen
-        name="Ajuda_Conta"
-        component={TelaAjuda}
+        name="User"
+        component={telaLogin}
         options={{
           tabBarIcon: ({ focused, color, size }) => (
-            <Icon
-              name="help"
+            <Icon2
+              name="user"
               size={size ? size : 24}
               color={focused ? color : "#fff"}
               focused={focused}
@@ -73,6 +72,7 @@ export function TabsNav() {
           ),
         }}
       />
+
       <Tabs.Screen
         name="Configuração"
         component={TelaConfigura}

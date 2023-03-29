@@ -29,6 +29,14 @@ export const TelaConfigura = ({ navigation }) => {
         >
           Solicitar a exclusão da conta
         </Text>
+        <Text
+          style={styles.text}
+          onPress={() => {
+            navigation.navigate("Ajuda");
+          }}
+        >
+          Ajuda com a Conta
+        </Text>
       </View>
   );
 };
