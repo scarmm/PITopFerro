@@ -1,8 +1,8 @@
 Arguments: 
-  /home/senac/.nvm/versions/node/v16.19.1/bin/node /home/senac/.nvm/versions/node/v16.19.1/bin/yarn add react-native-reanimated2
+  /home/senac/.nvm/versions/node/v16.19.1/bin/node /home/senac/.nvm/versions/node/v16.19.1/bin/yarn add @types/react-native-hr-component
 
 PATH: 
-  /home/senac/.nvm/versions/node/v16.19.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2204.1.8.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Users/samuel.souza2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/samuel.souza2/AppData/Roaming/npm:/snap/bin
+  /home/senac/.nvm/versions/node/v16.19.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2204.1.8.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Users/samuel.souza2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/samuel.souza2/AppData/Roaming/npm:/snap/bin
 
 Yarn version: 
   1.22.19
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/react-native-reanimated2: Not found
+  Error: https://registry.yarnpkg.com/@types%2freact-native-hr-component: Not found
       at Request.params.callback [as _callback] (/home/senac/.nvm/versions/node/v16.19.1/lib/node_modules/yarn/lib/cli.js:66145:18)
       at Request.self.callback (/home/senac/.nvm/versions/node/v16.19.1/lib/node_modules/yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:513:28)
@@ -56,7 +56,7 @@ npm manifest:
       "react-native-headers": "1.1.3",
       "react-native-hr-component": "2.0.3",
       "react-native-paper": "5.2.0",
-      "react-native-reanimated": "^3.0.2",
+      "react-native-reanimated": "~2.14.4",
       "react-native-reanimated-carousel": "^3.3.0",
       "react-native-safe-area-context": "4.5.0",
       "react-native-screens": "3.20.0",
@@ -8538,10 +8538,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-native-reanimated-carousel/-/react-native-reanimated-carousel-3.3.0.tgz#e71e9441ee6aaae401c5a023b27bf48a54565d16"
     integrity sha512-rprUl+LqWoXyH/8OvHv+m9Kol2YORHEnz7tvRum+o4ciCUCcYnafQBbSqG44RMllOCqm3WOAcuEX5p8a7W3ZZw==
   
-  react-native-reanimated@^3.0.2:
-    version "3.0.2"
-    resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-3.0.2.tgz#8f7284fab2b0cd949779429e48f32d19a966bbd6"
-    integrity sha512-8Et90yTI9yxchGbDP79k391XZqc/64zNbASbGy8X3Vgv4EbZ1M3IkKwcIbZmbVwpA804VJ6V9nJAGUh9fP0LrA==
+  react-native-reanimated@~2.14.4:
+    version "2.14.4"
+    resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.14.4.tgz#3fa3da4e7b99f5dfb28f86bcf24d9d1024d38836"
+    integrity sha512-DquSbl7P8j4SAmc+kRdd75Ianm8G+IYQ9T4AQ6lrpLVeDkhZmjWI0wkutKWnp6L7c5XNVUrFDUf69dwETLCItQ==
     dependencies:
       "@babel/plugin-transform-object-assign" "^7.16.7"
       "@babel/preset-typescript" "^7.16.7"
