@@ -65,4 +65,10 @@ texto3: {
   color: "gray",
 },
 
+texto:{
+  fontSize:"18px",
+  fontWeight: "600",
+  paddingTop: "20px"
+}
+
 });
