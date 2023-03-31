@@ -94,7 +94,7 @@ export const RootNavigation = () => {
           headerRight: () => (
             <Searchbar
               placeholder="Busque na TopFerro..."
-              placeholderTextColor={"gray"}
+              placeholderTextColor={"#888888"}
               style={principas.barrapesquisa}
               color="#fff"
             />

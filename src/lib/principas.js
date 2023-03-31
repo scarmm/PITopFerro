@@ -19,6 +19,7 @@ export const principas = StyleSheet.create({
         flexDirection: "row",
         flexWrap: "wrap",
         justifyContent: "space-around",
+        padding:"20px",
 
     },
 
@@ -34,7 +35,7 @@ export const principas = StyleSheet.create({
     boxs: {
         position: 'relative',
         backgroundColor: "#fff",
-        width: "200px",
+        width: "172px",
         height: "220px",
         padding: "10px",
         shadowColor: '#171717',
@@ -42,25 +43,29 @@ export const principas = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 5,
         borderRadius: 15,
+        marginBottom:"18px",
+
+        
     },
 
     boxstext: {
         fontSize: "15px",
         marginTop: "20px",
         fontWeight: "500",
-        color: "#002710"
+        color: "#34271F"
     },
 
     boxstext1: {
         marginTop: "2px",
-        fontSize: "10px"
+        fontSize: "10px",
+        color: "gray"
     },
 
     boxstext2: {
         marginTop: "10px",
         fontSize: "17px",
         fontWeight: "500",
-        color: "gray"
+        color:"#A69387"
     },
 
     imgbox: {
@@ -87,6 +92,7 @@ export const principas = StyleSheet.create({
         height: 60,
         borderRadius: 60 / 2,
         backgroundColor: "#E7D5CA",
+        flexDirection:"column"
     },
 
     shadowProp: {
@@ -100,18 +106,36 @@ export const principas = StyleSheet.create({
         justifyContent: "space-evenly",
         alignContent: "center",
         flexDirection: "row",
+        marginBottom:"40px"
     },
+
+    minitexto:{
+        paddingTop:"10px",
+        fontSize:"14px",
+        textAlign:"center",
+        fontWeight:"600",
+        color:"#A69387"
+    },
+
+
+
     iconebotao: {
         margin: "6px"
     },
     carrosa: {
         borderRadius: "30px",
         marginBottom: "40px",
-        marginTop: "20px"
+        marginTop: "20px",
+        
     },
     carrosa2: {
         borderRadius: "30px",
-        marginLeft: "20px"
+        marginLeft: "20px",
+        shadowColor: '#171717',
+        shadowOffset: { width: -2, height: 4 },
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
+        borderRadius: 15,
     },
     image: {
         width: "370px",
