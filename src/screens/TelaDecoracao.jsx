@@ -6,7 +6,7 @@ export const TelaDecoracao = ({ navigation }) => {
     <ScrollView>
     <View style={principas.container}>
       <View style={principas.titulotext1}>
-        <Text style={principas.titulotext1}>DORMITÓRIO</Text>
+        <Text style={principas.titulotext1}>DECORAÇÃO</Text>
       </View>
       <View style={principas.containerboxs}>
         <View style={principas.boxs}>

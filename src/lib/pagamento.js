@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
 
   checkbox: {
     margin: 8,
-
+    
   },
 
   textopague:{

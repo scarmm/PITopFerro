@@ -135,7 +135,7 @@ const TelaPrincipal2 = ({}) => {
               backgroundColor="none"
               color={"#695548"}
               size={30}
-              onPress={() => navigation.navigate("TelaDormitorio")}
+              onPress={() => navigation.navigate("Dormitorio")}
             />
             <Text style={principas.minitexto}>Quarto</Text>
           </View>
