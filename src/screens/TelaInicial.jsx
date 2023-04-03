@@ -17,9 +17,9 @@ export const telaInicial = ({ navigation }) => {
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Pagamento")}>Tela de Pagamentos</Button>
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Obrigado")}>Tela de Obrigado pela Compra</Button>
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Dormitorio")}>Tela dormitório</Button>
-            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Dormitorio")}>Tela sala</Button>
-            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Dormitorio")}>Tela cozinha</Button>
-            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Dormitorio")}>Tela decoração</Button>
+            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Sala")}>Tela sala</Button>
+            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Cozinha")}>Tela cozinha</Button>
+            <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Decoração")}>Tela decoração</Button>
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Principal")}>Tela principas</Button>
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("PreCompra")}>Tela pre compra</Button>
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Resultados")}>resultadopesquisa</Button>

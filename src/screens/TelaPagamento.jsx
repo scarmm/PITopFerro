@@ -5,7 +5,6 @@ import Hr from "react-native-hr-component";
 import { Button } from "react-native-paper";
 import { styles } from "../lib/pagamento";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import { ScrollView } from "react-native-web";
 
 export const TelaPagamento = ({ navigation }) => {
   const [isChecked2, setChecked2] = useState(false);
@@ -23,7 +22,6 @@ export const TelaPagamento = ({ navigation }) => {
             style={styles.checkbox}
             value={isChecked2}
             onValueChange={setChecked2}
-            color={isChecked2 ? "#4630EB" : undefined}
           />
 
           <Text style={styles.paragraph}>
