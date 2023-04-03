@@ -10,7 +10,7 @@ export const TelaCadastroCartao = ({ navigation }) => {
   const [selectedValue, setSelectedValue] = useState("");
   const [selectedValue2, setSelectedValue2] = useState("");
   return (
-    <ScrollView style={{backgroundColor:"#F3ECE8"}}>
+    <ScrollView style={{ backgroundColor: "#F3ECE8" }}>
       <View style={styles.container}>
         <Text style={styles.text}>Cadastrar Cartão</Text>
         <Hr lineColor="#d3d3d3" width={50} />
@@ -31,9 +31,7 @@ export const TelaCadastroCartao = ({ navigation }) => {
             onChangeText={setNumero}
           />
         </View>
-        <Text style={styles.text2}>
-          Data de expiração
-        </Text>
+        <Text style={styles.text2}>Data de expiração</Text>
         <View style={styles.lateral}>
           <View>
             <Picker
