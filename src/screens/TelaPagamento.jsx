@@ -58,7 +58,7 @@ export const TelaPagamento = ({ navigation }) => {
           <Button
             style={styles.botao1}
             mode="contained"
-            onPress={() => navigation.navigate("Salvar")}
+            onPress={() => navigation.navigate("CadastroCartão")}
           >
             Adicionar Cartão
           </Button>
@@ -73,7 +73,7 @@ export const TelaPagamento = ({ navigation }) => {
         <Button
           style={styles.botao2}
           mode="contained"
-          onPress={() => navigation.navigate("Salvar")}
+          onPress={() => navigation.navigate("Obrigado")}
         >
           Continuar
         </Button>

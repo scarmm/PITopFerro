@@ -1,4 +1,4 @@
-import { Image, View } from "react-native";
+import { Image, Pressable, View } from "react-native";
 import { Text } from "react-native";
 import { styles } from "../lib/PreCompra";
 import Icon from "react-native-vector-icons/FontAwesome5";
@@ -30,6 +30,7 @@ export const telaPreCompra = ({ navigation }) => {
 
         <View style={styles.todosbotoes}>
           <Icon.Button
+            onPress={() => navigation.navigate("Localização")}
             style={styles.botoes}
             name="shopping-bag"
             size={18}
@@ -37,7 +38,9 @@ export const telaPreCompra = ({ navigation }) => {
           >
             Comprar
           </Icon.Button>
+
           <Icon.Button
+            onPress={() => navigation.navigate("Carrinho1")}
             style={styles.botoes}
             name="cart-plus"
             size={18}
@@ -54,69 +57,77 @@ export const telaPreCompra = ({ navigation }) => {
         </View>
 
         <View style={styles.containerprodutos}>
-          <View style={styles.containerboxs}>
-            <View style={styles.boxs}>
-              <View style={styles.imgbox1}>
-                <Image
-                  style={styles.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
-                ></Image>
+          <Pressable onPress={() => navigation.navigate("PreCompra")}>
+            <View style={styles.containerboxs}>
+              <View style={styles.boxs}>
+                <View style={styles.imgbox1}>
+                  <Image
+                    style={styles.imgbox}
+                    source={{ uri: require("../imagens/mesa9.jpg") }}
+                  ></Image>
+                </View>
+                <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
+                <Text style={styles.boxstext1}>
+                  Lorem Ipsum Lorem Ipsum Lorem
+                </Text>
+                <Text style={styles.boxstext2}>R$234,50</Text>
               </View>
-              <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
-              <Text style={styles.boxstext1}>
-                Lorem Ipsum Lorem Ipsum Lorem
-              </Text>
-              <Text style={styles.boxstext2}>R$234,50</Text>
             </View>
-          </View>
+          </Pressable>
 
-          <View style={styles.containerboxs}>
-            <View style={styles.boxs}>
-              <View style={styles.imgbox1}>
-                <Image
-                  style={styles.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
-                ></Image>
+          <Pressable onPress={() => navigation.navigate("PreCompra")}>
+            <View style={styles.containerboxs}>
+              <View style={styles.boxs}>
+                <View style={styles.imgbox1}>
+                  <Image
+                    style={styles.imgbox}
+                    source={{ uri: require("../imagens/mesa9.jpg") }}
+                  ></Image>
+                </View>
+                <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
+                <Text style={styles.boxstext1}>
+                  Lorem Ipsum Lorem Ipsum Lorem
+                </Text>
+                <Text style={styles.boxstext2}>R$234,50</Text>
               </View>
-              <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
-              <Text style={styles.boxstext1}>
-                Lorem Ipsum Lorem Ipsum Lorem
-              </Text>
-              <Text style={styles.boxstext2}>R$234,50</Text>
             </View>
-          </View>
+          </Pressable>
 
-          <View style={styles.containerboxs}>
-            <View style={styles.boxs}>
-              <View style={styles.imgbox1}>
-                <Image
-                  style={styles.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
-                ></Image>
+          <Pressable onPress={() => navigation.navigate("PreCompra")}>
+            <View style={styles.containerboxs}>
+              <View style={styles.boxs}>
+                <View style={styles.imgbox1}>
+                  <Image
+                    style={styles.imgbox}
+                    source={{ uri: require("../imagens/mesa9.jpg") }}
+                  ></Image>
+                </View>
+                <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
+                <Text style={styles.boxstext1}>
+                  Lorem Ipsum Lorem Ipsum Lorem
+                </Text>
+                <Text style={styles.boxstext2}>R$234,50</Text>
               </View>
-              <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
-              <Text style={styles.boxstext1}>
-                Lorem Ipsum Lorem Ipsum Lorem
-              </Text>
-              <Text style={styles.boxstext2}>R$234,50</Text>
             </View>
-          </View>
+          </Pressable>
 
-          <View style={styles.containerboxs}>
-            <View style={styles.boxs}>
-              <View style={styles.imgbox1}>
-                <Image
-                  style={styles.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
-                ></Image>
+          <Pressable onPress={() => navigation.navigate("PreCompra")}>
+            <View style={styles.containerboxs}>
+              <View style={styles.boxs}>
+                <View style={styles.imgbox1}>
+                  <Image
+                    style={styles.imgbox}
+                    source={{ uri: require("../imagens/mesa9.jpg") }}
+                  ></Image>
+                </View>
+                <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
+                <Text style={styles.boxstext1}>
+                  Lorem Ipsum Lorem Ipsum Lorem
+                </Text>
+                <Text style={styles.boxstext2}>R$234,50</Text>
               </View>
-              <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
-              <Text style={styles.boxstext1}>
-                Lorem Ipsum Lorem Ipsum Lorem
-              </Text>
-              <Text style={styles.boxstext2}>R$234,50</Text>
             </View>
-          </View>
+          </Pressable>
         </View>
       </View>
     </ScrollView>

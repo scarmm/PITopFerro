@@ -13,14 +13,14 @@ export const TelaEndereco = ({ navigation }) => {
           <Text>Joinville, Santa Catarina, 87423742</Text>
         </View>
         <View style={styles.endereco}>
-          <Text style={styles.text}>Cristiano Ronaldo | 047-9287364</Text>
+          <Text style={styles.text}>Cristiano Ronaldo | 047-28746</Text>
           <Text>R. João Klein, 297, Crisciúma</Text>
           <Text>Crisciúma, Santa Catarina, 87234234</Text>
         </View>
         <View style={styles.endereco}>
-          <Text style={styles.text}>Sandro Rivaldo | 047-954534554</Text>
-          <Text>R. 20 de março, 900, São Paulo</Text>
-          <Text>São Bernardo do Campo, São Paulo, 89423423</Text>
+          <Text style={styles.text}>Sandro Rivaldo | 047-9545345</Text>
+          <Text>R.20 de março, 900, São Paulo </Text>
+          <Text>SãoBernardodo Campo, São Paulo,84423</Text>
         </View>
         <View style={styles.text1}>
           <Icon.Button
@@ -30,7 +30,7 @@ export const TelaEndereco = ({ navigation }) => {
             color="#34271F"
             backgroundColor="none"
             onPress={() => {
-              navigation.navigate("Localização");
+              navigation.navigate("LocalizaçãoMimic");
             }}
           >
             Adicione um novo endereço

@@ -1,5 +1,4 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { AnimatedTabBarNavigator } from "react-native-animated-nav-tab-bar";
 import { styles } from "../lib/styles";
 import { telaCadastro } from "../screens/TelaCadastro";
 import { telaCadastro2 } from "../screens/TelaCadastro2";
@@ -19,12 +18,11 @@ import { TelaEndereco } from "../screens/TelaEndereco";
 import { TelaCartao } from "../screens/TelaCartao";
 import { TelaExcluir } from "../screens/TelaExcluir";
 import { TelaPrincipal } from "../screens/TelaPrincipal";
-import { Image } from "react-native";
+import { Image, Pressable } from "react-native";
 import { Searchbar } from "react-native-paper";
 import { principas } from "../lib/principas";
 import { TelaLocalizacao } from "../screens/TelaLocalizacao";
 import { TelaCadastroCartao } from "../screens/TelaCadastroCartao";
-import { useNavigation } from "@react-navigation/native";
 import { TelaIntrodução } from "../screens/TelaIntro";
 import { TelaIntrodução2 } from "../screens/TelaIntro2";
 import { TelaIntrodução3 } from "../screens/TelaIntro3";
@@ -37,10 +35,13 @@ import { TelaDecoracao } from "../screens/TelaDecoracao";
 import { telaPreCompra } from "../screens/TelaPreCompra";
 import { TelaResultado } from "../screens/TelaResultado";
 import { TelaCarrinho1 } from "../screens/TelaCarrinho1";
+import { useNavigation } from "@react-navigation/native";
+import { TelaLocalizacaoMimic } from "../screens/TelaLocalizacaoMimic";
+import { TelaCadastroCartaoMimic } from "../screens/TelaCadastroCartaoMimic";
 
 const Stack = createNativeStackNavigator();
-
 export const RootNavigation = () => {
+  const navigation = useNavigation();
   return (
 
 
@@ -52,6 +53,7 @@ export const RootNavigation = () => {
       }}
     >
 
+
       <Stack.Screen
         name={"Introducao"}
         component={TelaIntrodução}
@@ -60,6 +62,7 @@ export const RootNavigation = () => {
           headerShown: false,
         }}
       />
+
 
       <Stack.Screen
         name={"Introducao2"}
@@ -70,6 +73,7 @@ export const RootNavigation = () => {
         }}
       />
 
+
       <Stack.Screen
         name={"Introducao3"}
         component={TelaIntrodução3}
@@ -78,6 +82,8 @@ export const RootNavigation = () => {
           headerShown: false,
         }}
       />
+
+
       <Stack.Screen
         name={"Principal"}
         component={TelaPrincipal}
@@ -86,10 +92,12 @@ export const RootNavigation = () => {
           headerTransparent: false,
           headerLeft: () => null,
           title: (
-            <Image
-              source={require("../imagens/TF.png")}
-              style={{ width: 40, height: 40, alignItems: "center" }}
-            />
+            <Pressable onPress={() => navigation.navigate("Principal")}>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
+            </Pressable>
           ),
           headerRight: () => (
             <Searchbar
@@ -101,13 +109,7 @@ export const RootNavigation = () => {
           ),
         }}
       />
-      <Stack.Screen
-        name={"Inicio"}
-        component={telaInicial}
-        options={{
-          title: "",
-        }}
-      />
+
 
       <Stack.Screen
         name={"Dormitorio"}
@@ -117,10 +119,12 @@ export const RootNavigation = () => {
           headerTransparent: false,
           headerLeft: () => null,
           title: (
-            <Image
-              source={require("../imagens/TF.png")}
-              style={{ width: 40, height: 40, alignItems: "center" }}
-            />
+            <Pressable onPress={() => navigation.navigate("Principal")}>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
+            </Pressable>
           ),
           headerRight: () => (
             <Searchbar
@@ -132,6 +136,7 @@ export const RootNavigation = () => {
           ),
         }}
       />
+
 
       <Stack.Screen
         name={"Sala"}
@@ -141,10 +146,12 @@ export const RootNavigation = () => {
           headerTransparent: false,
           headerLeft: () => null,
           title: (
-            <Image
-              source={require("../imagens/TF.png")}
-              style={{ width: 40, height: 40, alignItems: "center" }}
-            />
+            <Pressable onPress={() => navigation.navigate("Principal")}>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
+            </Pressable>
           ),
           headerRight: () => (
             <Searchbar
@@ -156,6 +163,7 @@ export const RootNavigation = () => {
           ),
         }}
       />
+
 
       <Stack.Screen
         name={"Cozinha"}
@@ -165,10 +173,12 @@ export const RootNavigation = () => {
           headerTransparent: false,
           headerLeft: () => null,
           title: (
-            <Image
-              source={require("../imagens/TF.png")}
-              style={{ width: 40, height: 40, alignItems: "center" }}
-            />
+            <Pressable onPress={() => navigation.navigate("Principal")}>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
+            </Pressable>
           ),
           headerRight: () => (
             <Searchbar
@@ -180,6 +190,7 @@ export const RootNavigation = () => {
           ),
         }}
       />
+
 
       <Stack.Screen
         name={"Decoração"}
@@ -189,10 +200,12 @@ export const RootNavigation = () => {
           headerTransparent: false,
           headerLeft: () => null,
           title: (
-            <Image
-              source={require("../imagens/TF.png")}
-              style={{ width: 40, height: 40, alignItems: "center" }}
-            />
+            <Pressable onPress={() => navigation.navigate("Principal")}>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
+            </Pressable>
           ),
           headerRight: () => (
             <Searchbar
@@ -204,6 +217,7 @@ export const RootNavigation = () => {
           ),
         }}
       />
+
 
       <Stack.Screen
         name={"Resultados"}
@@ -213,10 +227,12 @@ export const RootNavigation = () => {
           headerTransparent: false,
           headerLeft: () => null,
           title: (
-            <Image
-              source={require("../imagens/TF.png")}
-              style={{ width: 40, height: 40, alignItems: "center" }}
-            />
+            <Pressable onPress={() => navigation.navigate("Principal")}>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
+            </Pressable>
           ),
           headerRight: () => (
             <Searchbar
@@ -229,6 +245,7 @@ export const RootNavigation = () => {
         }}
       />
 
+
       <Stack.Screen
         name={"PreCompra"}
         component={telaPreCompra}
@@ -237,10 +254,39 @@ export const RootNavigation = () => {
           headerTransparent: false,
           headerLeft: () => null,
           title: (
-            <Image
-              source={require("../imagens/TF.png")}
-              style={{ width: 40, height: 40, alignItems: "center" }}
+            <Pressable onPress={() => navigation.navigate("Principal")}>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
+            </Pressable>
+          ),
+          headerRight: () => (
+            <Searchbar
+              placeholder="Busque na TopFerro..."
+              placeholderTextColor={"gray"}
+              style={principas.barrapesquisa}
+              color="#fff"
             />
+          ),
+        }}
+      />
+
+
+      <Stack.Screen
+        name={"Carrinho1"}
+        component={TelaCarrinho1}
+        options={{
+          headerStyle: { backgroundColor: "#2C2019" },
+          headerTransparent: false,
+          headerLeft: () => null,
+          title: (
+            <Pressable onPress={() => navigation.navigate("Principal")}>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
+            </Pressable>
           ),
           headerRight: () => (
             <Searchbar
@@ -262,6 +308,7 @@ export const RootNavigation = () => {
         }}
       />
 
+
       <Stack.Screen
         name={"Ajuda"}
         options={{
@@ -273,6 +320,8 @@ export const RootNavigation = () => {
         }}
         component={TelaAjuda}
       />
+
+
       <Stack.Screen
         name={"Central"}
         options={{
@@ -284,6 +333,8 @@ export const RootNavigation = () => {
         }}
         component={TelaCentral}
       />
+
+
       <Stack.Screen
         name={"AjudaConta"}
         options={{
@@ -295,6 +346,8 @@ export const RootNavigation = () => {
         }}
         component={TelaAjudaConta}
       />
+
+
       <Stack.Screen
         name={"Sugestões"}
         options={{
@@ -307,6 +360,7 @@ export const RootNavigation = () => {
         component={TelaSugestoes}
       />
 
+
       <Stack.Screen
         name={"Login"}
         component={telaLogin}
@@ -314,6 +368,8 @@ export const RootNavigation = () => {
           title: "",
         }}
       />
+
+
       <Stack.Screen
         name={"Cadastro"}
         component={telaCadastro}
@@ -321,6 +377,8 @@ export const RootNavigation = () => {
           title: "",
         }}
       />
+
+
       <Stack.Screen
         name={"Cadastro2"}
         component={telaCadastro2}
@@ -328,6 +386,8 @@ export const RootNavigation = () => {
           title: "",
         }}
       />
+
+
       <Stack.Screen
         name={"EsqueceuaSenha"}
         component={TelaEsqueceuaSenha}
@@ -335,6 +395,8 @@ export const RootNavigation = () => {
           title: "",
         }}
       />
+
+
       <Stack.Screen
         name={"TelaEnvioSms"}
         component={TelaEnvioSms}
@@ -342,6 +404,8 @@ export const RootNavigation = () => {
           title: "",
         }}
       />
+
+
       <Stack.Screen
         name={"TelaEnvioEmail"}
         component={TelaEnvioEmail}
@@ -349,6 +413,8 @@ export const RootNavigation = () => {
           title: "",
         }}
       />
+
+
       <Stack.Screen
         name={"TelaMudarSenha"}
         component={telaMudarSenha}
@@ -356,6 +422,8 @@ export const RootNavigation = () => {
           title: "",
         }}
       />
+
+
       <Stack.Screen
         name={"TelaSenhaAlterada"}
         component={TelaSenhaAlterada}
@@ -363,6 +431,8 @@ export const RootNavigation = () => {
           title: "",
         }}
       />
+
+
       <Stack.Screen
         name={"Localização"}
         component={TelaLocalizacao}
@@ -371,6 +441,16 @@ export const RootNavigation = () => {
         }}
       />
 
+
+      <Stack.Screen
+        name={"LocalizaçãoMimic"}
+        component={TelaLocalizacaoMimic}
+        options={{
+          title: "",
+        }}
+      />
+
+
       <Stack.Screen
         name={"CadastroCartão"}
         component={TelaCadastroCartao}
@@ -378,6 +458,16 @@ export const RootNavigation = () => {
           title: "",
         }}
       />
+
+      <Stack.Screen
+        name={"CadastroCartãoMimic"}
+        component={TelaCadastroCartaoMimic}
+        options={{
+          title: "",
+        }}
+      />
+
+
       <Stack.Screen
         name={"Obrigado"}
         component={TelaObrigado}
@@ -385,6 +475,7 @@ export const RootNavigation = () => {
           title: "",
         }}
       />
+
 
       <Stack.Screen
         name={"Configurações"}
@@ -398,6 +489,7 @@ export const RootNavigation = () => {
         component={TelaConfigura}
       />
 
+
       <Stack.Screen
         name={"Endereços"}
         options={{
@@ -409,6 +501,7 @@ export const RootNavigation = () => {
         }}
         component={TelaEndereco}
       />
+
 
       <Stack.Screen
         name={"Cartões"}
@@ -422,6 +515,7 @@ export const RootNavigation = () => {
         component={TelaCartao}
       />
 
+
       <Stack.Screen
         name={"Excluir"}
         options={{
@@ -434,29 +528,15 @@ export const RootNavigation = () => {
         component={TelaExcluir}
       />
 
+
       <Stack.Screen
-        name={"Carrinho1"}
-        component={TelaCarrinho1}
+        name={"Inicio"}
+        component={telaInicial}
         options={{
-          headerStyle: { backgroundColor: "#2C2019" },
-          headerTransparent: false,
-          headerLeft: () => null,
-          title: (
-            <Image
-              source={require("../imagens/TF.png")}
-              style={{ width: 40, height: 40, alignItems: "center" }}
-            />
-          ),
-          headerRight: () => (
-            <Searchbar
-              placeholder="Busque na TopFerro..."
-              placeholderTextColor={"gray"}
-              style={principas.barrapesquisa}
-              color="#fff"
-            />
-          ),
+          title: "",
         }}
       />
+
 
     </Stack.Navigator>
   );

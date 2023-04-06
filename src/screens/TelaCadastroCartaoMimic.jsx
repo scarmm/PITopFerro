@@ -4,7 +4,7 @@ import Hr from "react-native-hr-component";
 import { Button, TextInput } from "react-native-paper";
 import { useState } from "react";
 
-export const TelaCadastroCartao = ({ navigation }) => {
+export const TelaCadastroCartaoMimic = ({ navigation }) => {
   const [nome, setNome] = useState("");
   const [numero, setNumero] = useState("");
   const [selectedValue, setSelectedValue] = useState("");
@@ -82,7 +82,7 @@ export const TelaCadastroCartao = ({ navigation }) => {
           <Button
             style={styles.botaozinho}
             mode="contained"
-            onPress={() => navigation.navigate("Pagamento")}
+            onPress={() => navigation.navigate("Cartões")}
           >
             Confirmar
           </Button>

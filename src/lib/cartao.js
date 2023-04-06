@@ -67,8 +67,8 @@ export const styles = StyleSheet.create({
         overflow: 'hidden',
        
     },
-    caixasfora:{
-   
+    caixasFora:{
+        height: 30, 
     },
 
     botao:{
