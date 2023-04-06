@@ -6,7 +6,7 @@ import Icon from "react-native-vector-icons/Entypo";
 import { ScrollView } from "react-native-web";
 import { styles } from "../lib/config";
 
-export const TelaLocalizacao = ({navigation}) => {
+export const TelaLocalizacaoMimic = ({navigation}) => {
   const [nome, setNome] = useState("");
   const [nome1, setNome1] = useState("");
   const [nome2, setNome2] = useState("");
@@ -75,7 +75,7 @@ export const TelaLocalizacao = ({navigation}) => {
           <Button
             style={styles.botao2}
             mode="contained"
-            onPress={() => navigation.navigate("Pagamento")}
+            onPress={() => navigation.navigate("Endereços")}
           >
             Salvar
           </Button>

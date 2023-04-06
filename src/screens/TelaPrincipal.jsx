@@ -1,5 +1,5 @@
 import { useNavigation } from "@react-navigation/native";
-import { Image, Text, TextInput, View } from "react-native";
+import { Image, Pressable, Text, TextInput, View } from "react-native";
 import { AnimatedTabBarNavigator } from "react-native-animated-nav-tab-bar";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import Icon2 from "react-native-vector-icons/Feather";
@@ -11,8 +11,6 @@ import { TelaCarrinho } from "./TelaCarrinho";
 import Carousel from "react-native-reanimated-carousel";
 import { telaLogin } from "./TelaLogin";
 import { ScrollView } from "react-native-web";
-
-
 
 const Tabs = AnimatedTabBarNavigator();
 export function TabsNav() {
@@ -28,7 +26,6 @@ export function TabsNav() {
       tabBarOptions={{
         activeTintColor: "white",
         activeBackgroundColor: "#45352b",
-        
       }}
     >
       <Tabs.Screen
@@ -93,9 +90,11 @@ export function TabsNav() {
     </Tabs.Navigator>
   );
 }
+
 export const TelaPrincipal = ({}) => {
   return <TabsNav />;
 };
+
 const images = [
   require("../imagens/saladeestar.jpg"),
   require("../imagens/cozinha.jpg"),
@@ -142,6 +141,7 @@ const TelaPrincipal2 = ({}) => {
             />
             <Text style={principas.minitexto}>Quarto</Text>
           </View>
+
           <View style={[principas.circulos, principas.shadowProp]}>
             <Icon4.Button
               style={principas.iconebotao}
@@ -153,7 +153,7 @@ const TelaPrincipal2 = ({}) => {
             />
             <Text style={principas.minitexto}>Sala</Text>
           </View>
-          
+
           <View style={[principas.circulos, principas.shadowProp]}>
             <Icon.Button
               style={principas.iconebotao}
@@ -165,7 +165,7 @@ const TelaPrincipal2 = ({}) => {
             ></Icon.Button>
             <Text style={principas.minitexto}>Cozinha</Text>
           </View>
-         
+
           <View style={[principas.circulos, principas.shadowProp]}>
             <Icon4.Button
               style={principas.iconebotao}
@@ -181,86 +181,106 @@ const TelaPrincipal2 = ({}) => {
 
 
 
+
+
+
+
         <View style={principas.containerboxs}>
-          <View style={principas.boxs}>
-            <View style={principas.imgbox1}>
-              <Image
-                style={principas.imgbox}
-                onPress={() => navigation.navigate("PreCompra")}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
-              ></Image>
-            </View>
-            <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
-            <Text style={principas.boxstext1}>
-              Lorem Ipsum Lorem Ipsum Lorem
-            </Text>
-            <Text style={principas.boxstext2}>R$234,50</Text>
-          </View>
-          <View style={principas.boxs}>
-            <View style={principas.imgbox1}>
-              <Image
-                style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
-              ></Image>
-            </View>
-            <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
-            <Text style={principas.boxstext1}>
-              Lorem Ipsum Lorem Ipsum Lorem
-            </Text>
-            <Text style={principas.boxstext2}>R$234,50</Text>
-          </View>
-          <View style={principas.boxs}>
-            <View style={principas.imgbox1}>
-              <Image
-                style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
-              ></Image>
-            </View>
-            <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
-            <Text style={principas.boxstext1}>
-              Lorem Ipsum Lorem Ipsum Lorem
-            </Text>
-            <Text style={principas.boxstext2}>R$234,50</Text>
-          </View>
-          <View style={principas.boxs}>
-            <View style={principas.imgbox1}>
-              <Image
-                style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
-              ></Image>
-            </View>
-            <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
-            <Text style={principas.boxstext1}>
-              Lorem Ipsum Lorem Ipsum Lorem
-            </Text>
-            <Text style={principas.boxstext2}>R$234,50</Text>
-          </View>
-          <View style={principas.boxs}>
-            <View style={principas.imgbox1}>
-              <Image
-                style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
-              ></Image>
-            </View>
-            <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
-            <Text style={principas.boxstext1}>
-              Lorem Ipsum Lorem Ipsum Lorem
-            </Text>
-            <Text style={principas.boxstext2}>R$234,50</Text>
-          </View>
-          <View style={principas.boxs}>
-            <View style={principas.imgbox1}>
+          <Pressable onPress={() => navigation.navigate("PreCompra")}>
+            <View style={principas.boxs}>
+              <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
                   source={{ uri: require("../imagens/mesa9.jpg") }}
                 ></Image>
+              </View>
+              <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
+              <Text style={principas.boxstext1}>
+                Lorem Ipsum Lorem Ipsum Lorem
+              </Text>
+              <Text style={principas.boxstext2}>R$234,50</Text>
             </View>
-            <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
-            <Text style={principas.boxstext1}>
-              Lorem Ipsum Lorem Ipsum Lorem
-            </Text>
-            <Text style={principas.boxstext2}>R$234,50</Text>
-          </View>
+          </Pressable>
+
+          <Pressable onPress={() => navigation.navigate("PreCompra")}>
+            <View style={principas.boxs}>
+              <View style={principas.imgbox1}>
+                <Image
+                  style={principas.imgbox}
+                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                ></Image>
+              </View>
+              <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
+              <Text style={principas.boxstext1}>
+                Lorem Ipsum Lorem Ipsum Lorem
+              </Text>
+              <Text style={principas.boxstext2}>R$234,50</Text>
+            </View>
+          </Pressable>
+
+          <Pressable onPress={() => navigation.navigate("PreCompra")}>
+            <View style={principas.boxs}>
+              <View style={principas.imgbox1}>
+                <Image
+                  style={principas.imgbox}
+                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                ></Image>
+              </View>
+              <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
+              <Text style={principas.boxstext1}>
+                Lorem Ipsum Lorem Ipsum Lorem
+              </Text>
+              <Text style={principas.boxstext2}>R$234,50</Text>
+            </View>
+          </Pressable>
+
+          <Pressable onPress={() => navigation.navigate("PreCompra")}>
+            <View style={principas.boxs}>
+              <View style={principas.imgbox1}>
+                <Image
+                  style={principas.imgbox}
+                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                ></Image>
+              </View>
+              <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
+              <Text style={principas.boxstext1}>
+                Lorem Ipsum Lorem Ipsum Lorem
+              </Text>
+              <Text style={principas.boxstext2}>R$234,50</Text>
+            </View>
+          </Pressable>
+
+          <Pressable onPress={() => navigation.navigate("PreCompra")}>
+            <View style={principas.boxs}>
+              <View style={principas.imgbox1}>
+                <Image
+                  style={principas.imgbox}
+                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                ></Image>
+              </View>
+              <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
+              <Text style={principas.boxstext1}>
+                Lorem Ipsum Lorem Ipsum Lorem
+              </Text>
+              <Text style={principas.boxstext2}>R$234,50</Text>
+            </View>
+          </Pressable>
+
+          <Pressable onPress={() => navigation.navigate("PreCompra")}>
+            <View style={principas.boxs}>
+              <View style={principas.imgbox1}>
+                <Image
+                  style={principas.imgbox}
+                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                ></Image>
+              </View>
+              <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
+              <Text style={principas.boxstext1}>
+                Lorem Ipsum Lorem Ipsum Lorem
+              </Text>
+              <Text style={principas.boxstext2}>R$234,50</Text>
+            </View>
+          </Pressable>
         </View>
       </View>
     </ScrollView>

@@ -22,7 +22,7 @@ export const TelaSenhaAlterada = ({ navigation }) => {
             size={25}
             color="#34271F"
             backgroundColor="none"
-            onPress={() => navigation.navigate("Inicio")}
+            onPress={() => navigation.navigate("Principal")}
           ></Icon.Button>
         </View>
       </View>
