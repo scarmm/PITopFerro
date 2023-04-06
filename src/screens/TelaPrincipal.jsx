@@ -6,12 +6,13 @@ import Icon2 from "react-native-vector-icons/Feather";
 import Icon3 from "react-native-vector-icons/Ionicons";
 import Icon4 from "react-native-vector-icons/MaterialCommunityIcons";
 import { principas } from "../lib/principas";
-import { TelaAjuda } from "./TelaAjuda";
 import { TelaConfigura } from "./TelaConfigura";
 import { TelaCarrinho } from "./TelaCarrinho";
 import Carousel from "react-native-reanimated-carousel";
-import { telaLogin, TelaLogin } from "./TelaLogin";
+import { telaLogin } from "./TelaLogin";
 import { ScrollView } from "react-native-web";
+
+
 
 const Tabs = AnimatedTabBarNavigator();
 export function TabsNav() {
@@ -27,6 +28,7 @@ export function TabsNav() {
       tabBarOptions={{
         activeTintColor: "white",
         activeBackgroundColor: "#45352b",
+        
       }}
     >
       <Tabs.Screen
@@ -101,6 +103,7 @@ const images = [
 ];
 
 const TelaPrincipal2 = ({}) => {
+  const navigation = useNavigation();
   return (
     <ScrollView>
       <View style={principas.tela}>
@@ -146,10 +149,11 @@ const TelaPrincipal2 = ({}) => {
               backgroundColor="none"
               color={"#695548"}
               size={30}
-              onPress={() => navigation.navigate("TelaSaladeEstar")}
+              onPress={() => navigation.navigate("Sala")}
             />
             <Text style={principas.minitexto}>Sala</Text>
           </View>
+          
           <View style={[principas.circulos, principas.shadowProp]}>
             <Icon.Button
               style={principas.iconebotao}
@@ -157,10 +161,11 @@ const TelaPrincipal2 = ({}) => {
               backgroundColor="none"
               color={"#695548"}
               size={30}
-              onPress={() => navigation.navigate("TelaCozinha")}
+              onPress={() => navigation.navigate("Cozinha")}
             ></Icon.Button>
             <Text style={principas.minitexto}>Cozinha</Text>
           </View>
+         
           <View style={[principas.circulos, principas.shadowProp]}>
             <Icon4.Button
               style={principas.iconebotao}
@@ -168,17 +173,20 @@ const TelaPrincipal2 = ({}) => {
               backgroundColor="none"
               color={"#695548"}
               size={30}
-              onPress={() => navigation.navigate("TelaDecoracao")}
+              onPress={() => navigation.navigate("Decoração")}
             ></Icon4.Button>
             <Text style={principas.minitexto}>Aparatos</Text>
           </View>
         </View>
+
+
 
         <View style={principas.containerboxs}>
           <View style={principas.boxs}>
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
+                onPress={() => navigation.navigate("PreCompra")}
                 source={{ uri: require("../imagens/mesa9.jpg") }}
               ></Image>
             </View>
