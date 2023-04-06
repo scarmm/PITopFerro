@@ -2,7 +2,6 @@
   "name": "topferropi",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
-  
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -25,7 +24,7 @@
     "jest-junit": "^15.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "0.71.4",
+    "react-native": "0.71.6",
     "react-native-animated-nav-tab-bar": "^3.1.8",
     "react-native-gesture-handler": "^2.9.0",
     "react-native-headers": "1.1.3",
