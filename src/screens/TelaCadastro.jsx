@@ -1,5 +1,5 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../lib/firebase";
+import { auth, db } from "../lib/firebase";
 import { useState } from "react";
 import { View, Image, ScrollView } from "react-native";
 import { Button, TextInput, Text, HelperText } from "react-native-paper";
@@ -23,51 +23,6 @@ export const telaCadastro = ({ navigation }) => {
     value: "",
     error: "",
   });
-  const [confirmaPassword, setConfirmaPassword] = useState({
-    value: "",
-    error: "",
-  });
-
-  function onRegisterPressed() {
-    console.log("RegistroIniciado");
-    let erro = false;
-    if (nome.value === "") {
-      setNome({ ...nome, error: "Entre com o seu nome maravilhoso" });
-      erro = true;
-    }
-    if (email.value === "") {
-      setEmail({ ...email, error: "Entre com um e-mail válido" });
-      erro = true;
-    }
-    if (password.value === "") {
-      setPassword({ ...password, error: "Entre com uma senha" });
-      erro = true;
-    }
-    if (confirmaPassword.value === "") {
-      setConfirmaPassword({
-        ...confirmaPassword,
-        error: "Repita sua senha",
-      });
-      erro = true;
-    }
-    if (confirmaPassword.value != password.value) {
-      erro = true;
-      setConfirmaPassword({
-        ...confirmaPassword,
-        error: "Senhas não conferem",
-      });
-    }
-    if (!erro) {
-      createUserWithEmailAndPassword(auth, email.value, password.value)
-        .then((value) => {
-          console.log("Cadastrado com sucesso! " + value.user.uid);
-          navigation.navigate("Inicio", {
-            mensagem: "Você se registrou com muito sucesso! 💋",
-          });
-        })
-        .catch((error) => lidarComErro(error.code));
-    }
-  }
 
   function lidarComErro(erro) {
     if (erro == "auth/weak-password") {
@@ -83,6 +38,10 @@ export const telaCadastro = ({ navigation }) => {
       return;
     }
     setMostraErro(erro);
+  }
+
+  function continuarCadastro() {
+    navigation.navigate("Cadastro2", { nome: nome.value, sobrenome: sobrenome.value, email: email.value })
   }
 
   return (
@@ -112,7 +71,7 @@ export const telaCadastro = ({ navigation }) => {
           keyboardType="email-address"
         />
         <TextInput
-          placeholder="Nome Completo"
+          placeholder="Nome"
           style={styles.input}
           value={nome.value}
           onChangeText={(text) => setNome({ value: text, error: "" })}
@@ -138,7 +97,7 @@ export const telaCadastro = ({ navigation }) => {
       </View>
 
       <View style={styles.bot}>
-        <Button style={styles.btt} mode="contained" onPress={(onRegisterPressed) => navigation.navigate("Cadastro2")}>Continuar</Button>
+        <Button style={styles.btt} mode="contained" onPress={continuarCadastro}>Continuar</Button>
       </View>
 
       <View style={styles.texto2}>
