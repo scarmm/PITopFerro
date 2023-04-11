@@ -55,6 +55,12 @@ export const styles = StyleSheet.create({
         height: "250px",
         margin: "40px"
     },
+    imgespecifico: {
+        width: "250px",
+        height: "250px",
+    },
+
+   
 
     botao: {
         backgroundColor: "#FFAFCC",
@@ -85,7 +91,6 @@ export const styles = StyleSheet.create({
         paddingTop: "60px",
         fontWeight: "800"
     },
-
 
     imgE: {
         width: "160px",
