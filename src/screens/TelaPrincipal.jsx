@@ -58,20 +58,6 @@ export function TabsNav() {
         }}
       />
 
-      <Tabs.Screen
-        name="User"
-        component={telaLogin}
-        options={{
-          tabBarIcon: ({ focused, color, size }) => (
-            <Icon2
-              name="user"
-              size={size ? size : 24}
-              color={focused ? color : "#fff"}
-              focused={focused}
-            />
-          ),
-        }}
-      />
 
       <Tabs.Screen
         name="Configuração"

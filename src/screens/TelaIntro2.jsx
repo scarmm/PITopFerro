@@ -7,7 +7,7 @@ export const TelaIntrodução2 = ({ navigation }) => {
         <View style={intro.fundo}>
 
             <ImageBackground source={require('../imagens/salaa.png')} style={intro.backgroundImage}>
-                <Text style={intro.pular} onPress={() => navigation.navigate("Principal")}>Pular</Text>
+                <Text style={intro.pular} onPress={() => navigation.navigate("Login")}>Pular</Text>
 
                 <View
                     style={intro.setas}

@@ -7,11 +7,11 @@ export const TelaIntrodução3 = ({ navigation }) => {
         <View style={intro.fundo}>
 
             <ImageBackground source={require('../imagens/quarto.png')} style={intro.backgroundImage}>
-                <Text style={intro.pular} onPress={() => navigation.navigate("Principal")}>Pular</Text>
+                <Text style={intro.pular} onPress={() => navigation.navigate("Login")}>Pular</Text>
                 <View style={intro.setas}>
                 <Icon.Button style={intro.botico2} name="left" size={25} color="#6f7f76" backgroundColor="none" onPress={() => navigation.navigate("Introducao2") } >
                 </Icon.Button>
-                <Icon.Button style={intro.botico} name="right" size={25} color="#6f7f76" backgroundColor="none" onPress={() => navigation.navigate("Inicio") } >
+                <Icon.Button style={intro.botico} name="right" size={25} color="#6f7f76" backgroundColor="none" onPress={() => navigation.navigate("Login") } >
                 </Icon.Button>
                 </View>
                 <Text style={intro.TextIntro}>Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Fringilla phasellus faucibus scelerisque eleifend donec.</Text>
