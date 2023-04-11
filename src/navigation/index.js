@@ -38,6 +38,7 @@ import { TelaCarrinho1 } from "../screens/TelaCarrinho1";
 import { useNavigation } from "@react-navigation/native";
 import { TelaLocalizacaoMimic } from "../screens/TelaLocalizacaoMimic";
 import { TelaCadastroCartaoMimic } from "../screens/TelaCadastroCartaoMimic";
+import { TelaPedido } from "../screens/TelaPedido";
 
 const Stack = createNativeStackNavigator();
 export const RootNavigation = () => {
@@ -308,6 +309,14 @@ export const RootNavigation = () => {
         }}
       />
 
+      <Stack.Screen
+        name={"Pedido"}
+        component={TelaPedido}
+        options={{
+          title: "",
+          headerShown: false,
+        }}
+      />
 
       <Stack.Screen
         name={"Ajuda"}

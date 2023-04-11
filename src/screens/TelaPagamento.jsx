@@ -35,7 +35,7 @@ export const TelaPagamento = ({ navigation }) => {
           </Text>
         </View>
 
-        <Hr lineColor="#d3d3d3" width={50} />
+        <Hr text="" lineColor="#d3d3d3" width={50} />
 
         <View style={styles.section1}>
           <Checkbox
@@ -64,16 +64,16 @@ export const TelaPagamento = ({ navigation }) => {
           </Button>
         </View>
 
-        <Hr lineColor="#d3d3d3" width={50} />
+        <Hr text="" lineColor="#d3d3d3" width={50} />
       </View>
 
-      <Hr lineColor="#d3d3d3" width={50} />
+      <Hr text="" lineColor="#d3d3d3" width={50} />
 
       <View style={styles.local1}>
         <Button
           style={styles.botao2}
           mode="contained"
-          onPress={() => navigation.navigate("Obrigado")}
+          onPress={() => navigation.navigate("Pedido")}
         >
           Continuar
         </Button>
