@@ -4,7 +4,7 @@ import { styles } from "../lib/PreCompra";
 import Icon from "react-native-vector-icons/FontAwesome5";
 import { ScrollView } from "react-native-web";
 
-export const telaPreCompra = ({ navigation }) => {
+export const TelaPreCompra = ({ navigation }) => {
   return (
     <ScrollView style={{ backgroundColor: "#F3ECE8" }}>
       <View style={styles.container}>

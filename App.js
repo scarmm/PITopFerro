@@ -1,12 +1,10 @@
-import { NavigationContainer } from "@react-navigation/native";
+import { Provider } from "react-native-paper";
 import { RootNavigation } from "./src/navigation";
 
-export default function App(){
-  return(
-    <NavigationContainer>
-      <RootNavigation>
-
-      </RootNavigation>
-    </NavigationContainer>
-  )
+export default function App() {
+  return (
+    <Provider>
+      <RootNavigation />
+    </Provider>
+  );
 }

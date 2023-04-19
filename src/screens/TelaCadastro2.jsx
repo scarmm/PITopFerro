@@ -7,7 +7,7 @@ import { auth, db } from "../lib/firebase";
 import { log } from "react-native-reanimated";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
-export const telaCadastro2 = ({ route, navigation }) => {
+export const TelaCadastro2 = ({ route, navigation }) => {
   const { nome, sobrenome, email } = route.params;
 
   const [mostraErro, setMostraErro] = useState("");
@@ -89,6 +89,8 @@ export const telaCadastro2 = ({ route, navigation }) => {
     setMostraErro(erro);
   }
 
+  const images = require ("../imagens/bolinhasD.png");
+
   return (
     <View style={styles.container}>
       <View style={styles.cadastro}>
@@ -97,7 +99,7 @@ export const telaCadastro2 = ({ route, navigation }) => {
         </View>
         <Image
           style={styles.imgE}
-          source={{ uri: require("../imagens/bolinhasD.png") }}
+          source={images}
         />
       </View>
       <View style={styles.input1}>
