@@ -5,7 +5,7 @@ import { View, Image, ScrollView } from "react-native";
 import { Button, TextInput, Text, HelperText } from "react-native-paper";
 import { styles } from "../lib/styles";
 
-export const telaCadastro = ({ navigation }) => {
+export const TelaCadastro = ({ navigation }) => {
   const [mostraErro, setMostraErro] = useState("");
   const [nome, setNome] = useState({
     value: "",
@@ -43,6 +43,9 @@ export const telaCadastro = ({ navigation }) => {
   function continuarCadastro() {
     navigation.navigate("Cadastro2", { nome: nome.value, sobrenome: sobrenome.value, email: email.value })
   }
+  
+const image = require ("../imagens/bolinhasE.png");
+
 
   return (
     <View style={styles.container}>
@@ -53,7 +56,7 @@ export const telaCadastro = ({ navigation }) => {
         </View>
         <Image
           style={styles.imgE}
-          source={{ uri: require("../imagens/bolinhasE.png") }}
+          source={image}
         />
       </View>
       <View style={styles.input1}>

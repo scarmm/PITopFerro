@@ -11,6 +11,8 @@ import {
 
 import { styles } from "../lib/styles";
 
+const images = require ("../imagens/esqueceuaSenha.png")
+
 export const TelaEsqueceuaSenha = ({ navigation }) => {
   const [visible, setVisible] = useState(false);
 
@@ -23,7 +25,7 @@ export const TelaEsqueceuaSenha = ({ navigation }) => {
         <View>
           <Image
             style={styles.imgS}
-            source={{ uri: require("../imagens/esqueceuaSenha.png") }}
+            source={images}
           />
         </View>
 

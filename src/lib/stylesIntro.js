@@ -5,11 +5,20 @@ export const intro = StyleSheet.create({
     width: "100vw",
     height: "100vh",
   },
+
   pular: {
-    position: "absolute",
-    right: "40px",
-    top: "40px",
-    color: "#FFF",
+    // position: "absolute",
+    right: -300,
+    top: -295,
+    color: "black",
+    backfaceVisibility: "hidden",
+    backgroundColor: "white",
+    padding: 10,
+    width: 70,
+    marginTop: 40,
+    textAlign: "center",
+    borderRadius: 20,
+
   },
 
   botaoIntro: {
@@ -30,6 +39,7 @@ export const intro = StyleSheet.create({
   },
   botico: {
     justifyContent: "flex-end",
+    backgroundColor: "none"
   },
   botico2: {
     justifyContent: "flex-start",
@@ -42,11 +52,15 @@ export const intro = StyleSheet.create({
   setas: {
     flexDirection: "row",
     justifyContent: "space-between",
+    backfaceVisibility: "hidden"
   },
-  TextIntro:{
-    position:"absolute",
-    bottom:"100px",
-    color:"#FFF",
-    left:"25px",
+  TextIntro: {
+    bottom: -230,
+    color: "#FFF",
+    display: "flex",
+    maxWidth: 400,
+    textAlign: "left",
+    paddingLeft: 30,
+    paddingRight: 30
   }
 });

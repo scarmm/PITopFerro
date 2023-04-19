@@ -6,17 +6,17 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#F3ECE8",
-    padding:"20px",
+    padding:20,
   },
 
   container1: {
     flexDirection: "row",
-    padding: "20px",
+    padding: 20,
   },
 
   imagempc: {
-    width: "150px",
-    height: "150px",
+    width: 150,
+    height: 150,
     borderRadius: 15,
   },
 
@@ -29,26 +29,26 @@ export const styles = StyleSheet.create({
   },
 
   container2: {
-    width: "200px",
-    marginLeft: "20px",
+    width: 200,
+    marginLeft: 20,
   },
 
   texto1: {
-    fontSize: "17px",
+    fontSize: 17,
     fontWeight: "500",
     color: "#002710",
   },
 
   texto2: {
-    fontSize: "12px",
-    marginTop: "10px",
+    fontSize: 12,
+    marginTop: 10,
     fontWeight: "500",
     color: "#30353B",
   },
 
   texto3: {
-    marginTop: "10px",
-    fontSize: "17px",
+    marginTop: 10,
+    fontSize: 17,
     fontWeight: "600",
     color: "gray",
   },
@@ -58,7 +58,7 @@ export const styles = StyleSheet.create({
     width: 160,
     height: 40,
     borderRadius: 40,
-    margin: "20px",
+    margin: 20,
     shadowColor: "#171717",
     shadowOffset: { width: -2, height: 4 },
     shadowOpacity: 0.2,
@@ -73,15 +73,15 @@ export const styles = StyleSheet.create({
   boxs: {
     position: "relative",
     backgroundColor: "#fff",
-    width: "170px",
-    height: "200px",
-    padding: "10px",
+    width: 170,
+    height: 200,
+    padding: 10,
     shadowColor: "#171717",
     shadowOffset: { width: -2, height: 4 },
     shadowOpacity: 0.2,
     shadowRadius: 5,
     borderRadius: 15,
-    marginTop:"20px",
+    marginTop:20,
     alignContent: "space-around",
   },
 
@@ -99,27 +99,27 @@ export const styles = StyleSheet.create({
   },
 
   boxstext: {
-    fontSize: "14px",
-    marginTop: "20px",
+    fontSize: 14,
+    marginTop: 20,
     fontWeight: "500",
     color: "#002710",
   },
 
   boxstext1: {
-    marginTop: "2px",
-    fontSize: "8px",
+    marginTop: 2,
+    fontSize: 8,
   },
 
   boxstext2: {
-    marginTop: "10px",
-    fontSize: "13px",
+    marginTop: 10,
+    fontSize: 13,
     fontWeight: "500",
     color: "gray",
   },
 
   imgbox: {
-    width: "100px",
-    height: "100px",
+    width: 100,
+    height: 100,
   },
 
   imgbox1: {
@@ -128,8 +128,8 @@ export const styles = StyleSheet.create({
   },
 
   textotitulo: {
-    fontSize: "18px",
+    fontSize: 18,
     fontWeight: "600",
-    marginTop:"20px"
+    marginTop:20
   },
 });

@@ -4,11 +4,13 @@ import { Image, ScrollView, Text, View, } from "react-native";
 import { Button } from "react-native-paper";
 import { styles } from "../lib/styles";
 
-export const telaInicial = ({ navigation }) => {
+export const TelaInicial = ({ navigation }) => {
+    const images = require("../imagens/gatao.png")
     return (
         <ScrollView>
+
         <View style={styles.container}>
-            <Image style={styles.img} source={{uri: require("../imagens/gatao.png")}} />
+            <Image style={styles.img} source={images} />
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Login")}>LoGin</Button>
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Ajuda")}>AJUda</Button>
             <Button style={styles.botao} mode="contained" onPress={() => navigation.navigate("Configurações")}>Configuração</Button>

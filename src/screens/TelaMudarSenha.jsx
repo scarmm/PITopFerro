@@ -3,12 +3,13 @@ import { Button, TextInput, Text } from "react-native-paper";
 import { ScrollView } from "react-native-web";
 import { styles } from "../lib/styles";
 
-export const telaMudarSenha = ({ navigation }) => {
+export const TelaMudarSenha = ({ navigation }) => {
+  const images = require("../imagens/senha-relogio.png")
   return (
       <View style={styles.container}>
         <Image
           style={styles.img2}
-          source={{ uri: require("../imagens/senha-relogio.png") }}
+          source={images}
         />
         <Text style={styles.textosenha}>Mude sua senha</Text>
         <View>

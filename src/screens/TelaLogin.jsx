@@ -1,12 +1,11 @@
-import { useNavigation } from "@react-navigation/native";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../lib/firebase";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { View, Image } from "react-native";
 import { Button, TextInput, Text, HelperText } from "react-native-paper";
 import { styles } from "../lib/styles";
 
-export const telaLogin = ({ route, navigation }) => {
+export const TelaLogin = ({ route, navigation }) => {
   const [Email, setEmail] = useState({
     value: "",
     error: "",
@@ -17,54 +16,62 @@ export const telaLogin = ({ route, navigation }) => {
   });
   const [mostraErro, setMostraErro] = useState("");
   const { mensagem } = route.params || false;
-  
+
+  // Set up an effect that listens for changes in the user's authentication state
+  // useEffect(() => {
+  //   // Create a function to unsubscribe from the authentication state listener
+  //   const unsubscribe = onAuthStateChanged(auth, (user) => {
+  //     // If the user is logged in, navigate to the "Principal" screen
+  //     if (user) {
+  //       // const userId = user.uid; // Extract the user's unique ID from the authentication object
+  //       // console.log("User logged in:", user);
+  //       navigation.navigate("Principal");
+  //     }
+  //   });
+  //   // Return the unsubscribe function to clean up the effect when it unmounts
+  //   return () => unsubscribe;
+  // }, []); // The effect only runs once, when the component mounts, because the dependency array is empty.
+
   function onLoginPressed() {
     if (Email.value === "" || Senha.value === "") {
       setEmail({ ...Email, error: "Entre com um e-mail válido" });
       setSenha({ ...Senha, error: "Entre com uma senha" });
       return;
     }
-    console.log(auth, Email.value, Senha.value)
-    signInWithEmailAndPassword( auth, Email.value, Senha.value)
-    .then((userCredential) => {
-      const user = userCredential.user;
-      console.log("LoginIniciado");
-      navigation.navigate("Principal");
+    console.log(auth, Email.value, Senha.value);
+    signInWithEmailAndPassword(auth, Email.value, Senha.value)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log("LoginIniciado");
+        navigation.navigate("Inicio");
       })
       .catch((error) => {
-        console.log("batataquente",error);
+        console.log("batataquente", error);
         lidarComErro(error.code);
       });
-    }
-    
-    function lidarComErro(erro) {
-      if (erro == "auth/wrong-password") {
-        setMostraErro("Senha errada 😕");
-        return;
-      }
-      if (erro == "auth/user-not-found") {
-        setMostraErro("Usuário não encontrado 😕");
-        return;
-      }
-      if (erro == "auth/invalid-email") {
-        setMostraErro("E-mail inválido 😕");
-        return;
-      }
-      setMostraErro(erro);
-    }
+  }
 
-    
-    return (
-      <View style={styles.container}>
-      <Image
-        style={styles.imgicon1}
-        source={{ uri: require("../imagens/voltar.png") }}
-        />
+  function lidarComErro(erro) {
+    if (erro == "auth/wrong-password") {
+      setMostraErro("Senha errada 😕");
+      return;
+    }
+    if (erro == "auth/user-not-found") {
+      setMostraErro("Usuário não encontrado 😕");
+      return;
+    }
+    if (erro == "auth/invalid-email") {
+      setMostraErro("E-mail inválido 😕");
+      return;
+    }
+    setMostraErro(erro);
+  }
 
-      <Image
-        style={styles.imgespecifico}
-        source={{ uri: require("../imagens/icon-login.png") }}
-        />
+  const images2 = require("../imagens/icon-login.png");
+
+  return (
+    <View style={styles.container}>
+      {/* <Image style={styles.imgespecifico} source={images2} /> */}
 
       <View>
         {mensagem && <HelperText type="info">{mensagem}</HelperText>}

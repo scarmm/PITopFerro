@@ -4,15 +4,15 @@ import { ScrollView } from "react-native-web";
 import { styles } from "../lib/styles";
 
 export const TelaEnvioEmail = ({ navigation }) => {
+  const images = require ("../imagens/correio.png")
   return (
     <View style={styles.container}>
       <Image
         style={styles.imgS}
-        source={{ uri: require("../imagens/correio.png") }}
+        source={images}
       />
       <Text
         style={styles.textoemail}
-        onPress={() => navigation.navigate("Login")}
       >
         Código foi enviado por Email
       </Text>
@@ -27,7 +27,7 @@ export const TelaEnvioEmail = ({ navigation }) => {
       <View>
         <Text
           style={styles.textosms1}
-          onPress={() => navigation.navigate("Login")}
+          onPress={() => navigation.navigate("TelaEnvioEmail")}
         >
           Reenviar Email
         </Text>

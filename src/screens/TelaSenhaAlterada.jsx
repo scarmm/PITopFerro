@@ -5,12 +5,13 @@ import Icon from "react-native-vector-icons/AntDesign";
 import { ScrollView } from "react-native-web";
 
 export const TelaSenhaAlterada = ({ navigation }) => {
+const image = require ("../imagens/senha-relogio.png")
   return (
       <View style={styles.container1}>
         <View style={styles.container2}>
           <Image
             style={styles.img2}
-            source={{ uri: require("../imagens/senha-relogio.png") }}
+            source={image}
           />
           <Text style={styles.textosenha}>Senha alterada</Text>
         </View>

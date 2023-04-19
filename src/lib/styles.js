@@ -1,222 +1,212 @@
-
 import { StyleSheet } from "react-native";
 
 const borderRadius = 40;
 const inputPaddingX = 20;
 
 export const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F3ECE8',
-        padding: 30
-    },
-    input: {
-        height: 55,
-        width: 320,
-        margin: 15,
-        paddingLeft: inputPaddingX,
-        paddingRight: inputPaddingX,
-        borderRadius: borderRadius,
-        borderTopEndRadius: borderRadius,
-        borderTopLeftRadius: borderRadius,
-        backgroundColor: "white",
-        color: "#BAC4BD",
-        overflow: 'hidden',
-        fontSize: "15px",
-        shadowColor: '#171717',
-        shadowOffset: { width: -2, height: 4 },
-        shadowOpacity: 0.2,
-        shadowRadius: 5,
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#F3ECE8",
+    padding: 30,
+  },
+  input: {
+    // height: 55,
+    // width: 320,
+    // margin: 15,
+    // paddingLeft: inputPaddingX,
+    // paddingRight: inputPaddingX,
+    // borderRadius: borderRadius,
+    // borderTopEndRadius: borderRadius,
+    // borderTopLeftRadius: borderRadius,
+    // backgroundColor: "white",
+    // color: "#BAC4BD",
+    // overflow: "hidden",
+    // fontSize: 15,
+    // shadowColor: "#171717",
+    // shadowOffset: { width: -2, height: 4 },
+    // shadowOpacity: 0.2,
+    // shadowRadius: 5,
+  },
 
-    },
+  texto: {
+    justifyContent: "flex-end",
+    display: "flex",
+    paddingLeft: 170,
+    margin: 5,
+  },
 
-    texto: {
-        justifyContent: "flex-end",
-        display: "flex",
-        paddingLeft: "170px",
-        margin: "5px"
-    },
+  texto1: {
+    color: "#707070",
+    fontWeight: "200",
+    fontSize: 15,
+  },
 
-    texto1: {
-        color: "#707070",
-        fontWeight: "200",
-        fontSize: "15px"
-    },
+  img: {
+    width: 220,
+    height: 200,
+  },
 
-    img: {
-        width: "220px",
-        height: "200px"
-    },
+  img1: {
+    width: 250,
+    height: 250,
+    margin: 40,
+  },
+  imgespecifico: {
+    width: 250,
+    height: 250,
+  },
 
-    img1: {
-        width: "250px",
-        height: "250px",
-        margin: "40px"
-    },
-    imgespecifico: {
-        width: "250px",
-        height: "250px",
-    },
+  botao: {
+    backgroundColor: "#FFAFCC",
+    margin: 15,
+  },
 
-   
+  botao1: {
+    justifyContent: "center",
+    display: "flex",
+  },
 
-    botao: {
-        backgroundColor: "#FFAFCC",
-        margin: 15,
+  btt: {
+    backgroundColor: "#34271F",
+    margin: 20,
+    width: 160,
+    height: 50,
+    borderRadius: 50,
+    padding: 5,
+    shadowColor: "#171717",
+    shadowOffset: { width: -2, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 5,
+  },
 
-    },
+  texto2: {
+    display: "flex",
+    paddingTop: 60,
+    fontWeight: "800",
+  },
 
-    botao1: {
-        justifyContent: "center",
-        display: "flex",
-    },
+  imgE: {
+    width: 160,
+    height: 32,
+  },
 
-    btt: {
-        backgroundColor: "#34271F",
-        margin: "40px",
-        width: 160,
-        height: 50,
-        borderRadius: 50,
-        padding: '5px',
-        shadowColor: '#171717',
-        shadowOffset: { width: -2, height: 4 },
-        shadowOpacity: 0.2,
-        shadowRadius: 5,
-    },
+  textoC: {
+    fontSize: 20,
+    marginBottom: 30,
+  },
 
-    texto2: {
-        display: "flex",
-        paddingTop: "60px",
-        fontWeight: "800"
-    },
+  input1: {
+    marginTop: 80,
+  },
 
-    imgE: {
-        width: "160px",
-        height: "32px",
-    },
+  textos: {
+    display: "flex",
+    justifyContent: "center",
+  },
 
-    textoC: {
-        fontSize: "20px",
-        marginBottom: "30px"
-    },
+  textoR: {
+    fontSize: 20,
+    textAlign: "center",
+  },
 
-    input1: {
-        marginTop: "80px"
-    },
+  textoS: {
+    fontSize: 15,
+    paddingLeft: 50,
+    paddingRight: 50,
+    marginBottom: 10,
+    marginTop: 30,
+    alignItems: "center",
+    justifyContent: "center",
+    display: "flex",
+    textAlign: "center",
+    width: 430,
+  },
 
-    textos: {
-        display: "flex",
-        justifyContent: "center",
-    },
+  textoN: {
+    fontSize: 15,
+    marginBottom: 60,
+    marginTop: 30,
+  },
 
-    textoR: {
-        fontSize: "22px",
-        margin: "30px",
-        alignItems: "center",
-        justifyContent: "center",
-        display: "flex",
-    },
+  imgS: {
+    width: 100,
+    height: 100,
+  },
 
-    textoS: {
-        fontSize: "18px",
-        paddingLeft: "50px",
-        paddingRight: "50px",
-        marginBottom: "10px",
-        marginTop: "10px",
-        alignItems: "center",
-        justifyContent: "center",
-        display: "flex",
-        textAlign: "center"
-    },
+  textos: {
+    marginTop: 40,
+    textAlign: "center",
+  },
 
-    textoN: {
-        fontSize: "15px",
-        marginBottom: "60px",
-        marginTop: "30px"
-    },
+  textosms: {
+    marginTop: 30,
+    fontSize: 20,
+  },
 
-    imgS: {
-        width: "100px",
-        height: "100px"
-    },
+  textosms1: {
+    paddingLeft: 170,
+    color: "#707070",
+    fontWeight: "200",
+    fontSize: 15,
+  },
 
-    textos: {
-        marginTop: "40px",
-        textAlign: "center"
-    },
+  textoemail: {
+    marginBottom: 60,
+    marginTop: 30,
+    fontSize: 20,
+  },
 
-    textosms: {
-        marginTop: "30px",
-        fontSize: "20px",
+  textosenha: {
+    fontSize: 20,
+    marginBottom: 70,
+  },
 
-    },
+  img2: {
+    width: 150,
+    height: 150,
+  },
 
-    textosms1: {
-        paddingLeft: "170px",
-        color: "#707070",
-        fontWeight: "200",
-        fontSize: "15px"
-    },
+  imgicon: {},
+  imgicon1: {
+    width: 30,
+    height: 50,
+    padding: 20,
+  },
 
-    textoemail: {
-        marginBottom: "60px",
-        marginTop: "30px",
-        fontSize: "20px"
-    },
+  container1: {
+    flex: 1,
+    backgroundColor: "#F3ECE8",
+  },
 
-    textosenha: {
-        fontSize: "20px",
-        marginBottom: "70px"
-    },
+  container2: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
 
-    img2: {
-        width: "150px",
-        height: "150px"
-    },
+  containerIcones: {
+    paddingLeft: 350,
+  },
 
-    imgicon: {
-        width: "30px",
-        height: "50px",
-        padding: "20px"
-    },
+  botaoE: {
+    margin: 30,
+    padding: 20,
+    borderRadius: 15,
+    backgroundColor: "#fff",
+    border: 10,
+    color: "black",
+  },
 
-    container1: {
-        flex: 1,
-        backgroundColor: '#F3ECE8'
-    },
+  alert: {
+    fontSize: 25,
+    width: 300,
+    borderRadius: 15,
+    backgroundColor: "#fff",
+  },
 
-    container2: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-
-    },
-
-    containerIcones: {
-        paddingLeft: "350px",
-    },
-
-    botaoE: {
-        margin: 30,
-        padding: 20,
-        borderRadius: 15,
-        backgroundColor: "#fff",
-        border: 10,
-        color: "black"
-    },
-
-    alert: {
-        borderRadius: 15,
-        backgroundColor: "#fff",
-    },
-
-    CO: {
-        justifyContent: "space-around",
-
-    },
-
-
-})
-
+  CO: {
+    justifyContent: "space-around",
+  },
+});

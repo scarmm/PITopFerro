@@ -14,7 +14,7 @@ export const TelaIntrodução3 = ({ navigation }) => {
                 <Icon.Button style={intro.botico} name="right" size={25} color="#6f7f76" backgroundColor="none" onPress={() => navigation.navigate("Login") } >
                 </Icon.Button>
                 </View>
-                <Text style={intro.TextIntro}>Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Fringilla phasellus faucibus scelerisque eleifend donec.</Text>
+                <Text style={intro.TextIntro}>Se você está procurando por móveis que são confortáveis, estilosos e duráveis, você veio ao lugar certo! </Text>
             </ImageBackground>
 
         </View>

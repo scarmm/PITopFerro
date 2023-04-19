@@ -9,7 +9,6 @@ import { principas } from "../lib/principas";
 import { TelaConfigura } from "./TelaConfigura";
 import { TelaCarrinho } from "./TelaCarrinho";
 import Carousel from "react-native-reanimated-carousel";
-import { telaLogin } from "./TelaLogin";
 import { ScrollView } from "react-native-web";
 
 const Tabs = AnimatedTabBarNavigator();
@@ -81,18 +80,17 @@ export const TelaPrincipal = ({}) => {
   return <TabsNav />;
 };
 
-const images = [
-  require("../imagens/saladeestar.jpg"),
-  require("../imagens/cozinha.jpg"),
-  require("../imagens/quarto.jpg"),
-];
+
+const images2 = 
+  require("../imagens/mesa9.jpg")
+
 
 const TelaPrincipal2 = ({}) => {
   const navigation = useNavigation();
   return (
     <ScrollView>
       <View style={principas.tela}>
-        <View style={principas.carrosa}>
+        {/* <View style={principas.carrosa}>
           <Carousel
             style={principas.carrosa2}
             loop
@@ -106,14 +104,14 @@ const TelaPrincipal2 = ({}) => {
                 style={{
                   flex: 1,
                   justifyContent: "center",
-                  borderRadius: "30px",
+                  borderRadius: 30,
                 }}
               >
                 <Image style={principas.image} source={item} />
               </View>
             )}
           />
-        </View>
+        </View> */}
 
         <View style={principas.circulosfora}>
           <View style={[principas.circulos, principas.shadowProp]}>
@@ -177,8 +175,8 @@ const TelaPrincipal2 = ({}) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
-                ></Image>
+                  source={images2}
+                />
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
               <Text style={principas.boxstext1}>
@@ -193,8 +191,8 @@ const TelaPrincipal2 = ({}) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
-                ></Image>
+                  source={images2}
+                />
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
               <Text style={principas.boxstext1}>
@@ -209,8 +207,8 @@ const TelaPrincipal2 = ({}) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
-                ></Image>
+                  source={images2}
+                />
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
               <Text style={principas.boxstext1}>
@@ -225,8 +223,8 @@ const TelaPrincipal2 = ({}) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
-                ></Image>
+                  source={images2}
+                />
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
               <Text style={principas.boxstext1}>
@@ -241,8 +239,8 @@ const TelaPrincipal2 = ({}) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
-                ></Image>
+                  source={images2}
+              />
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
               <Text style={principas.boxstext1}>
@@ -257,8 +255,8 @@ const TelaPrincipal2 = ({}) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
-                ></Image>
+                  source={images2}
+                />
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
               <Text style={principas.boxstext1}>
