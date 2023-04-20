@@ -26,12 +26,14 @@ export const principas = StyleSheet.create({
     barrapesquisa: {
         backgroundColor: "white",
         borderRadius: 20,
-        marginRight: 30,
+        marginRight: 10,
         width: 290,
-        height: 32,
-        
-
+        maxHeight: 37,
+       
     },
+
+    
+    
 
     boxs: {
         
@@ -117,11 +119,11 @@ export const principas = StyleSheet.create({
         fontWeight:"600",
         color:"#A69387"
     },
-
-
-
     iconebotao: {
-        margin: 6
+        width: 90,
+        marginLeft:7,
+        marginTop:6
+        
     },
     carrosa: {
         borderRadius: 30,

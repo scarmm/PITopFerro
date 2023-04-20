@@ -29,7 +29,7 @@ export const TelaLogin = ({ route, navigation }) => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log("LoginIniciado");
-        navigation.navigate("Inicio");
+        navigation.navigate("Principal");
       })
       .catch((error) => {
         console.log("batataquente", error);
