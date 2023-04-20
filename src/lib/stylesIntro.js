@@ -39,7 +39,8 @@ export const intro = StyleSheet.create({
   },
   botico: {
     justifyContent: "flex-end",
-    backgroundColor: "none"
+    backgroundColor: "none",
+    
   },
   botico2: {
     justifyContent: "flex-start",
