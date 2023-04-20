@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 50,
-    marginTop:"40"
+    marginTop:40
 
   },
 
@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 30,
-    marginTop:"40"
+    marginTop:40
 
   },
 
@@ -51,11 +51,11 @@ export const styles = StyleSheet.create({
   },
 
   hr:{
-    width:"100vh"
+    width:920
   },
 
   pagamento:{
-    width:"40vh"
+    width: 368
 
   },
 
@@ -74,7 +74,7 @@ export const styles = StyleSheet.create({
     shadowOffset: { width: -2, height: 4 },
     shadowOpacity: 0.2,
     shadowRadius: 5,
-    marginBottom:"40"
+    marginBottom:40
   },
 
   botao2:{

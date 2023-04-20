@@ -1,14 +1,12 @@
-import Checkbox from "expo-checkbox";
 import React, { useState } from "react";
 import { Text, View } from "react-native";
 import Hr from "react-native-hr-component";
-import { Button } from "react-native-paper";
+import { Button, RadioButton } from "react-native-paper";
 import { styles } from "../lib/pagamento";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 export const TelaPagamento = ({ navigation }) => {
-  const [isChecked2, setChecked2] = useState(false);
-  const [isChecked3, setChecked3] = useState(false);
+  const [checked, setChecked] = React.useState("first");
 
   return (
     <View style={styles.container}>
@@ -18,10 +16,11 @@ export const TelaPagamento = ({ navigation }) => {
 
       <View style={styles.pagamento}>
         <View style={styles.section}>
-          <Checkbox
+          <RadioButton
             style={styles.checkbox}
-            value={isChecked2}
-            onValueChange={setChecked2}
+            value="first"
+            status={checked === "first" ? "checked" : "unchecked"}
+            onPress={() => setChecked("first")}
           />
 
           <Text style={styles.paragraph}>
@@ -38,10 +37,11 @@ export const TelaPagamento = ({ navigation }) => {
         <Hr text="" lineColor="#d3d3d3" width={50} />
 
         <View style={styles.section1}>
-          <Checkbox
+          <RadioButton
             style={styles.checkbox}
-            value={isChecked3}
-            onValueChange={setChecked3}
+            value="second"
+            status={checked === "second" ? "checked" : "unchecked"}
+            onPress={() => setChecked("second")}
           />
           <Text style={styles.paragraph}>
             Cartão de credito ou debito
@@ -66,8 +66,6 @@ export const TelaPagamento = ({ navigation }) => {
 
         <Hr text="" lineColor="#d3d3d3" width={50} />
       </View>
-
-      <Hr text="" lineColor="#d3d3d3" width={50} />
 
       <View style={styles.local1}>
         <Button

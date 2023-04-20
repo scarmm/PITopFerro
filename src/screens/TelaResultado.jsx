@@ -1,5 +1,4 @@
 import { Image, Text, View } from "react-native";
-import { ScrollView } from "react-native-web";
 import { principas } from "../lib/principas";
 
 export const TelaResultado = ({ navigation }) => {
@@ -15,7 +14,7 @@ export const TelaResultado = ({ navigation }) => {
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
+                source={require("../imagens/mesa9.jpg")}
               ></Image>
             </View>
             <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -28,7 +27,7 @@ export const TelaResultado = ({ navigation }) => {
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
+                source={require("../imagens/mesa9.jpg")}
               ></Image>
             </View>
             <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -41,7 +40,7 @@ export const TelaResultado = ({ navigation }) => {
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
+                source={require("../imagens/mesa9.jpg")}
               ></Image>
             </View>
             <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -54,7 +53,7 @@ export const TelaResultado = ({ navigation }) => {
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
+                source={require("../imagens/mesa9.jpg")}
               ></Image>
             </View>
             <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>

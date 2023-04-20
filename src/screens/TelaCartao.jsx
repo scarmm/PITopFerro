@@ -1,7 +1,7 @@
 import { View, Text, Pressable } from "react-native";
 import { styles } from "../lib/config";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import { ScrollView } from "react-native-web";
+import { ScrollView } from "react-native";
 
 export const TelaCartao = ({ navigation }) => {
   return (

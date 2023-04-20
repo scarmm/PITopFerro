@@ -14,7 +14,7 @@ export const TelaDecoracao = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -29,7 +29,7 @@ export const TelaDecoracao = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -44,7 +44,7 @@ export const TelaDecoracao = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -59,7 +59,7 @@ export const TelaDecoracao = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -74,7 +74,7 @@ export const TelaDecoracao = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -89,7 +89,7 @@ export const TelaDecoracao = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -104,7 +104,7 @@ export const TelaDecoracao = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -119,7 +119,7 @@ export const TelaDecoracao = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>

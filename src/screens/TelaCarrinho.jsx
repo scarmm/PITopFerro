@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import { ScrollView } from "react-native-web";
+import { ScrollView } from "react-native";
 import { Carrinho } from "../lib/Carrinho";
 
 export const TelaCarrinho = () => {

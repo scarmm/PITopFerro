@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
-import { ScrollView } from "react-native-web";
+import { ScrollView } from "react-native";
 import { styles } from "../lib/config";
 
 export const TelaEndereco = ({ navigation }) => {

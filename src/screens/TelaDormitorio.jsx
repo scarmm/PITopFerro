@@ -1,5 +1,5 @@
 import { Image, Pressable, Text, View } from "react-native";
-import { ScrollView } from "react-native-web";
+import { ScrollView } from "react-native";
 import { principas } from "../lib/principas";
 
 export const TelaDormitorio = ({ navigation }) => {
@@ -15,7 +15,7 @@ export const TelaDormitorio = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -31,7 +31,7 @@ export const TelaDormitorio = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -45,7 +45,7 @@ export const TelaDormitorio = ({ navigation }) => {
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
+                source={require("../imagens/mesa9.jpg")}
               ></Image>
             </View>
             <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -59,7 +59,7 @@ export const TelaDormitorio = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -73,7 +73,7 @@ export const TelaDormitorio = ({ navigation }) => {
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
+                source={require("../imagens/mesa9.jpg")}
               ></Image>
             </View>
             <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -87,7 +87,7 @@ export const TelaDormitorio = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -102,7 +102,7 @@ export const TelaDormitorio = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -117,7 +117,7 @@ export const TelaDormitorio = ({ navigation }) => {
               <View style={principas.imgbox1}>
                 <Image
                   style={principas.imgbox}
-                  source={{ uri: require("../imagens/mesa9.jpg") }}
+                  source={require("../imagens/mesa9.jpg")}
                 ></Image>
               </View>
               <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>

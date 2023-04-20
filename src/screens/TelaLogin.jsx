@@ -1,8 +1,8 @@
-import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../lib/firebase";
-import { useEffect, useState } from "react";
-import { View, Image } from "react-native";
-import { Button, TextInput, Text, HelperText } from "react-native-paper";
+import { useState } from "react";
+import { View, Image, } from "react-native";
+import { Button, Text, HelperText, TextInput } from "react-native-paper";
 import { styles } from "../lib/styles";
 
 export const TelaLogin = ({ route, navigation }) => {
@@ -17,20 +17,6 @@ export const TelaLogin = ({ route, navigation }) => {
   const [mostraErro, setMostraErro] = useState("");
   const { mensagem } = route.params || false;
 
-  // Set up an effect that listens for changes in the user's authentication state
-  // useEffect(() => {
-  //   // Create a function to unsubscribe from the authentication state listener
-  //   const unsubscribe = onAuthStateChanged(auth, (user) => {
-  //     // If the user is logged in, navigate to the "Principal" screen
-  //     if (user) {
-  //       // const userId = user.uid; // Extract the user's unique ID from the authentication object
-  //       // console.log("User logged in:", user);
-  //       navigation.navigate("Principal");
-  //     }
-  //   });
-  //   // Return the unsubscribe function to clean up the effect when it unmounts
-  //   return () => unsubscribe;
-  // }, []); // The effect only runs once, when the component mounts, because the dependency array is empty.
 
   function onLoginPressed() {
     if (Email.value === "" || Senha.value === "") {
@@ -71,7 +57,7 @@ export const TelaLogin = ({ route, navigation }) => {
 
   return (
     <View style={styles.container}>
-      {/* <Image style={styles.imgespecifico} source={images2} /> */}
+      <Image style={styles.imgespecifico} source={images2} />
 
       <View>
         {mensagem && <HelperText type="info">{mensagem}</HelperText>}

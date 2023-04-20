@@ -1,4 +1,5 @@
-import { View, Text, Picker, ScrollView } from "react-native-web";
+import { View, Text, ScrollView, Picker } from "react-native";
+// import { Picker } from "react-native-picker"
 import { styles } from "../lib/cartao";
 import Hr from "react-native-hr-component";
 import { Button, TextInput } from "react-native-paper";

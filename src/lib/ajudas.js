@@ -24,8 +24,8 @@ export const ajudas = StyleSheet.create({
   },
   containerSugestoes: {
     flex: 1,
-    // justifyContent: "center",
-    // alignItems: "center",
+    justifyContent: "center",
+    alignItems: "center",
     backgroundColor: "#F3ECE8",
     marginTop: 150,
   },
@@ -51,7 +51,7 @@ export const ajudas = StyleSheet.create({
   },
   textoCentral2: {
     color: "#707070",
-    opacity: "50%",
+    // opacity: "50%",
     maxWidth: 270,
   },
   textoajudaconta: {

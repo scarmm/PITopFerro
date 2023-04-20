@@ -11,7 +11,7 @@ export const TelaAjudaConta = ({ navigation }) => {
       <View style={ajudas.containerAjudaConta}>
         <Image
           style={ajudas.imgajudaconta}
-          source={{ uri: require("../imagens/Escudo-i.png") }}
+          source={require("../imagens/Escudo-i.png")}
         />
         <Text style={ajudas.textoajudaconta}>O que Aconteceu?</Text>
         <Collapse>

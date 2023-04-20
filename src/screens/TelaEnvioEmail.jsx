@@ -1,6 +1,5 @@
 import { Image, View } from "react-native";
 import { Button, TextInput, Text } from "react-native-paper";
-import { ScrollView } from "react-native-web";
 import { styles } from "../lib/styles";
 
 export const TelaEnvioEmail = ({ navigation }) => {
