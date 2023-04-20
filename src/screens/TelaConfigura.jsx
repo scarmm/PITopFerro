@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import { ScrollView, TouchableOpacity } from "react-native-web";
+import { ScrollView, TouchableOpacity } from "react-native";
 import { styles } from "../lib/config";
 
 export const TelaConfigura = ({ navigation }) => {

@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 import Hr from "react-native-hr-component";
 import { Button, Checkbox, TextInput } from "react-native-paper";
 import Icon from "react-native-vector-icons/Entypo";
-import { ScrollView } from "react-native-web";
+import { ScrollView } from "react-native";
 import { styles } from "../lib/config";
 
 export const TelaLocalizacaoMimic = ({navigation}) => {

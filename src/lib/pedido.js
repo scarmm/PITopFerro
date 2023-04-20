@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
 
     bott: {
         backgroundColor: "#34271F",
-        margin: "40",
+        margin: 40,
         width: 190,
         height: 50,
         borderRadius: 50,

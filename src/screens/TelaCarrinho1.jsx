@@ -22,7 +22,7 @@ export const TelaCarrinho1 = ({navigation}) => {
           <View style={Carrinho.imagem}>
             <Image
               style={Carrinho.imagempc}
-              source={{ uri: require("../imagens/mesa9.jpg") }}
+              source={require("../imagens/mesa9.jpg")}
             ></Image>
           </View>
           <View style={Carrinho.container2}>
@@ -42,7 +42,7 @@ export const TelaCarrinho1 = ({navigation}) => {
           <View style={Carrinho.imagem}>
             <Image
               style={Carrinho.imagempc}
-              source={{ uri: require("../imagens/mesa9.jpg") }}
+              source={require("../imagens/mesa9.jpg")}
             ></Image>
           </View>
           <View style={Carrinho.container2}>
@@ -62,7 +62,7 @@ export const TelaCarrinho1 = ({navigation}) => {
           <View style={Carrinho.imagem}>
             <Image
               style={Carrinho.imagempc}
-              source={{ uri: require("../imagens/mesa9.jpg") }}
+              source={require("../imagens/mesa9.jpg")}
             ></Image>
           </View>
           <View style={Carrinho.container2}>
@@ -82,7 +82,7 @@ export const TelaCarrinho1 = ({navigation}) => {
           <View style={Carrinho.imagem}>
             <Image
               style={Carrinho.imagempc}
-              source={{ uri: require("../imagens/mesa9.jpg") }}
+              source={require("../imagens/mesa9.jpg")}
             ></Image>
           </View>
           <View style={Carrinho.container2}>

@@ -1,5 +1,4 @@
 import { Image, Pressable, Text, View } from "react-native";
-import { ScrollView } from "react-native-web";
 import { principas } from "../lib/principas";
 
 export const TelaSaladeEstar = ({ navigation }) => {
@@ -14,7 +13,7 @@ export const TelaSaladeEstar = ({ navigation }) => {
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
+                source={require("../imagens/mesa9.jpg")}
               ></Image>
             </View>
             <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -29,7 +28,7 @@ export const TelaSaladeEstar = ({ navigation }) => {
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
+                source={require("../imagens/mesa9.jpg")}
               ></Image>
             </View>
             <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -44,7 +43,7 @@ export const TelaSaladeEstar = ({ navigation }) => {
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
+                source={require("../imagens/mesa9.jpg")}
               ></Image>
             </View>
             <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -59,7 +58,7 @@ export const TelaSaladeEstar = ({ navigation }) => {
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
+                source={require("../imagens/mesa9.jpg")}
               ></Image>
             </View>
             <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -74,7 +73,7 @@ export const TelaSaladeEstar = ({ navigation }) => {
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
+                source={require("../imagens/mesa9.jpg")}
               ></Image>
             </View>
             <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
@@ -89,7 +88,7 @@ export const TelaSaladeEstar = ({ navigation }) => {
             <View style={principas.imgbox1}>
               <Image
                 style={principas.imgbox}
-                source={{ uri: require("../imagens/mesa9.jpg") }}
+                source={require("../imagens/mesa9.jpg")}
               ></Image>
             </View>
             <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>

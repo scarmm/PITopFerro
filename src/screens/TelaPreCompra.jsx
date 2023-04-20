@@ -2,7 +2,7 @@ import { Image, Pressable, View } from "react-native";
 import { Text } from "react-native";
 import { styles } from "../lib/PreCompra";
 import Icon from "react-native-vector-icons/FontAwesome5";
-import { ScrollView } from "react-native-web";
+import { ScrollView } from "react-native";
 
 export const TelaPreCompra = ({ navigation }) => {
   return (
@@ -12,7 +12,7 @@ export const TelaPreCompra = ({ navigation }) => {
           <View style={styles.imagem}>
             <Image
               style={styles.imagempc}
-              source={{ uri: require("../imagens/mesa9.jpg") }}
+              source={require("../imagens/mesa9.jpg")}
             ></Image>
           </View>
           <View style={styles.container2}>
@@ -63,7 +63,7 @@ export const TelaPreCompra = ({ navigation }) => {
                 <View style={styles.imgbox1}>
                   <Image
                     style={styles.imgbox}
-                    source={{ uri: require("../imagens/mesa9.jpg") }}
+                    source={require("../imagens/mesa9.jpg")}
                   ></Image>
                 </View>
                 <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
@@ -81,7 +81,7 @@ export const TelaPreCompra = ({ navigation }) => {
                 <View style={styles.imgbox1}>
                   <Image
                     style={styles.imgbox}
-                    source={{ uri: require("../imagens/mesa9.jpg") }}
+                    source={require("../imagens/mesa9.jpg")}
                   ></Image>
                 </View>
                 <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
@@ -99,7 +99,7 @@ export const TelaPreCompra = ({ navigation }) => {
                 <View style={styles.imgbox1}>
                   <Image
                     style={styles.imgbox}
-                    source={{ uri: require("../imagens/mesa9.jpg") }}
+                    source={require("../imagens/mesa9.jpg")}
                   ></Image>
                 </View>
                 <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
@@ -117,7 +117,7 @@ export const TelaPreCompra = ({ navigation }) => {
                 <View style={styles.imgbox1}>
                   <Image
                     style={styles.imgbox}
-                    source={{ uri: require("../imagens/mesa9.jpg") }}
+                    source={require("../imagens/mesa9.jpg")}
                   ></Image>
                 </View>
                 <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>

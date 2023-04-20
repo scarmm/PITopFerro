@@ -87,14 +87,14 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => null,
-            title: (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
-            ),
+            // title: (
+            //   // <Pressable onPress={() => navigation.navigate("Principal")}>
+            //     // <Image
+            //     //   source={require("../imagens/TF.png")}
+            //     //   style={{ width: 40, height: 40, alignItems: "center" }}
+            //     // />
+            //   // </Pressable>
+            // ),
             headerRight: () => (
               <Searchbar
                 placeholder="Busque na TopFerro..."
@@ -113,14 +113,14 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => null,
-            title: (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
-            ),
+            // title: (
+            //   // <Pressable onPress={() => navigation.navigate("Principal")}>
+            //     <Image
+            //       source={require("../imagens/TF.png")}
+            //       style={{ width: 40, height: 40, alignItems: "center" }}
+            //     />
+            //   // </Pressable>
+            // ),
             headerRight: () => (
               <Searchbar
                 placeholder="Busque na TopFerro..."
@@ -139,14 +139,14 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => null,
-            title: (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
-            ),
+            // title: (
+            //   // <Pressable onPress={() => navigation.navigate("Principal")}>
+            //     <Image
+            //       source={require("../imagens/TF.png")}
+            //       style={{ width: 40, height: 40, alignItems: "center" }}
+            //     />
+            //   // </Pressable>
+            // ),
             headerRight: () => (
               <Searchbar
                 placeholder="Busque na TopFerro..."
@@ -165,14 +165,14 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => null,
-            title: (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
-            ),
+            // title: (
+            //   // <Pressable onPress={() => navigation.navigate("Principal")}>
+            //     <Image
+            //       source={require("../imagens/TF.png")}
+            //       style={{ width: 40, height: 40, alignItems: "center" }}
+            //     />
+            //   // </Pressable>
+            // ),
             headerRight: () => (
               <Searchbar
                 placeholder="Busque na TopFerro..."
@@ -191,14 +191,14 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => null,
-            title: (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
-            ),
+            // title: (
+            //   // <Pressable onPress={() => navigation.navigate("Principal")}>
+            //     <Image
+            //       source={require("../imagens/TF.png")}
+            //       style={{ width: 40, height: 40, alignItems: "center" }}
+            //     />
+            //   // </Pressable>
+            // ),
             headerRight: () => (
               <Searchbar
                 placeholder="Busque na TopFerro..."
@@ -217,14 +217,14 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => null,
-            title: (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
-            ),
+            // title: (
+            //   // <Pressable onPress={() => navigation.navigate("Principal")}>
+            //     <Image
+            //       source={require("../imagens/TF.png")}
+            //       style={{ width: 40, height: 40, alignItems: "center" }}
+            //     />
+            //   // </Pressable>
+            // ),
             headerRight: () => (
               <Searchbar
                 placeholder="Busque na TopFerro..."
@@ -243,14 +243,14 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => null,
-            title: (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
-            ),
+            // title: (
+            //   // <Pressable onPress={() => navigation.navigate("Principal")}>
+            //     <Image
+            //       source={require("../imagens/TF.png")}
+            //       style={{ width: 40, height: 40, alignItems: "center" }}
+            //     />
+            //   // </Pressable>
+            // ),
             headerRight: () => (
               <Searchbar
                 placeholder="Busque na TopFerro..."
@@ -269,14 +269,14 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => null,
-            title: (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
-            ),
+            // title: (
+            //   // <Pressable onPress={() => navigation.navigate("Principal")}>
+            //     <Image
+            //       source={require("../imagens/TF.png")}
+            //       style={{ width: 40, height: 40, alignItems: "center" }}
+            //     />
+            //   // </Pressable>
+            // ),
             headerRight: () => (
               <Searchbar
                 placeholder="Busque na TopFerro..."

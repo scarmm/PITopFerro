@@ -9,7 +9,7 @@ import { principas } from "../lib/principas";
 import { TelaConfigura } from "./TelaConfigura";
 import { TelaCarrinho } from "./TelaCarrinho";
 import Carousel from "react-native-reanimated-carousel";
-import { ScrollView } from "react-native-web";
+import { ScrollView } from "react-native";
 
 const Tabs = AnimatedTabBarNavigator();
 export function TabsNav() {
@@ -76,11 +76,17 @@ export function TabsNav() {
   );
 }
 
+
+
 export const TelaPrincipal = ({}) => {
   return <TabsNav />;
 };
 
-
+const images = [(
+  require("../imagens/saladeestar.jpg"),
+  require("../imagens/cozinha.jpg"),
+  require("../imagens/quarto.jpg")
+)]
 const images2 = 
   require("../imagens/mesa9.jpg")
 
@@ -90,7 +96,7 @@ const TelaPrincipal2 = ({}) => {
   return (
     <ScrollView>
       <View style={principas.tela}>
-        {/* <View style={principas.carrosa}>
+        <View style={principas.carrosa}>
           <Carousel
             style={principas.carrosa2}
             loop
@@ -111,7 +117,7 @@ const TelaPrincipal2 = ({}) => {
               </View>
             )}
           />
-        </View> */}
+        </View>
 
         <View style={principas.circulosfora}>
           <View style={[principas.circulos, principas.shadowProp]}>

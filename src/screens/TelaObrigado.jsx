@@ -1,6 +1,5 @@
 import { View, Text, Image } from "react-native";
 import { Button } from "react-native-paper";
-import { ScrollView } from "react-native-web";
 import { styles } from "../lib/obrigado";
 
 export const TelaObrigado = ({ navigation }) => {
@@ -12,7 +11,7 @@ export const TelaObrigado = ({ navigation }) => {
         </View>
         <Image
           style={styles.image}
-          source={require("../imagens/tela de fundo.png")}
+          source={require("../imagens/teladefundo.png")}
         />
         <Button
           style={styles.botaoObrigado}
