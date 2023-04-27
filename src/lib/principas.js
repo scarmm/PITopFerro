@@ -19,7 +19,8 @@ export const principas = StyleSheet.create({
         flexDirection: "row",
         flexWrap: "wrap",
         justifyContent: "space-around",
-        padding:20,
+        padding:10,
+      
 
     },
 
@@ -55,13 +56,17 @@ export const principas = StyleSheet.create({
         fontSize: 15,
         marginTop: 20,
         fontWeight: "500",
-        color: "#34271F"
+        color: "#34271F",
+        paddingLeft: 5
+    
     },
 
     boxstext1: {
         marginTop: 2,
-        fontSize: 10,
-        color: "gray"
+        fontSize: 15,
+        fontWeight: "700",
+        color: "gray",
+        paddingLeft: 5
     },
 
     boxstext2: {
