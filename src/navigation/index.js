@@ -18,7 +18,7 @@ import { TelaEndereco } from "../screens/TelaEndereco";
 import { TelaCartao } from "../screens/TelaCartao";
 import { TelaExcluir } from "../screens/TelaExcluir";
 import { TelaPrincipal } from "../screens/TelaPrincipal";
-import { Image} from "react-native";
+import { Image } from "react-native";
 import { Searchbar } from "react-native-paper";
 import { principas } from "../lib/principas";
 import { TelaLocalizacao } from "../screens/TelaLocalizacao";
@@ -252,8 +252,7 @@ export const RootNavigation = ({ navigation }) => {
           options={{
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
-            headerLeft: () => null,
-            title: (
+            headerLeft: () => (
               <Image
                 source={require("../imagens/TF.png")}
                 style={{ width: 40, height: 40, alignItems: "center" }}

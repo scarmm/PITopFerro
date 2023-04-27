@@ -168,7 +168,11 @@ export const styles = StyleSheet.create({
     height: 150,
   },
 
-  imgicon: {},
+  imgicon: {
+
+
+  },
+  
   imgicon1: {
     width: 30,
     height: 50,
@@ -187,7 +191,7 @@ export const styles = StyleSheet.create({
   },
 
   containerIcones: {
-    paddingLeft: 350,
+    paddingLeft: 330,
   },
 
   botaoE: {
@@ -201,12 +205,14 @@ export const styles = StyleSheet.create({
 
   alert: {
     fontSize: 25,
-    width: 300,
+    width: 350,
     borderRadius: 15,
     backgroundColor: "#fff",
+    justifyContent: "center",
   },
 
   CO: {
     justifyContent: "space-around",
+
   },
 });

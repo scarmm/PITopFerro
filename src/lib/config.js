@@ -100,6 +100,7 @@ export const styles = StyleSheet.create({
 
     botao3: {
         margin: 20,
+        marginTop: 10,
         borderRadius: 20,
         backgroundColor: "#fff",
         shadowColor: '#171717',
@@ -132,7 +133,7 @@ export const styles = StyleSheet.create({
         alignItems:"center",
         justifyContent:"center",
         padding:30,
-        marginTop: 30
+        marginTop: 10
     }
 
     
