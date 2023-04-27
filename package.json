@@ -21,7 +21,7 @@
     "@types/react": "18.0.37",
     "accordion-collapse-react-native": "^1.1.1",
     "babel-jest": "^29.5.0",
-    "expo": "48.0.11",
+    "expo": "^48.0.15",
     "expo-checkbox": "~2.3.1",
     "expo-cli": "^6.3.2",
     "expo-status-bar": "1.4.4",
