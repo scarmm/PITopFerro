@@ -208,12 +208,13 @@ const TelaPrincipal2 = ({}) => {
 
         <View style={principas.containerboxs}>
           {produtos.map((produto) => (
-            <Pressable onPress={() => navigation.navigate("PreCompra")}>
+            <Pressable key={produto.id} onPress={() => navigation.navigate("PreCompra")}>
+              {/* push id??? */}
               <View style={principas.boxs}>
                 <View style={principas.imgbox1}>
                   <Image
                     style={principas.imgbox}
-                    source={{uri: produtos.Imagem}}
+                    source={{uri: produto.Imagem}}
                   ></Image>
                 </View>
                 

@@ -1,8 +1,9 @@
-import { View, Text, Picker, ScrollView } from "react-native";
+import { View, Text,ScrollView } from "react-native";
 import { styles } from "../lib/cartao";
 import Hr from "react-native-hr-component";
 import { Button, TextInput } from "react-native-paper";
 import { useState } from "react";
+import { Picker } from "@react-native-picker/picker";
 
 export const TelaCadastroCartaoMimic = ({ navigation }) => {
   const [nome, setNome] = useState("");

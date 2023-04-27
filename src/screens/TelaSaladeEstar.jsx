@@ -1,103 +1,68 @@
 import { Image, Pressable, Text, View } from "react-native";
 import { principas } from "../lib/principas";
+import { db } from "../lib/firebase";
+import { collection, getDocs, ref } from "firebase/firestore";
+import React, { useState, useEffect } from "react";
 
 export const TelaSaladeEstar = ({ navigation }) => {
+  const [produtos, setProdutos] = useState([]);
+
+  useEffect(() => {
+    getDocs(collection(db, "Produtos")).then((querySnapshot) => {
+      const produtos = [];
+      querySnapshot.forEach((doc) => {
+        const {
+          Nome: Nome,
+          Descricao: Descricao,
+          Altura: Altura,
+          Imagem: Imagem,
+          Largura: Largura,
+          Material: Material,
+          Preço: Preço,
+          Profundidade: Profundidade,
+        } = doc.data();
+        produtos.push({
+          id: doc.id,
+          Nome,
+          Descricao,
+          Altura,
+          Imagem,
+          Largura,
+          Material,
+          Preço,
+          Profundidade,
+        });
+      });
+      setProdutos(produtos);
+      console.log(produtos);
+    });
+  }, []);
+
   return (
     <View style={principas.container}>
       <View style={principas.titulotext1}>
         <Text style={principas.titulotext1}>SALA DE ESTAR</Text>
       </View>
+
       <View style={principas.containerboxs}>
-        <Pressable onPress={() => navigation.navigate("PreCompra")}>
-          <View style={principas.boxs}>
-            <View style={principas.imgbox1}>
-              <Image
-                style={principas.imgbox}
-                source={require("../imagens/mesa9.jpg")}
-              ></Image>
+        {produtos.map((produto) => (
+          <Pressable
+            key={produto.id}
+            onPress={() => navigation.navigate("PreCompra")}
+          >
+            <View style={principas.boxs}>
+              <View style={principas.imgbox1}>
+                <Image
+                  style={principas.imgbox}
+                  source={{uri: produto.Imagem}}
+                ></Image>
+              </View>
+              <Text style={principas.boxstext}>{produto.Nome}</Text>
+
+              <Text style={principas.boxstext2}>{produto.Preço}</Text>
             </View>
-            <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
-            <Text style={principas.boxstext1}>
-              Lorem Ipsum Lorem Ipsum Lorem
-            </Text>
-            <Text style={principas.boxstext2}>R$234,50</Text>
-          </View>
-        </Pressable>
-        <Pressable onPress={() => navigation.navigate("PreCompra")}>
-          <View style={principas.boxs}>
-            <View style={principas.imgbox1}>
-              <Image
-                style={principas.imgbox}
-                source={require("../imagens/mesa9.jpg")}
-              ></Image>
-            </View>
-            <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
-            <Text style={principas.boxstext1}>
-              Lorem Ipsum Lorem Ipsum Lorem
-            </Text>
-            <Text style={principas.boxstext2}>R$234,50</Text>
-          </View>
-        </Pressable>
-        <Pressable onPress={() => navigation.navigate("PreCompra")}>
-          <View style={principas.boxs}>
-            <View style={principas.imgbox1}>
-              <Image
-                style={principas.imgbox}
-                source={require("../imagens/mesa9.jpg")}
-              ></Image>
-            </View>
-            <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
-            <Text style={principas.boxstext1}>
-              Lorem Ipsum Lorem Ipsum Lorem
-            </Text>
-            <Text style={principas.boxstext2}>R$234,50</Text>
-          </View>
-        </Pressable>
-        <Pressable onPress={() => navigation.navigate("PreCompra")}>
-          <View style={principas.boxs}>
-            <View style={principas.imgbox1}>
-              <Image
-                style={principas.imgbox}
-                source={require("../imagens/mesa9.jpg")}
-              ></Image>
-            </View>
-            <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
-            <Text style={principas.boxstext1}>
-              Lorem Ipsum Lorem Ipsum Lorem
-            </Text>
-            <Text style={principas.boxstext2}>R$234,50</Text>
-          </View>
-        </Pressable>
-        <Pressable onPress={() => navigation.navigate("PreCompra")}>
-          <View style={principas.boxs}>
-            <View style={principas.imgbox1}>
-              <Image
-                style={principas.imgbox}
-                source={require("../imagens/mesa9.jpg")}
-              ></Image>
-            </View>
-            <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
-            <Text style={principas.boxstext1}>
-              Lorem Ipsum Lorem Ipsum Lorem
-            </Text>
-            <Text style={principas.boxstext2}>R$234,50</Text>
-          </View>
-        </Pressable>
-        <Pressable onPress={() => navigation.navigate("PreCompra")}>
-          <View style={principas.boxs}>
-            <View style={principas.imgbox1}>
-              <Image
-                style={principas.imgbox}
-                source={require("../imagens/mesa9.jpg")}
-              ></Image>
-            </View>
-            <Text style={principas.boxstext}>Lorem Ipsum Lorem</Text>
-            <Text style={principas.boxstext1}>
-              Lorem Ipsum Lorem Ipsum Lorem
-            </Text>
-            <Text style={principas.boxstext2}>R$234,50</Text>
-          </View>
-        </Pressable>
+          </Pressable>
+        ))}
       </View>
     </View>
   );
