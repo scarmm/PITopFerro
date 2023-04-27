@@ -18,7 +18,7 @@ import { TelaEndereco } from "../screens/TelaEndereco";
 import { TelaCartao } from "../screens/TelaCartao";
 import { TelaExcluir } from "../screens/TelaExcluir";
 import { TelaPrincipal } from "../screens/TelaPrincipal";
-import { Image, Pressable } from "react-native";
+import { Image} from "react-native";
 import { Searchbar } from "react-native-paper";
 import { principas } from "../lib/principas";
 import { TelaLocalizacao } from "../screens/TelaLocalizacao";
@@ -42,7 +42,6 @@ import { TelaPedido } from "../screens/TelaPedido";
 
 const Stack = createNativeStackNavigator();
 export const RootNavigation = ({ navigation }) => {
-  // const navigation = useNavigation();
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -87,12 +86,15 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center", marginRight: 40  }}
-                />
-              </Pressable>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{
+                  width: 40,
+                  height: 40,
+                  alignItems: "center",
+                  marginRight: 40,
+                }}
+              />
             ),
             headerRight: () => (
               <Searchbar
@@ -112,12 +114,10 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
             ),
             headerRight: () => (
               <Searchbar
@@ -137,12 +137,10 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
             ),
             headerRight: () => (
               <Searchbar
@@ -162,12 +160,10 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
             ),
 
             headerRight: () => (
@@ -188,12 +184,10 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
             ),
             headerRight: () => (
               <Searchbar
@@ -213,12 +207,10 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center" }}
-                />
-              </Pressable>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
             ),
             headerRight: () => (
               <Searchbar
@@ -238,12 +230,10 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => (
-              <Pressable onPress={() => navigation.navigate("Principal")}>
-                <Image
-                  source={require("../imagens/TF.png")}
-                  style={{ width: 40, height: 40, alignItems: "center",  }}
-                />
-              </Pressable>
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
             ),
             headerRight: () => (
               <Searchbar
@@ -263,14 +253,12 @@ export const RootNavigation = ({ navigation }) => {
             headerStyle: { backgroundColor: "#2C2019" },
             headerTransparent: false,
             headerLeft: () => null,
-            // title: (
-            //   // <Pressable onPress={() => navigation.navigate("Principal")}>
-            //     <Image
-            //       source={require("../imagens/TF.png")}
-            //       style={{ width: 40, height: 40, alignItems: "center" }}
-            //     />
-            //   // </Pressable>
-            // ),
+            title: (
+              <Image
+                source={require("../imagens/TF.png")}
+                style={{ width: 40, height: 40, alignItems: "center" }}
+              />
+            ),
             headerRight: () => (
               <Searchbar
                 placeholder="Busque na TopFerro..."
