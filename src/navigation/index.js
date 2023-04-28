@@ -18,7 +18,7 @@ import { TelaEndereco } from "../screens/TelaEndereco";
 import { TelaCartao } from "../screens/TelaCartao";
 import { TelaExcluir } from "../screens/TelaExcluir";
 import { TelaPrincipal } from "../screens/TelaPrincipal";
-import { Image} from "react-native";
+import { Image } from "react-native";
 import { Searchbar } from "react-native-paper";
 import { principas } from "../lib/principas";
 import { TelaLocalizacao } from "../screens/TelaLocalizacao";

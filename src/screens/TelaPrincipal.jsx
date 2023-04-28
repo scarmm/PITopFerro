@@ -157,8 +157,9 @@ const TelaPrincipal2 = ({}) => {
             <Icon3.Button
               style={principas.iconebotao}
               name="bed-outline"
-              backgroundColor="none"
+              backgroundColor={"rgba(0, 0, 0, 0.0)"}
               color={"#695548"}
+              on-background={"none"}
               size={30}
               onPress={() => navigation.navigate("Dormitorio")}
             />
@@ -169,7 +170,7 @@ const TelaPrincipal2 = ({}) => {
             <Icon4.Button
               style={principas.iconebotao}
               name="sofa-outline"
-              backgroundColor="none"
+              backgroundColor={"rgba(0, 0, 0, 0.0)"}
               color={"#695548"}
               size={30}
               onPress={() => navigation.navigate("Sala")}
@@ -181,7 +182,7 @@ const TelaPrincipal2 = ({}) => {
             <Icon.Button
               style={principas.iconebotao}
               name="kitchen"
-              backgroundColor="none"
+              backgroundColor={"rgba(0, 0, 0, 0.0)"}
               color={"#695548"}
               size={30}
               onPress={() => navigation.navigate("Cozinha")}
@@ -193,7 +194,7 @@ const TelaPrincipal2 = ({}) => {
             <Icon4.Button
               style={principas.iconebotao}
               name="image-frame"
-              backgroundColor="none"
+              backgroundColor={"rgba(0, 0, 0, 0.0)"}
               color={"#695548"}
               size={30}
               onPress={() => navigation.navigate("Decoração")}
@@ -209,7 +210,7 @@ const TelaPrincipal2 = ({}) => {
         <View style={principas.containerboxs}>
           {produtos.map((produto) => (
             <Pressable key={produto.id} onPress={() => navigation.navigate("PreCompra")}>
-              {/* push id??? */}
+
               <View style={principas.boxs}>
                 <View style={principas.imgbox1}>
                   <Image
