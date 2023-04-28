@@ -28,6 +28,7 @@ import { TelaIntrodução2 } from "../screens/TelaIntro2";
 import { TelaIntrodução3 } from "../screens/TelaIntro3";
 import { TelaPagamento } from "../screens/TelaPagamento";
 import { TelaObrigado } from "../screens/TelaObrigado";
+import { TelaPagamento2 } from "../screens/TelaPagamento2";
 import { TelaDormitorio } from "../screens/TelaDormitorio";
 import { TelaSaladeEstar } from "../screens/TelaSaladeEstar";
 import { TelaCozinha } from "../screens/TelaCozinha";
@@ -272,6 +273,14 @@ export const RootNavigation = ({ navigation }) => {
         <Stack.Screen
           name={"Pagamento"}
           component={TelaPagamento}
+          options={{
+            title: "",
+          }}
+        />
+
+        <Stack.Screen
+          name={"Pagamento2"}
+          component={TelaPagamento2}
           options={{
             title: "",
           }}

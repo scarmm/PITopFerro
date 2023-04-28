@@ -9,9 +9,9 @@ export const TelaCartao = ({ navigation }) => {
       <View style={styles.container}>
         <View style={styles.endereco}>
           <Text style={styles.text}>Cartão Crédito</Text>
-          <Text>Cartão de crédito mastercard *********</Text>
-          <Text>Samuel do Berimbal</Text>
-          <Text>Expira em 05/2023</Text>
+          <Text>Cartão de crédito mastercard ******</Text>
+          <Text>Samuel Souza</Text>
+          <Text>Expira em 12/2030</Text>
         </View>
 
         <View style={styles.text1}>

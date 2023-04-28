@@ -1,5 +1,5 @@
-import { View, Text, ScrollView, Picker } from "react-native";
-// import { Picker } from "react-native-picker"
+import { View, Text, ScrollView } from "react-native";
+import { Picker } from "@react-native-picker/picker"
 import { styles } from "../lib/cartao";
 import Hr from "react-native-hr-component";
 import { Button, TextInput } from "react-native-paper";
@@ -83,7 +83,7 @@ export const TelaCadastroCartao = ({ navigation }) => {
           <Button
             style={styles.botaozinho}
             mode="contained"
-            onPress={() => navigation.navigate("Pagamento")}
+            onPress={() => navigation.navigate("Pagamento2")}
           >
             Confirmar
           </Button>

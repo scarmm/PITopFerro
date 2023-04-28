@@ -74,7 +74,7 @@ export const styles = StyleSheet.create({
     shadowOffset: { width: -2, height: 4 },
     shadowOpacity: 0.2,
     shadowRadius: 5,
-    marginBottom:40
+    marginBottom:25
   },
 
   botao2:{
@@ -85,6 +85,10 @@ export const styles = StyleSheet.create({
     shadowRadius: 5,
     marginTop:150
 
-  }
+  },
+  textoCartao:{
+    paddingLeft:20,
+
+}
 
 });

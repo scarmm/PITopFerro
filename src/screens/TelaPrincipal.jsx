@@ -210,6 +210,7 @@ const TelaPrincipal2 = ({}) => {
         <View style={principas.containerboxs}>
           {produtos.map((produto) => (
             <Pressable key={produto.id} onPress={() => navigation.navigate("PreCompra")}>
+
               <View style={principas.boxs}>
                 <View style={principas.imgbox1}>
                   <Image

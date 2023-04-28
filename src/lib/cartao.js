@@ -79,7 +79,7 @@ export const styles = StyleSheet.create({
 
     botaozinho: {
         backgroundColor: "#34271F",
-        margin: "40",
+        margin: 40,
         width: 160,
         height: 50,
         borderRadius: 50,
@@ -89,4 +89,6 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 5,
     },
+
+  
 })
