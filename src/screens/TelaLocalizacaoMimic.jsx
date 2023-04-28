@@ -22,7 +22,7 @@ export const TelaLocalizacaoMimic = ({navigation}) => {
             name="location-pin"
             size={21}
             style={styles.botao2}
-            backgroundColor="none"
+            backgroundColor={"rgba(0, 0, 0, 0.0)"}
             mode="contained"
             onPress={() => navigation.navigate("AtivaLoca")}
           >

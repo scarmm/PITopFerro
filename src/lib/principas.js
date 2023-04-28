@@ -26,7 +26,7 @@ export const principas = StyleSheet.create({
     borderRadius: 20,
     marginRight: 10,
     width: 290,
-    maxHeight: 37,
+    maxHeight: 40,
   },
 
   boxs: {

@@ -20,7 +20,7 @@ export const TelaCartao = ({ navigation }) => {
             name="credit-card-plus-outline"
             size={20}
             color="#34271F"
-            backgroundColor="none"
+            backgroundColor={"rgba(0, 0, 0, 0.0)"}
             onPress={() => {
               navigation.navigate("CadastroCartãoMimic");
             }}

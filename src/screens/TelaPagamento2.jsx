@@ -29,7 +29,7 @@ export const TelaPagamento2 = ({ navigation }) => {
               name="qrcode-scan"
               size={18}
               color="#34271F"
-              backgroundColor="none"
+              backgroundColor={"rgba(0, 0, 0, 0.0)"}
             ></Icon.Button>
           </Text>
         </View>
@@ -49,12 +49,16 @@ export const TelaPagamento2 = ({ navigation }) => {
               name="credit-card-plus-outline"
               size={18}
               color="#34271F"
-              backgroundColor="none"
+              backgroundColor={"rgba(0, 0, 0, 0.0)"}
             ></Icon.Button>
           </Text>
         </View>
 
         <View style={styles.local}>
+          <Text style={styles.textoCartao}>Cartão de Crédito mastercard,
+            Samuel de Souza,
+            Expira em 12/2030
+          </Text>
           <Button
             style={styles.botao1}
             mode="contained"
@@ -62,10 +66,6 @@ export const TelaPagamento2 = ({ navigation }) => {
           >
             Adicionar Cartão
           </Button>
-          <Text style={styles.textoCartao}>Cartão de Crédito mastercard,
-            Samuel de Souza,
-            Expira em 12/2030
-          </Text>
         </View>
 
         <Hr text="" lineColor="#d3d3d3" width={50} />

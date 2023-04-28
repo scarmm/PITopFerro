@@ -7,11 +7,13 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#F3ECE8",
     padding:20,
+    
   },
 
   container1: {
     flexDirection: "row",
-    padding: 20,
+    padding: 10,
+
   },
 
   imagempc: {
@@ -96,6 +98,7 @@ export const styles = StyleSheet.create({
     flexWrap: "wrap",
     justifyContent: "space-around",
     alignContent: "space-between",
+    
   },
 
   boxstext: {

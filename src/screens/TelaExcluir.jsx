@@ -36,10 +36,10 @@ export const TelaExcluir = () => {
               >
                 <Dialog.Title>Deseja excluir este usuário?</Dialog.Title>
                 <Dialog.Content>
-                  <Paragraph>Confirme se você ama o usuário ou não</Paragraph>
+                  <Paragraph>Confirme se você quer excluir o usuário ou não</Paragraph>
                 </Dialog.Content>
                 <Dialog.Actions style={styles.CO}>
-                  <Button onPress={hideDialogExclude}>Ok</Button>
+                  <Button onPress={hideDialogExclude}>Excluir</Button>
                   <Button onPress={hideDialog}>Cancelar</Button>
                 </Dialog.Actions>
               </Dialog>

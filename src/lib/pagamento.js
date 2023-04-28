@@ -88,6 +88,8 @@ export const styles = StyleSheet.create({
   },
   textoCartao:{
     paddingLeft:20,
+    paddingBottom:20,
+    
 
 }
 
