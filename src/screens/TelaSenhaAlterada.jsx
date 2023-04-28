@@ -2,7 +2,7 @@ import { Image, View } from "react-native";
 import { Text } from "react-native-paper";
 import { styles } from "../lib/styles";
 import Icon from "react-native-vector-icons/AntDesign";
-import { ScrollView } from "react-native-web";
+
 
 export const TelaSenhaAlterada = ({ navigation }) => {
 const image = require ("../imagens/senha-relogio.png")
@@ -22,8 +22,8 @@ const image = require ("../imagens/senha-relogio.png")
             name="login"
             size={25}
             color="#34271F"
-            backgroundColor="none"
-            onPress={() => navigation.navigate("Principal")}
+            backgroundColor={"rgba(0, 0, 0, 0.0)"}
+            onPress={() => navigation.navigate("Login")}
           ></Icon.Button>
         </View>
       </View>

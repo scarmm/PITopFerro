@@ -17,7 +17,7 @@ export const TelaIntrodução = ({ navigation }) => {
           name="right"
           size={25}
           color="#6f7f76"
-          backgroundColor="transparent"
+          backgroundColor={"rgba(0, 0, 0, 0.0)"}
           onPress={() => navigation.navigate("Introducao2")}
         ></Icon.Button>
         <Text style={intro.TextIntro}>

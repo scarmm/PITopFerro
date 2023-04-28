@@ -13,14 +13,14 @@ export const ajudas = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#F3ECE8",
-    marginTop: 150,
+    marginTop: 50,
   },
   containerAjudaConta: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#F3ECE8",
-    marginTop: 150,
+    marginTop: 100,
   },
   containerSugestoes: {
     flex: 1,

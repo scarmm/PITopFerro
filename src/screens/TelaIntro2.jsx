@@ -19,7 +19,7 @@ export const TelaIntrodução2 = ({ navigation }) => {
             name="left"
             size={25}
             color="#6f7f76"
-            backgroundColor="none"
+            backgroundColor={"rgba(0, 0, 0, 0.0)"}
             onPress={() => navigation.navigate("Introducao")}
           ></Icon.Button>
           <Icon.Button
@@ -27,7 +27,7 @@ export const TelaIntrodução2 = ({ navigation }) => {
             name="right"
             size={25}
             color="#6f7f76"
-            backgroundColor="none"
+            backgroundColor={"rgba(0, 0, 0, 0.0)"}
             onPress={() => navigation.navigate("Introducao3")}
           ></Icon.Button>
         </View>

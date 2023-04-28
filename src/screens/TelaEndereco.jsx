@@ -28,7 +28,7 @@ export const TelaEndereco = ({ navigation }) => {
             name="add-circle-outline"
             size={18}
             color="#34271F"
-            backgroundColor="none"
+            backgroundColor={"rgba(0, 0, 0, 0.0)"}
             onPress={() => {
               navigation.navigate("LocalizaçãoMimic");
             }}

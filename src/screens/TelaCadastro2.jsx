@@ -63,7 +63,7 @@ export const TelaCadastro2 = ({ route, navigation }) => {
       })
       .then((docRef) => {
         console.log("Id do usuário: ", docRef.id);
-        navigation.navigate("Principal", {
+        navigation.navigate("Login", {
           mensagem: "Você se registrou com muito sucesso! 💋",
         });
       })

@@ -39,15 +39,15 @@ export const TelaLogin = ({ route, navigation }) => {
 
   function lidarComErro(erro) {
     if (erro == "auth/wrong-password") {
-      setMostraErro("Senha errada 😕");
+      setMostraErro("Senha errada 🤔");
       return;
     }
     if (erro == "auth/user-not-found") {
-      setMostraErro("Usuário não encontrado 😕");
+      setMostraErro("Email não encontrado 🤔");
       return;
     }
     if (erro == "auth/invalid-email") {
-      setMostraErro("E-mail inválido 😕");
+      setMostraErro("E-mail inválido 🤔");
       return;
     }
     setMostraErro(erro);

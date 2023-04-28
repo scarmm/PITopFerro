@@ -291,7 +291,7 @@ export const RootNavigation = ({ navigation }) => {
           component={TelaPedido}
           options={{
             title: "",
-            headerShown: false,
+            headerShown: true,
           }}
         />
 

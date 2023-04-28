@@ -54,7 +54,7 @@ export const TelaDecoracao = ({ navigation }) => {
                 <View style={principas.imgbox1}>
                   <Image
                     style={principas.imgbox}
-                    source={{ uri: produto.imagem }}
+                    source={{ uri: produto.Imagem }}
                   ></Image>
                 </View>
                 <Text style={principas.boxstext}>{produto.Nome}</Text>

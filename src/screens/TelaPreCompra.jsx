@@ -1,10 +1,46 @@
+import React, { useState, useEffect } from "react";
 import { Image, Pressable, View } from "react-native";
 import { Text } from "react-native";
 import { styles } from "../lib/PreCompra";
 import Icon from "react-native-vector-icons/FontAwesome5";
 import { ScrollView } from "react-native";
+import { db } from "../lib/firebase";
+import { collection, getDocs, ref } from "firebase/firestore";
 
 export const TelaPreCompra = ({ navigation }) => {
+  const [produtos, setProdutos] = useState([]);
+
+  useEffect(() => {
+    getDocs(collection(db, "Produtos")).then((querySnapshot) => {
+      const produtos = [];
+      querySnapshot.forEach((doc) => {
+        const {
+          Nome: Nome,
+          Descricao: Descricao,
+          Altura: Altura,
+          Imagem: Imagem,
+          Largura: Largura,
+          Material: Material,
+          Preço: Preço,
+          Profundidade: Profundidade,
+        } = doc.data();
+        produtos.push({
+          id: doc.id,
+          Nome,
+          Descricao,
+          Altura,
+          Imagem,
+          Largura,
+          Material,
+          Preço,
+          Profundidade,
+        });
+      });
+      setProdutos(produtos);
+      console.log(produtos);
+    });
+  }, []);
+
   return (
     <ScrollView style={{ backgroundColor: "#F3ECE8" }}>
       <View style={styles.container}>
@@ -12,18 +48,17 @@ export const TelaPreCompra = ({ navigation }) => {
           <View style={styles.imagem}>
             <Image
               style={styles.imagempc}
-              source={require("../imagens/mesa9.jpg")}
+              source={require("../imagens/prateleira.png")}
             ></Image>
           </View>
           <View style={styles.container2}>
             <View>
-              <Text style={styles.texto1}>Lorem ipsum dolor sit.</Text>
+              <Text style={styles.texto1}>Prateleira de Exposição</Text>
               <Text style={styles.texto2}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio harum ducimus maxime nisi iste minima? Minima quidem
-                natus molestiae.
+                Estante Multiuso Decorativa com 4 prateleiras estilo Artany Star
+                Freijó
               </Text>
-              <Text style={styles.texto3}>R$291,00</Text>
+              <Text style={styles.texto3}>R$300,00</Text>
             </View>
           </View>
         </View>
@@ -34,7 +69,7 @@ export const TelaPreCompra = ({ navigation }) => {
             style={styles.botoes}
             name="shopping-bag"
             size={18}
-            backgroundColor="none"
+            backgroundColor={"rgba(0, 0, 0, 0.0)"}
           >
             Comprar
           </Icon.Button>
@@ -44,7 +79,7 @@ export const TelaPreCompra = ({ navigation }) => {
             style={styles.botoes}
             name="cart-plus"
             size={18}
-            backgroundColor="none"
+            backgroundColor={"rgba(0, 0, 0, 0.0)"}
           >
             Carrinho
           </Icon.Button>
@@ -57,77 +92,26 @@ export const TelaPreCompra = ({ navigation }) => {
         </View>
 
         <View style={styles.containerprodutos}>
-          <Pressable onPress={() => navigation.navigate("PreCompra")}>
-            <View style={styles.containerboxs}>
-              <View style={styles.boxs}>
-                <View style={styles.imgbox1}>
-                  <Image
-                    style={styles.imgbox}
-                    source={require("../imagens/mesa9.jpg")}
-                  ></Image>
-                </View>
-                <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
-                <Text style={styles.boxstext1}>
-                  Lorem Ipsum Lorem Ipsum Lorem
-                </Text>
-                <Text style={styles.boxstext2}>R$234,50</Text>
-              </View>
-            </View>
-          </Pressable>
+          {produtos.map((produto) => (
+            <Pressable
+              key={produto.id}
+              onPress={() => navigation.navigate("PreCompra")}
+            >
+              <View style={styles.containerboxs}>
+                <View style={styles.boxs}>
+                  <View style={styles.imgbox1}>
+                    <Image
+                      style={styles.imgbox}
+                      source={{ uri: produto.Imagem }}
+                    ></Image>
+                  </View>
+                  <Text style={styles.boxstext}>{produto.Nome}</Text>
 
-          <Pressable onPress={() => navigation.navigate("PreCompra")}>
-            <View style={styles.containerboxs}>
-              <View style={styles.boxs}>
-                <View style={styles.imgbox1}>
-                  <Image
-                    style={styles.imgbox}
-                    source={require("../imagens/mesa9.jpg")}
-                  ></Image>
+                  <Text style={styles.boxstext2}>{produto.Preço}</Text>
                 </View>
-                <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
-                <Text style={styles.boxstext1}>
-                  Lorem Ipsum Lorem Ipsum Lorem
-                </Text>
-                <Text style={styles.boxstext2}>R$234,50</Text>
               </View>
-            </View>
-          </Pressable>
-
-          <Pressable onPress={() => navigation.navigate("PreCompra")}>
-            <View style={styles.containerboxs}>
-              <View style={styles.boxs}>
-                <View style={styles.imgbox1}>
-                  <Image
-                    style={styles.imgbox}
-                    source={require("../imagens/mesa9.jpg")}
-                  ></Image>
-                </View>
-                <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
-                <Text style={styles.boxstext1}>
-                  Lorem Ipsum Lorem Ipsum Lorem
-                </Text>
-                <Text style={styles.boxstext2}>R$234,50</Text>
-              </View>
-            </View>
-          </Pressable>
-
-          <Pressable onPress={() => navigation.navigate("PreCompra")}>
-            <View style={styles.containerboxs}>
-              <View style={styles.boxs}>
-                <View style={styles.imgbox1}>
-                  <Image
-                    style={styles.imgbox}
-                    source={require("../imagens/mesa9.jpg")}
-                  ></Image>
-                </View>
-                <Text style={styles.boxstext}>Lorem Ipsum Lorem</Text>
-                <Text style={styles.boxstext1}>
-                  Lorem Ipsum Lorem Ipsum Lorem
-                </Text>
-                <Text style={styles.boxstext2}>R$234,50</Text>
-              </View>
-            </View>
-          </Pressable>
+            </Pressable>
+          ))}
         </View>
       </View>
     </ScrollView>

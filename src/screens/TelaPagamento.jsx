@@ -29,7 +29,7 @@ export const TelaPagamento = ({ navigation }) => {
               name="qrcode-scan"
               size={18}
               color="#34271F"
-              backgroundColor="none"
+              backgroundColor={"rgba(0, 0, 0, 0.0)"}
             ></Icon.Button>
           </Text>
         </View>
@@ -49,7 +49,7 @@ export const TelaPagamento = ({ navigation }) => {
               name="credit-card-plus-outline"
               size={18}
               color="#34271F"
-              backgroundColor="none"
+              backgroundColor={"rgba(0, 0, 0, 0.0)"}
             ></Icon.Button>
           </Text>
         </View>

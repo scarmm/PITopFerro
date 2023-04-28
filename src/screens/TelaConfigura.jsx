@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import { ScrollView, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 import { styles } from "../lib/config";
 
 export const TelaConfigura = ({ navigation }) => {
@@ -23,18 +23,18 @@ export const TelaConfigura = ({ navigation }) => {
       <Text
         style={styles.text}
         onPress={() => {
-          navigation.navigate("Excluir");
+          navigation.navigate("Ajuda");
         }}
       >
-        Solicitar a exclusão da conta
+        Ajuda 
       </Text>
       <Text
         style={styles.text}
         onPress={() => {
-          navigation.navigate("Ajuda");
+          navigation.navigate("Excluir");
         }}
       >
-        Ajuda com a Conta
+        Solicitar a exclusão da conta
       </Text>
     </View>
   );
