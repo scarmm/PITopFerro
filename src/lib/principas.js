@@ -120,10 +120,12 @@ export const principas = StyleSheet.create({
     borderRadius: 30,
     marginBottom: 40,
     marginTop: 20,
+    
   },
   carrosa2: {
+    
     borderRadius: 30,
-    marginLeft: 20,
+    marginLeft: 13,
     shadowColor: "#171717",
     shadowOffset: { width: -2, height: 4 },
     shadowOpacity: 0.2,

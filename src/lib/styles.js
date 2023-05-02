@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
     borderTopEndRadius: borderRadius,
     borderTopLeftRadius: borderRadius,
     backgroundColor: "white",
-    color: "#BAC4BD",
+    color: "gray",
     overflow: "hidden",
     fontSize: 15,
     shadowColor: "#171717",
@@ -116,7 +116,7 @@ export const styles = StyleSheet.create({
     paddingLeft: 50,
     paddingRight: 50,
     marginBottom: 10,
-    marginTop: 30,
+    marginTop: 10,
     alignItems: "center",
     justifyContent: "center",
     display: "flex",
@@ -168,9 +168,10 @@ export const styles = StyleSheet.create({
     height: 150,
   },
 
-  imgicon: {
-
-
+  inputd:{
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 20
   },
   
   imgicon1: {

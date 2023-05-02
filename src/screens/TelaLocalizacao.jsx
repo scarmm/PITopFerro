@@ -6,7 +6,12 @@ import Icon from "react-native-vector-icons/Entypo";
 import { ScrollView } from "react-native";
 import { styles } from "../lib/config";
 
+
+
 export const TelaLocalizacao = ({navigation}) => {
+  const [cep, setCep] = useState(null);
+  const initialValue = "";
+  const [value, setValue, getZip] = useCep(initialValue);
   const [nome, setNome] = useState("");
   const [nome1, setNome1] = useState("");
   const [nome2, setNome2] = useState("");

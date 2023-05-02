@@ -82,11 +82,10 @@ export const TelaPrincipal = ({}) => {
 };
 
 const images = [
-  (require("../imagens/saladeestar.jpg"),
+  require("../imagens/saladeestar.jpg"),
   require("../imagens/cozinha.jpg"),
-  require("../imagens/quarto.jpg")),
+  require("../imagens/quarto.jpg"),
 ];
-
 
 const TelaPrincipal2 = ({}) => {
   const navigation = useNavigation();
@@ -119,13 +118,10 @@ const TelaPrincipal2 = ({}) => {
         });
       });
       setProdutos(produtos);
-      console.log(produtos)
+      console.log(produtos);
     });
-
-    
   }, []);
 
-  
   return (
     <ScrollView>
       <View style={principas.tela}>
@@ -203,22 +199,20 @@ const TelaPrincipal2 = ({}) => {
           </View>
         </View>
 
-
-
-
-
         <View style={principas.containerboxs}>
           {produtos.map((produto) => (
-            <Pressable key={produto.id} onPress={() => navigation.navigate("PreCompra")}>
-
+            <Pressable
+              key={produto.id}
+              onPress={() => navigation.navigate("PreCompra", { idCompra: id })}
+            >
               <View style={principas.boxs}>
                 <View style={principas.imgbox1}>
                   <Image
                     style={principas.imgbox}
-                    source={{uri: produto.Imagem}}
+                    source={{ uri: produto.Imagem }}
                   ></Image>
                 </View>
-                
+
                 <Text style={principas.boxstext}>{produto.Nome}</Text>
                 <Text style={principas.boxstext1}>{produto.Preço}</Text>
               </View>
