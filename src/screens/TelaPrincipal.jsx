@@ -12,7 +12,7 @@ import { TelaCarrinho } from "./TelaCarrinho";
 import Carousel from "react-native-reanimated-carousel";
 import { ScrollView } from "react-native";
 import { db } from "../lib/firebase";
-import { collection, getDocs, ref } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 
 import Skeleton from "../lib/skeleton";
 
@@ -97,7 +97,7 @@ const TelaPrincipal2 = ({}) => {
   useEffect(() => {
     let timer = setInterval(() => {
       setLoading(false);
-    }, 5000);
+    }, 2500);
   }, []);
 
   useEffect(() => {
@@ -232,12 +232,9 @@ const TelaPrincipal2 = ({}) => {
             ))}
           </View>
         </Skeleton>
-        <Skeleton visible={loading}>
-        </Skeleton>
-        <Skeleton visible={loading}>
-        </Skeleton>
-        <Skeleton visible={loading}>
-        </Skeleton>
+        <Skeleton visible={loading}></Skeleton>
+        <Skeleton visible={loading}></Skeleton>
+        <Skeleton visible={loading}></Skeleton>
       </View>
     </ScrollView>
   );

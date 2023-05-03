@@ -102,7 +102,7 @@ export const RootNavigation = ({ navigation }) => {
                 placeholder="Busque na TopFerro..."
                 placeholderTextColor={"#888888"}
                 style={principas.barrapesquisa}
-                color="#fff"
+                color="black"
               />
             ),
           }}
@@ -125,7 +125,7 @@ export const RootNavigation = ({ navigation }) => {
                 placeholder="Busque na TopFerro..."
                 placeholderTextColor={"gray"}
                 style={principas.barrapesquisa}
-                color="#fff"
+                color="black"
               />
             ),
           }}
@@ -148,7 +148,7 @@ export const RootNavigation = ({ navigation }) => {
                 placeholder="Busque na TopFerro..."
                 placeholderTextColor={"gray"}
                 style={principas.barrapesquisa}
-                color="#fff"
+                color="black"
               />
             ),
           }}
@@ -172,7 +172,7 @@ export const RootNavigation = ({ navigation }) => {
                 placeholder="Busque na TopFerro..."
                 placeholderTextColor={"gray"}
                 style={principas.barrapesquisa}
-                color="#fff"
+                color="black"
               />
             ),
           }}
@@ -195,7 +195,7 @@ export const RootNavigation = ({ navigation }) => {
                 placeholder="Busque na TopFerro..."
                 placeholderTextColor={"gray"}
                 style={principas.barrapesquisa}
-                color="#fff"
+                color="black"
               />
             ),
           }}
@@ -218,7 +218,7 @@ export const RootNavigation = ({ navigation }) => {
                 placeholder="Busque na TopFerro..."
                 placeholderTextColor={"gray"}
                 style={principas.barrapesquisa}
-                color="#fff"
+                color="black"
               />
             ),
           }}
@@ -241,7 +241,7 @@ export const RootNavigation = ({ navigation }) => {
                 placeholder="Busque na TopFerro..."
                 placeholderTextColor={"gray"}
                 style={principas.barrapesquisa}
-                color="#fff"
+                color="black"
               />
             ),
           }}
@@ -264,7 +264,7 @@ export const RootNavigation = ({ navigation }) => {
                 placeholder="Busque na TopFerro..."
                 placeholderTextColor={"gray"}
                 style={principas.barrapesquisa}
-                color="#fff"
+                color="black"
               />
             ),
           }}

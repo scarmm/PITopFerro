@@ -7,6 +7,14 @@ import { collection, getDocs, ref } from "firebase/firestore";
 
 export const TelaDormitorio = ({ navigation }) => {
   const [produtos, setProdutos] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let timer = setInterval(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
+
 
   useEffect(() => {
     getDocs(collection(db, "Produtos")).then((querySnapshot) => {
@@ -45,7 +53,7 @@ export const TelaDormitorio = ({ navigation }) => {
         <View style={principas.titulotext1}>
           <Text style={principas.titulotext1}>DORMITÓRIO</Text>
         </View>
-
+        <Skeleton visible={loading}>
         <View style={principas.containerboxs}>
           {produtos.map((produto) => (
             <Pressable
@@ -65,6 +73,10 @@ export const TelaDormitorio = ({ navigation }) => {
             </Pressable>
           ))}
         </View>
+        </Skeleton>
+        <Skeleton visible={loading}></Skeleton>
+        <Skeleton visible={loading}></Skeleton>
+        <Skeleton visible={loading}></Skeleton>
       </View>
     </ScrollView>
   );
