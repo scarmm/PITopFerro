@@ -6,6 +6,13 @@ import React, { useState, useEffect } from "react";
 
 export const TelaSaladeEstar = ({ navigation }) => {
   const [produtos, setProdutos] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let timer = setInterval(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
 
   useEffect(() => {
     getDocs(collection(db, "Produtos")).then((querySnapshot) => {
@@ -43,27 +50,31 @@ export const TelaSaladeEstar = ({ navigation }) => {
       <View style={principas.titulotext1}>
         <Text style={principas.titulotext1}>SALA DE ESTAR</Text>
       </View>
+      <Skeleton visible={loading}>
+        <View style={principas.containerboxs}>
+          {produtos.map((produto) => (
+            <Pressable
+              key={produto.id}
+              onPress={() => navigation.navigate("PreCompra")}
+            >
+              <View style={principas.boxs}>
+                <View style={principas.imgbox1}>
+                  <Image
+                    style={principas.imgbox}
+                    source={{ uri: produto.Imagem }}
+                  ></Image>
+                </View>
+                <Text style={principas.boxstext}>{produto.Nome}</Text>
 
-      <View style={principas.containerboxs}>
-        {produtos.map((produto) => (
-          <Pressable
-            key={produto.id}
-            onPress={() => navigation.navigate("PreCompra")}
-          >
-            <View style={principas.boxs}>
-              <View style={principas.imgbox1}>
-                <Image
-                  style={principas.imgbox}
-                  source={{uri: produto.Imagem}}
-                ></Image>
+                <Text style={principas.boxstext2}>{produto.Preço}</Text>
               </View>
-              <Text style={principas.boxstext}>{produto.Nome}</Text>
-
-              <Text style={principas.boxstext2}>{produto.Preço}</Text>
-            </View>
-          </Pressable>
-        ))}
-      </View>
+            </Pressable>
+          ))}
+        </View>
+        <Skeleton visible={loading}></Skeleton>
+        <Skeleton visible={loading}></Skeleton>
+        <Skeleton visible={loading}></Skeleton>
+      </Skeleton>
     </View>
   );
 };

@@ -6,13 +6,12 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#F3ECE8",
-    padding:20,
-    
+    padding: 20,
+
   },
 
   container1: {
     flexDirection: "row",
-    padding: 10,
 
   },
 
@@ -32,7 +31,7 @@ export const styles = StyleSheet.create({
 
   container2: {
     width: 200,
-    marginLeft: 20,
+    marginLeft: 10,
   },
 
   texto1: {
@@ -42,14 +41,18 @@ export const styles = StyleSheet.create({
   },
 
   texto2: {
-    fontSize: 12,
-    marginTop: 10,
+    fontSize: 10,
+    marginTop: 3,
     fontWeight: "500",
-    color: "#30353B",
+    color: "gray"
   },
 
   texto3: {
-    marginTop: 10,
+    fontSize: 14,
+  },
+
+  texto4: {
+    marginTop: 5,
     fontSize: 17,
     fontWeight: "600",
     color: "gray",
@@ -83,7 +86,7 @@ export const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 5,
     borderRadius: 15,
-    marginTop:20,
+    marginTop: 20,
     alignContent: "space-around",
   },
 
@@ -98,7 +101,7 @@ export const styles = StyleSheet.create({
     flexWrap: "wrap",
     justifyContent: "space-around",
     alignContent: "space-between",
-    
+
   },
 
   boxstext: {
@@ -114,7 +117,7 @@ export const styles = StyleSheet.create({
   },
 
   boxstext2: {
-    marginTop: 10,
+    marginTop: 5,
     fontSize: 13,
     fontWeight: "500",
     color: "gray",
@@ -133,6 +136,77 @@ export const styles = StyleSheet.create({
   textotitulo: {
     fontSize: 18,
     fontWeight: "600",
-    marginTop:20
+    marginTop: 20
+  },
+
+
+
+
+  //skeleton
+
+  containerSkeleton: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#fff",
+    borderRadius: 20,
+    padding: 20,
+    overflow: "hidden"
+  },
+
+  container1Skeleton: {
+    flexDirection: "row",
+    padding: 10,
+    backgroundColor: "#fff",
+    overflow: "hidden",
+    borderRadius: 20,
+
+  },
+
+  imagempcSkeleton: {
+    width: 150,
+    height: 150,
+    borderRadius: 10,
+    backgroundColor: "gray",
+    overflow: "hidden",
+
+  },
+
+
+  container2Skeleton: {
+    width: 150,
+
+
+    overflow: "hidden"
+  },
+
+  texto1Skeleton: {
+    marginTop: 4,
+    marginLeft: 20,
+    height: 20,
+    marginBottom: 15,
+    backgroundColor: "#bcbfc0",
+    overflow: "hidden"
+  },
+
+  texto2Skeleton: {
+
+    marginBottom: 5,
+    height: 10,
+    marginLeft: 20,
+    backgroundColor: "#bcbfc0",
+
+    overflow: "hidden"
+  },
+
+  texto3Skeleton: {
+    marginBottom: 5,
+    marginLeft: 20,
+    marginTop: 6,
+    backgroundColor: "#bcbfc0",
+    height: 25,
+    width: 60,
+
+    overflow: "hidden"
   },
 });
