@@ -9,10 +9,11 @@ import { collection, getDocs, ref } from "firebase/firestore";
 
 export const TelaPreCompra = ({ navigation }) => {
   const [produtos, setProdutos] = useState([]);
-  const { fi } = route.params;
+
   useEffect(() => {
     getDocs(collection(db, "Produtos")).then((querySnapshot) => {
       const produtos = [];
+    
       querySnapshot.forEach((doc) => {
         const {
           Nome: Nome,

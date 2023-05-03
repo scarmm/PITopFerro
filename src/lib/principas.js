@@ -88,6 +88,7 @@ export const principas = StyleSheet.create({
     borderRadius: 60 / 2,
     backgroundColor: "#E7D5CA",
     flexDirection: "column",
+    overflow: "hidden"
   },
 
   shadowProp: {
@@ -115,15 +116,16 @@ export const principas = StyleSheet.create({
     width: 90,
     marginLeft: 7,
     marginTop: 6,
+    overflow: "hidden"
   },
   carrosa: {
     borderRadius: 30,
     marginBottom: 40,
     marginTop: 20,
-    
+
   },
   carrosa2: {
-    
+
     borderRadius: 30,
     marginLeft: 13,
     shadowColor: "#171717",
@@ -136,5 +138,47 @@ export const principas = StyleSheet.create({
     width: 370,
     height: 175,
     flex: 1,
+  },
+
+
+
+
+  boxsSkeleton: {
+    backgroundColor: "#fff",
+    width: 172,
+    height: 220,
+    padding: 10,
+    borderRadius: 15,
+    marginBottom: 18,
+    overflow:"hidden"
+  },
+  imgbox1Skeleton: {
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor:"#bcbfc0",
+    overflow:"hidden"
+  },
+
+  boxstextSkeleton: {
+    backgroundColor:"#bcbfc0",
+    paddingLeft: 5,
+    height:40,
+    marginTop:15,
+    overflow:"hidden"
+  },
+
+  boxstext1Skeleton: {
+    backgroundColor:"#bcbfc0",
+    paddingLeft: 40,
+    height:20,
+    width:60,
+    marginTop:10,
+    overflow:"hidden"
+  },
+
+  imgboxSkeleton: {
+    width: 100,
+    height: 100,
+
   },
 });
