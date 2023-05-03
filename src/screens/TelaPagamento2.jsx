@@ -44,7 +44,7 @@ export const TelaPagamento2 = ({ navigation }) => {
             onPress={() => setChecked("second")}
           />
           <Text style={styles.paragraph}>
-            Cartão de credito ou debito
+            Cartão de crédito ou débito
             <Icon.Button
               name="credit-card-plus-outline"
               size={18}
