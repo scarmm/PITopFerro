@@ -6,12 +6,13 @@ import { addDoc, collection } from "firebase/firestore";
 import { auth, db } from "../lib/firebase";
 import { log } from "react-native-reanimated";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { TextInputMask } from "react-native-masked-text";
 
 export const TelaCadastro2 = ({ route, navigation }) => {
   const { nome, sobrenome, email } = route.params;
 
   const [mostraErro, setMostraErro] = useState("");
-  
+
   const [cpf, setCpf] = useState({
     value: "",
     error: "",
@@ -25,7 +26,6 @@ export const TelaCadastro2 = ({ route, navigation }) => {
     error: "",
   });
 
-
   function onRegisterPressed() {
     console.log("RegistroIniciado");
     let erro = false;
@@ -38,14 +38,9 @@ export const TelaCadastro2 = ({ route, navigation }) => {
 
     createUserWithEmailAndPassword(auth, email, password.value)
       .then((value) => {
-
         console.log("Cadastrado com sucesso! " + value.user.uid);
 
-
         createUserInCollection(value.user.uid);
-
-
-
       })
       .catch((error) => console.log(error.code));
     // .catch((error) => lidarComErro(error.code));
@@ -54,24 +49,22 @@ export const TelaCadastro2 = ({ route, navigation }) => {
 
   async function createUserInCollection(uid) {
     //use addDoc to add a new document to a collection
-    const docRef = addDoc(collection(db, "usuarios"),
-      {
-        email: email,
-        nome: nome,
-        sobrenome: sobrenome,
-        uid: uid
-      })
+    const docRef = addDoc(collection(db, "usuarios"), {
+      email: email,
+      nome: nome,
+      sobrenome: sobrenome,
+      uid: uid,
+    })
       .then((docRef) => {
         console.log("Id do usuário: ", docRef.id);
         navigation.navigate("Login", {
-          mensagem: "Você se registrou com muito sucesso! 💋",
+          mensagem: "Você se registrou com muito sucesso!💖",
         });
       })
       .catch((error) => {
         console.error("Error adding document: ", error);
       });
   }
-
 
   function lidarComErro(erro) {
     if (erro == "auth/weak-password") {
@@ -89,7 +82,7 @@ export const TelaCadastro2 = ({ route, navigation }) => {
     setMostraErro(erro);
   }
 
-  const images = require ("../imagens/bolinhasD.png");
+  const images = require("../imagens/bolinhasD.png");
 
   return (
     <View style={styles.container}>
@@ -97,32 +90,46 @@ export const TelaCadastro2 = ({ route, navigation }) => {
         <View>
           <Text style={styles.textoC}>Crie seu cadastro</Text>
         </View>
-        <Image
-          style={styles.imgE}
-          source={images}
-        />
+        <Image style={styles.imgE} source={images} />
       </View>
       <View style={styles.input1}>
-        <TextInput
-          style={styles.input}
+        <TextInputMask
+          type={"cpf"}
+          style={{ ...styles.input, color: "black", paddingLeft:30,  }}
           placeholder="CPF"
           returnKeyType="done"
           value={cpf.value}
-          onChangeText={(text) => setCpf({ value: text, error: "" })}
+          onChangeText={(text) => {
+            setCpf({
+              value: text,
+            });
+          }}
           error={!!cpf.error}
           errorText={cpf.error}
         />
-        <TextInput
-          style={styles.input}
+
+        <TextInputMask
+          style={{ ...styles.input, color: "black", paddingLeft:30 }}
+          type={"cel-phone"}
+          options={{
+            maskType: "BRL",
+          }}
           placeholder="Telefone"
           returnKeyType="done"
           value={telefone.value}
-          onChangeText={(text) => setTelefone({ value: text, error: "" })}
+          onChangeText={(text) => {
+            setTelefone({
+              // só uma correção
+              ...telefone,
+              value: text,
+            });
+          }}
           error={!!telefone.error}
           errorText={telefone.error}
         />
+
         <TextInput
-          style={styles.input}
+          style={{ ...styles.input, color: "black" }}
           placeholder="Senha"
           returnKeyType="done"
           value={password.value}
@@ -134,11 +141,7 @@ export const TelaCadastro2 = ({ route, navigation }) => {
       </View>
 
       <View style={styles.bot}>
-        <Button
-          style={styles.btt}
-          mode="contained"
-          onPress={onRegisterPressed}
-        >
+        <Button style={styles.btt} mode="contained" onPress={onRegisterPressed}>
           Entrar
         </Button>
       </View>

@@ -7,6 +7,7 @@ import {
   Portal,
   Provider,
   Text,
+  TextInput,
 } from "react-native-paper";
 
 import { styles } from "../lib/styles";
@@ -31,6 +32,9 @@ export const TelaEsqueceuaSenha = ({ navigation }) => {
 
         <View style={styles.textos}>
           <Text style={styles.textoR}>Recupere sua senha:</Text>
+          <View style={styles.inputd}>
+          <TextInput placeholder="Digite seu email" style={styles.input}></TextInput>
+          </View>
           <Text style={styles.textoS}>
             Será enviado um código sms ao número cadastrado.
           </Text>

@@ -14,7 +14,8 @@ export const styles = StyleSheet.create({
     text: {
         fontSize: 18,
         marginVertical: "5%",
-        fontWeight: 600
+        fontWeight: 400,
+        textDecorationLine:"underline"
     },
 
     text1: {
@@ -28,7 +29,6 @@ export const styles = StyleSheet.create({
         alignItems:"center",
         borderRadius: 15,
         backgroundColor: "#fff",
-        // border: 10,
         shadowColor: '#171717',
         shadowOffset: { width: -2, height: 4 },
         shadowOpacity: 0.2,
@@ -120,12 +120,10 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 10,
         flexDirection: 'row',
-        // opacity: 40,
     },
 
     textOpa: {
         fontSize: 14,
-        // opacity: 90, 
     },
 
     local:{
