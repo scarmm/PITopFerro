@@ -4,6 +4,7 @@ import { ScrollView } from "react-native";
 import { principas } from "../lib/principas";
 import { db } from "../lib/firebase";
 import { collection, getDocs, ref } from "firebase/firestore";
+import Skeleton from "../lib/skeleton";
 
 export const TelaDormitorio = ({ navigation }) => {
   const [produtos, setProdutos] = useState([]);
@@ -14,7 +15,6 @@ export const TelaDormitorio = ({ navigation }) => {
       setLoading(false);
     }, 2500);
   }, []);
-
 
   useEffect(() => {
     getDocs(collection(db, "Produtos")).then((querySnapshot) => {
@@ -49,31 +49,36 @@ export const TelaDormitorio = ({ navigation }) => {
 
   return (
     <ScrollView>
-      <View style={principas.container}>
-        <View style={principas.titulotext1}>
-          <Text style={principas.titulotext1}>DORMITÓRIO</Text>
+      <View style={principas.tela}>
+        <View style={principas.container}>
+          <View style={principas.titulotext1}>
+            <Text style={principas.titulotext1}>DORMITÓRIO</Text>
+          </View>
         </View>
         <Skeleton visible={loading}>
-        <View style={principas.containerboxs}>
-          {produtos.map((produto) => (
-            <Pressable
-              key={produto.id}
-              onPress={() => navigation.navigate("PreCompra")}
-            >
-              <View style={principas.boxs}>
-                <View style={principas.imgbox1}>
-                  <Image
-                    style={principas.imgbox}
-                    source={{ uri: produto.Imagem }}
-                  ></Image>
+          <View style={principas.containerboxs}>
+            {produtos.map((produto) => (
+              <Pressable
+                key={produto.id}
+                onPress={() =>
+                  navigation.navigate("PreCompra", { idCompra: produto.id })
+                }
+              >
+                <View style={principas.boxs}>
+                  <View style={principas.imgbox1}>
+                    <Image
+                      style={principas.imgbox}
+                      source={{ uri: produto.Imagem }}
+                    ></Image>
+                  </View>
+                  <Text style={principas.boxstext}>{produto.Nome}</Text>
+                  <Text style={principas.boxstext2}>{produto.Preço}</Text>
                 </View>
-                <Text style={principas.boxstext}>{produto.Nome}</Text>
-                <Text style={principas.boxstext2}>{produto.Preço}</Text>
-              </View>
-            </Pressable>
-          ))}
-        </View>
+              </Pressable>
+            ))}
+          </View>
         </Skeleton>
+
         <Skeleton visible={loading}></Skeleton>
         <Skeleton visible={loading}></Skeleton>
         <Skeleton visible={loading}></Skeleton>

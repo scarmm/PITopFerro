@@ -158,58 +158,74 @@ const TelaPrincipal2 = ({}) => {
         </View>
 
         <View style={principas.circulosfora}>
-          <View style={[principas.circulos, principas.shadowProp]}>
-            <Icon3.Button
-              style={principas.iconebotao}
-              name="bed-outline"
-              backgroundColor={"rgba(0, 0, 0, 0.0)"}
-              color={"#695548"}
-              on-background={"none"}
-              size={30}
-              onPress={() => navigation.navigate("Dormitorio")}
-            />
-            <Text style={principas.minitexto}>Quarto</Text>
+          <View>
+            <View style={[principas.circulos, principas.shadowProp]}>
+              <Icon3.Button
+                style={principas.iconebotao}
+                name="bed-outline"
+                backgroundColor={"rgba(0, 0, 0, 0.0)"}
+                color={"#695548"}
+                on-background={"none"}
+                size={30}
+                onPress={() => navigation.navigate("Dormitorio")}
+              />
+            </View>
+            <View>
+              <Text style={principas.minitexto}>Quarto</Text>
+            </View>
           </View>
 
-          <View style={[principas.circulos, principas.shadowProp]}>
-            <Icon4.Button
-              style={principas.iconebotao}
-              name="sofa-outline"
-              backgroundColor={"rgba(0, 0, 0, 0.0)"}
-              color={"#695548"}
-              size={30}
-              onPress={() => navigation.navigate("Sala")}
-            />
-            <Text style={principas.minitexto}>Sala</Text>
+          <View>
+            <View style={[principas.circulos, principas.shadowProp]}>
+              <Icon4.Button
+                style={principas.iconebotao}
+                name="sofa-outline"
+                backgroundColor={"rgba(0, 0, 0, 0.0)"}
+                color={"#695548"}
+                size={30}
+                onPress={() => navigation.navigate("Sala")}
+              />
+            </View>
+            <View>
+              <Text style={principas.minitexto}>Sala</Text>
+            </View>
           </View>
 
-          <View style={[principas.circulos, principas.shadowProp]}>
-            <Icon.Button
-              style={principas.iconebotao}
-              name="kitchen"
-              backgroundColor={"rgba(0, 0, 0, 0.0)"}
-              color={"#695548"}
-              size={30}
-              onPress={() => navigation.navigate("Cozinha")}
-            ></Icon.Button>
-            <Text style={principas.minitexto}>Cozinha</Text>
+          <View>
+            <View style={[principas.circulos, principas.shadowProp]}>
+              <Icon.Button
+                style={principas.iconebotao}
+                name="kitchen"
+                backgroundColor={"rgba(0, 0, 0, 0.0)"}
+                color={"#695548"}
+                size={30}
+                onPress={() => navigation.navigate("Cozinha")}
+              ></Icon.Button>
+            </View>
+            <View>
+              <Text style={principas.minitexto}>Cozinha</Text>
+            </View>
           </View>
 
-          <View style={[principas.circulos, principas.shadowProp]}>
-            <Icon4.Button
-              style={principas.iconebotao}
-              name="image-frame"
-              backgroundColor={"rgba(0, 0, 0, 0.0)"}
-              color={"#695548"}
-              size={30}
-              onPress={() => navigation.navigate("Decoração")}
-            ></Icon4.Button>
-            <Text style={principas.minitexto}>Aparatos</Text>
+          <View>
+            <View style={[principas.circulos, principas.shadowProp]}>
+              <Icon4.Button
+                style={principas.iconebotao}
+                name="image-frame"
+                backgroundColor={"rgba(0, 0, 0, 0.0)"}
+                color={"#695548"}
+                size={30}
+                onPress={() => navigation.navigate("Decoração")}
+              ></Icon4.Button>
+            </View>
+            <View>
+              <Text style={principas.minitexto}>Aparatos</Text>
+            </View>
           </View>
         </View>
 
         <Skeleton visible={loading}>
-          <View style={principas.containerboxs}>
+          <View style={principas.containerboxsSkeleton}>
             {produtos.map((produto) => (
               <Pressable
                 key={produto.id}

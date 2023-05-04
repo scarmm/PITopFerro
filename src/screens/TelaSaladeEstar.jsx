@@ -1,8 +1,9 @@
-import { Image, Pressable, Text, View } from "react-native";
+import { Image, Pressable, ScrollView, Text, View } from "react-native";
 import { principas } from "../lib/principas";
 import { db } from "../lib/firebase";
 import { collection, getDocs, ref } from "firebase/firestore";
 import React, { useState, useEffect } from "react";
+import Skeleton from "../lib/skeleton";
 
 export const TelaSaladeEstar = ({ navigation }) => {
   const [produtos, setProdutos] = useState([]);
@@ -46,35 +47,41 @@ export const TelaSaladeEstar = ({ navigation }) => {
   }, []);
 
   return (
-    <View style={principas.container}>
-      <View style={principas.titulotext1}>
-        <Text style={principas.titulotext1}>SALA DE ESTAR</Text>
-      </View>
-      <Skeleton visible={loading}>
-        <View style={principas.containerboxs}>
-          {produtos.map((produto) => (
-            <Pressable
-              key={produto.id}
-              onPress={() => navigation.navigate("PreCompra")}
-            >
-              <View style={principas.boxs}>
-                <View style={principas.imgbox1}>
-                  <Image
-                    style={principas.imgbox}
-                    source={{ uri: produto.Imagem }}
-                  ></Image>
-                </View>
-                <Text style={principas.boxstext}>{produto.Nome}</Text>
-
-                <Text style={principas.boxstext2}>{produto.Preço}</Text>
-              </View>
-            </Pressable>
-          ))}
+    <ScrollView>
+      <View style={principas.tela}>
+        <View style={principas.container}>
+          <View style={principas.titulotext1}>
+            <Text style={principas.titulotext1}>SALA DE ESTAR</Text>
+          </View>
         </View>
+        <Skeleton visible={loading}>
+          <View style={principas.containerboxs}>
+            {produtos.map((produto) => (
+              <Pressable
+                key={produto.id}
+                onPress={() =>
+                  navigation.navigate("PreCompra", { idCompra: produto.id })
+                }
+              >
+                <View style={principas.boxs}>
+                  <View style={principas.imgbox1}>
+                    <Image
+                      style={principas.imgbox}
+                      source={{ uri: produto.Imagem }}
+                    ></Image>
+                  </View>
+                  <Text style={principas.boxstext}>{produto.Nome}</Text>
+
+                  <Text style={principas.boxstext2}>{produto.Preço}</Text>
+                </View>
+              </Pressable>
+            ))}
+          </View>
+        </Skeleton>
         <Skeleton visible={loading}></Skeleton>
         <Skeleton visible={loading}></Skeleton>
         <Skeleton visible={loading}></Skeleton>
-      </Skeleton>
-    </View>
+      </View>
+    </ScrollView>
   );
 };

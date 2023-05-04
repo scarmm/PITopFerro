@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         padding:30,
         backgroundColor: '#F3ECE8',
-        marginTop: 150
+        marginTop: 60
     },
 
     text: {

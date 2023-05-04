@@ -46,7 +46,8 @@ export const TelaLocalizacao = ({navigation}) => {
             style={styles.botao2}
             backgroundColor={"rgba(0, 0, 0, 0.0)"}
             mode="contained"
-            onPress={() => navigation.navigate("AtivaLoca")}
+            overflow="hidden"
+          
           >
             Ativar a Localização
           </Icon.Button>

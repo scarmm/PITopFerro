@@ -40,6 +40,8 @@ export const intro = StyleSheet.create({
   botico: {
     justifyContent: "flex-end",
     backgroundColor: "none",
+    overflow:'hidden',
+    display:"flex",
     
   },
   botico2: {
