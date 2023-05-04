@@ -48,9 +48,11 @@ export const TelaDecoracao = ({ navigation }) => {
 
   return (
     <ScrollView>
-      <View style={principas.container}>
-        <View style={principas.titulotext1}>
-          <Text style={principas.titulotext1}>DECORAÇÃO</Text>
+      <View style={principas.tela}>
+        <View style={principas.container}>
+          <View style={principas.titulotext1}>
+            <Text style={principas.titulotext1}>DECORAÇÃO</Text>
+          </View>
         </View>
 
         <Skeleton visible={loading}>
@@ -58,7 +60,9 @@ export const TelaDecoracao = ({ navigation }) => {
             {produtos.map((produto) => (
               <Pressable
                 key={produto.id}
-                onPress={() => navigation.navigate("PreCompra")}
+                onPress={() =>
+                  navigation.navigate("PreCompra", { idCompra: produto.id })
+                }
               >
                 <View style={principas.boxs}>
                   <View style={principas.imgbox1}>
@@ -75,6 +79,7 @@ export const TelaDecoracao = ({ navigation }) => {
             ))}
           </View>
         </Skeleton>
+
         <Skeleton visible={loading}></Skeleton>
         <Skeleton visible={loading}></Skeleton>
         <Skeleton visible={loading}></Skeleton>

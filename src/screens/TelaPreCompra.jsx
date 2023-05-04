@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Image, Pressable, View } from "react-native";
 import { Text } from "react-native";
 import { styles } from "../lib/PreCompra";
+import { principas } from "../lib/principas";
 import Icon from "react-native-vector-icons/FontAwesome5";
 import { ScrollView } from "react-native";
 import { db } from "../lib/firebase";
@@ -92,24 +93,26 @@ export const TelaPreCompra = ({ navigation, route }) => {
 
   return (
     <ScrollView style={{ backgroundColor: "#F3ECE8" }}>
-      <View style={styles.container}>
-        <Skeleton2 visible={loading}>
-          <View style={styles.container1}>
-            <View style={styles.imagem}>
-              <Image style={styles.imagempc} source={{ uri: Imagem }}></Image>
-            </View>
-            <View style={styles.container2}>
-              <View>
-                <Text style={styles.texto1}>{Nome}</Text>
-                <Text style={styles.texto3}>{Descricao}</Text>
-                <Text style={styles.texto2}>
-                  Medidas: {Altura} x {Largura} x {Profundidade}, {Material}
-                </Text>
-                <Text style={styles.texto4}>{Preço}</Text>
+      <View style={principas.tela}>
+        <View style={styles.container}>
+          <Skeleton2 visible={loading}>
+            <View style={styles.container1}>
+              <View style={styles.imagem}>
+                <Image style={styles.imagempc} source={{ uri: Imagem }}></Image>
+              </View>
+              <View style={styles.container2}>
+                <View>
+                  <Text style={styles.texto1}>{Nome}</Text>
+                  <Text style={styles.texto3}>{Descricao}</Text>
+                  <Text style={styles.texto2}>
+                    Medidas: {Altura} x {Largura} x {Profundidade}, {Material}
+                  </Text>
+                  <Text style={styles.texto4}>{Preço}</Text>
+                </View>
               </View>
             </View>
-          </View>
-        </Skeleton2>
+          </Skeleton2>
+        </View>
 
         <View style={styles.todosbotoes}>
           <Icon.Button
@@ -118,6 +121,7 @@ export const TelaPreCompra = ({ navigation, route }) => {
             name="shopping-bag"
             size={18}
             backgroundColor={"rgba(0, 0, 0, 0.0)"}
+            overflow="hidden"
           >
             Comprar
           </Icon.Button>
@@ -140,28 +144,32 @@ export const TelaPreCompra = ({ navigation, route }) => {
         </View>
 
         <Skeleton visible={loading}>
-          <View style={styles.containerprodutos}>
+          <View style={principas.containerboxsSkeleton}>
             {produtos.map((produto) => (
               <Pressable
                 key={produto.id}
-                onPress={() => navigation.navigate("PreCompra")}
+                onPress={() =>
+                  navigation.navigate("PreCompra", { idCompra: produto.id })
+                }
               >
-                <View style={styles.containerboxs}>
-                  <View style={styles.boxs}>
-                    <View style={styles.imgbox1}>
-                      <Image
-                        style={styles.imgbox}
-                        source={{ uri: produto.Imagem }}
-                      ></Image>
-                    </View>
-                    <Text style={styles.boxstext}>{produto.Nome}</Text>
-                    <Text style={styles.boxstext2}>{produto.Preço}</Text>
+                <View style={principas.boxs}>
+                  <View style={principas.imgbox1}>
+                    <Image
+                      style={principas.imgbox}
+                      source={{ uri: produto.Imagem }}
+                    ></Image>
                   </View>
+
+                  <Text style={principas.boxstext}>{produto.Nome}</Text>
+                  <Text style={principas.boxstext1}>{produto.Preço}</Text>
                 </View>
               </Pressable>
             ))}
           </View>
         </Skeleton>
+        <Skeleton visible={loading}></Skeleton>
+        <Skeleton visible={loading}></Skeleton>
+        <Skeleton visible={loading}></Skeleton>
       </View>
     </ScrollView>
   );

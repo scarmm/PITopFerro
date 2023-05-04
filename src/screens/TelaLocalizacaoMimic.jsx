@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Text, View } from "react-native";
 import Hr from "react-native-hr-component";
 import { Button, Checkbox, TextInput } from "react-native-paper";
@@ -6,13 +6,35 @@ import Icon from "react-native-vector-icons/Entypo";
 import { ScrollView } from "react-native";
 import { styles } from "../lib/config";
 
+
+
+
 export const TelaLocalizacaoMimic = ({navigation}) => {
-  const [nome, setNome] = useState("");
-  const [nome1, setNome1] = useState("");
-  const [nome2, setNome2] = useState("");
-  const [nome3, setNome3] = useState("");
-  const [nome4, setNome4] = useState("");
+
+
+  const [cep, setCep] = useState("");
+  const [cidade, setCidade] = useState("");
+  const [bairro, setBairro] = useState("");
+  const [endereco, setEndereco] = useState("");
+  const [numero, setNumero] = useState("");
   const [checked, setChecked] = useState(false);
+
+  useEffect(() => {
+    if (cep.length === 8) {
+      fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(response => response.json())
+        .then(data => {
+          setCidade(data.localidade);
+          setBairro(data.bairro);
+          setEndereco(data.logradouro);
+        })
+        .catch(error => console.error(error));
+    }
+  }, [cep]);
+
+  const handleSave = () => {
+    // Lógica para salvar o endereço
+  };
 
   return (
     <ScrollView style={{backgroundColor:"#F3ECE8"}}>
@@ -24,7 +46,8 @@ export const TelaLocalizacaoMimic = ({navigation}) => {
             style={styles.botao2}
             backgroundColor={"rgba(0, 0, 0, 0.0)"}
             mode="contained"
-            onPress={() => navigation.navigate("AtivaLoca")}
+            overflow="hidden"
+          
           >
             Ativar a Localização
           </Icon.Button>
@@ -34,32 +57,38 @@ export const TelaLocalizacaoMimic = ({navigation}) => {
           <TextInput
             style={styles.botao3}
             label="CEP"
-            value={nome}
-            onChangeText={setNome}
+            value={cep}
+            onChangeText={setCep}
+            keyboardType="numeric"
+            maxLength={8}
+         
           />
           <TextInput
             style={styles.botao3}
             label="Cidade"
-            value={nome1}
-            onChangeText={setNome1}
+            value={cidade}
+            onChangeText={setCidade}
+            editable={false}
           />
           <TextInput
             style={styles.botao3}
             label="Bairro"
-            value={nome2}
-            onChangeText={setNome2}
+            value={bairro}
+            onChangeText={setBairro}
+            editable={false}
           />
           <TextInput
             style={styles.botao3}
             label="Endereço"
-            value={nome3}
-            onChangeText={setNome3}
+            value={endereco}
+            onChangeText={setEndereco}
+            editable={false}
           />
           <TextInput
             style={styles.botao3}
             label="Número"
-            value={nome4}
-            onChangeText={setNome4}
+            value={numero}
+            onChangeText={setNumero}
           />
           <View style={styles.check}>
             <Checkbox
@@ -75,7 +104,7 @@ export const TelaLocalizacaoMimic = ({navigation}) => {
           <Button
             style={styles.botao2}
             mode="contained"
-            onPress={() => navigation.navigate("Endereços")}
+            onPress={() => navigation.navigate("Pagamento")}
           >
             Salvar
           </Button>

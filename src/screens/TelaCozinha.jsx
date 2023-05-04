@@ -49,9 +49,11 @@ export const TelaCozinha = ({ navigation }) => {
 
   return (
     <ScrollView>
-      <View style={principas.container}>
-        <View style={principas.titulotext1}>
-          <Text style={principas.titulotext1}>COZINHA</Text>
+      <View style={principas.tela}>
+        <View style={principas.container}>
+          <View style={principas.titulotext1}>
+            <Text style={principas.titulotext1}>COZINHA</Text>
+          </View>
         </View>
 
         <Skeleton visible={loading}>
@@ -59,7 +61,9 @@ export const TelaCozinha = ({ navigation }) => {
             {produtos.map((produto) => (
               <Pressable
                 key={produto.id}
-                onPress={() => navigation.navigate("PreCompra")}
+                onPress={() =>
+                  navigation.navigate("PreCompra", { idCompra: produto.id })
+                }
               >
                 <View style={principas.boxs}>
                   <View style={principas.imgbox1}>

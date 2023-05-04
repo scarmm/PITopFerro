@@ -44,7 +44,46 @@ export default function Skeleton({ visible, children }) {
     })
     if (visible) {
         return (
-            <View style={principas.containerboxs}>
+            <View style={principas.containerboxsSkeleton}>
+                <View style={principas.boxsSkeleton}>
+
+                    <View style={principas.imgbox1Skeleton}>
+
+                        <View style={principas.imgboxSkeleton}>
+                            <Animated.View style={{
+                                width: '30%',
+                                height: 500,
+                                opacity: 0.3,
+                                backgroundColor: 'black',
+                                transform: [{ translateX: translateX }]
+                            }}>
+
+                            </Animated.View>
+                        </View>
+
+                    </View>
+
+                    <View style={principas.boxstextSkeleton}>
+                        <Animated.View style={{
+                            width: '15%',
+                            height: 500,
+                            opacity: 0.3,
+                            backgroundColor: 'black',
+                            transform: [{ translateX: translateX2 }]
+                        }}>
+                        </Animated.View>
+                    </View>
+                    <View style={principas.boxstext1Skeleton}>
+                        <Animated.View style={{
+                            width: '90%',
+                            height: 500,
+                            opacity: 0.3,
+                            backgroundColor: 'black',
+                            transform: [{ translateX: translateX3 }]
+                        }}>
+                        </Animated.View>
+                    </View>
+                </View>
                 <View style={principas.boxsSkeleton}>
 
                     <View style={principas.imgbox1Skeleton}>
@@ -89,11 +128,11 @@ export default function Skeleton({ visible, children }) {
 
 
     }
- return(
-    <>
-    {children}
-    </>
- )
+    return (
+        <>
+            {children}
+        </>
+    )
 }
 
 

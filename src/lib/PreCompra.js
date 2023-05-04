@@ -6,13 +6,14 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#F3ECE8",
-    padding: 20,
+
 
   },
 
   container1: {
     flexDirection: "row",
-
+    paddingTop: 30,
+    paddingBottom: 15
   },
 
   imagempc: {
@@ -22,10 +23,7 @@ export const styles = StyleSheet.create({
   },
 
   imagem: {
-    shadowColor: "#171717",
-    shadowOffset: { width: -2, height: 4 },
-    shadowOpacity: 0.2,
-    shadowRadius: 5,
+
     borderRadius: 15,
   },
 
@@ -64,45 +62,30 @@ export const styles = StyleSheet.create({
     height: 40,
     borderRadius: 40,
     margin: 20,
-    shadowColor: "#171717",
-    shadowOffset: { width: -2, height: 4 },
-    shadowOpacity: 0.2,
-    shadowRadius: 5,
+
     justifyContent: "center",
+    overflow: "hidden",
+
   },
 
   todosbotoes: {
     flexDirection: "row",
+    overflow: "hidden",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#F3ECE8",
+
   },
 
-  boxs: {
-    position: "relative",
-    backgroundColor: "#fff",
-    width: 170,
-    height: 200,
-    padding: 10,
-    shadowColor: "#171717",
-    shadowOffset: { width: -2, height: 4 },
-    shadowOpacity: 0.2,
-    shadowRadius: 5,
-    borderRadius: 15,
-    marginTop: 20,
-    alignContent: "space-around",
-  },
+
 
   imgbox1: {
     justifyContent: "center",
     alignItems: "center",
   },
 
-  containerprodutos: {
-    flex: 1,
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    alignContent: "space-between",
 
-  },
 
   boxstext: {
     fontSize: 14,
@@ -151,7 +134,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#fff",
     borderRadius: 20,
     padding: 20,
-    overflow: "hidden"
+    overflow: "hidden",
   },
 
   container1Skeleton: {
@@ -167,7 +150,7 @@ export const styles = StyleSheet.create({
     width: 150,
     height: 150,
     borderRadius: 10,
-    backgroundColor: "gray",
+    backgroundColor: "#bcbfc0",
     overflow: "hidden",
 
   },
@@ -175,8 +158,6 @@ export const styles = StyleSheet.create({
 
   container2Skeleton: {
     width: 150,
-
-
     overflow: "hidden"
   },
 
@@ -195,7 +176,6 @@ export const styles = StyleSheet.create({
     height: 10,
     marginLeft: 20,
     backgroundColor: "#bcbfc0",
-
     overflow: "hidden"
   },
 
@@ -206,7 +186,6 @@ export const styles = StyleSheet.create({
     backgroundColor: "#bcbfc0",
     height: 25,
     width: 60,
-
     overflow: "hidden"
   },
 });

@@ -152,6 +152,7 @@ export default function Skeleton2({ visible, children }) {
                         </View>
                     </View>
                 </View>
+                
             </View>
         )
 
