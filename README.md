@@ -2,7 +2,7 @@
  
 **Aplicativo Mobile para a Empresa TopFerro Joinville**
  
-Este projeto faz parte de um trabalho técnico avaliativo, onde desenvolvemos um aplicativo mobile para a empresa TopFerro Joinville. Utilizamos *React.js*, uma popular biblioteca *front-end* do *JavaScript*, para criar uma interface moderna e funcional.
+Este projeto faz parte de um trabalho técnico avaliativo, onde desenvolvemos um aplicativo mobile para a empresa TopFerro Joinville. Utilizamos *React.js*, uma popular biblioteca *front-end* do *JavaScript*, para criar a interface.
  
 🛠️ **Tecnologia Utilizada:**
 - *React.js*
